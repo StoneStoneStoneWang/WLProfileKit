@@ -94,14 +94,15 @@ public func onUploadImgResp(_ data: Data ,file: String ,param: WLALCredentialsBe
         
         let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(WLAccountCache.default.uid).png";
         
-        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
-            
-            if !(flag.takeUnretainedValue() as! Bool) {
-                
-                WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-            }
-        }
-        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
+        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
+//        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
+//
+//            if !(flag.takeUnretainedValue() as! Bool) {
+//
+//                WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
+//            }
+//        }
+//        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
         
         WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
             
@@ -131,14 +132,16 @@ public func onUploadPubImgResp(_ data: Data ,file: String ,param: WLALCredential
         
         let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(Date.getTimeStamp_MS()).png";
         
-        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
-            
-            if !(flag.takeUnretainedValue() as! Bool) {
-                
-                WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-            }
-        }
-        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
+//        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
+//
+//            if !(flag.takeUnretainedValue() as! Bool) {
+//
+//
+//            }
+//        }
+//        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
+
+        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
         
         WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
             
@@ -175,14 +178,15 @@ public func onUploadVideoResp(_ data: Data ,file: String ,param: WLALCredentials
         
         let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(Date.getTimeStamp_MS()).mp4";
         
-        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
-            
-            if !(flag.takeUnretainedValue() as! Bool) {
-                
-                WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-            }
-        }
-        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
+        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
+//        if let flag = WLAliObjCache.shared().perform(NSSelectorFromString("checkEnv")) {
+//
+//            if !(flag.takeUnretainedValue() as! Bool) {
+//
+//                WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
+//            }
+//        }
+//        else { WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com") }
         
         WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
             
