@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -55,7 +55,7 @@ Pod::Spec.new do |spec|
       api.dependency 'WLProfileKit/Prepare/Manager'
       api.dependency 'Alamofire'
       api.dependency 'WLReqKit'
-      api.dependency 'WLToolsKit/WLCommon'
+      api.dependency 'WLToolsKit/Common'
     end
     ## Req
     prepare.subspec 'Req' do |req|
@@ -79,9 +79,9 @@ Pod::Spec.new do |spec|
     ## Base
     prepare.subspec 'Base' do |base|
       base.source_files = "Code/Prepare/Base/*.{swift}"
-      base.dependency 'WLToolsKit/WLColor'
-      base.dependency 'WLBaseViewController/WLLoading'
-      base.dependency 'WLBaseViewController/WLInner'
+      base.dependency 'WLToolsKit/Color'
+      base.dependency 'WLBaseViewController/Loading'
+      base.dependency 'WLBaseViewController/Inner'
       base.dependency 'RxSwift'
     end
     
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
     prepare.subspec 'TextCheck' do |textCheck|
       textCheck.source_files = "Code/Prepare/TextCheck/*.{swift}"
       textCheck.dependency 'WLProfileKit/Prepare/Result'
-      textCheck.dependency 'WLToolsKit/WLString'
+      textCheck.dependency 'WLToolsKit/String'
     end
     ## Prepare/Base
     prepare.subspec 'ActionShow' do |ac|
@@ -102,7 +102,7 @@ Pod::Spec.new do |spec|
     ## Prepare/Base
     prepare.subspec 'PickerImpl' do |pi|
       pi.source_files = "Code/Prepare/PickerImpl/*.{swift}"
-      pi.dependency 'WLToolsKit/WLThen'
+      pi.dependency 'WLToolsKit/Then'
     end
   end
   
@@ -140,7 +140,7 @@ Pod::Spec.new do |spec|
       vm.source_files = "Code/Project/Welcome/VM/*.{swift}"
       vm.dependency 'WLBaseViewModel'
       vm.dependency 'WLProfileKit/Welcome/Style'
-      vm.dependency 'WLToolsKit/WLCommon'
+      vm.dependency 'WLToolsKit/Common'
       vm.dependency 'RxSwift'
       vm.dependency 'RxCocoa'
     end
@@ -148,7 +148,7 @@ Pod::Spec.new do |spec|
     welcome.subspec 'View' do |view|
       view.source_files = "Code/Project/Welcome/View/*.{swift}"
       view.dependency 'SnapKit'
-      view.dependency 'WLToolsKit/WLThen'
+      view.dependency 'WLToolsKit/Then'
     end
     ## 'Base'
     welcome.subspec 'Base' do |base|
@@ -158,8 +158,8 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/Welcome/View'
       base.dependency 'WLProfileKit/Welcome/Config'
       base.dependency 'WLProfileKit/Welcome/Delegate'
-      base.dependency 'WLToolsKit/WLColor'
-      base.dependency 'WLBaseTableView/WLSectionModel'
+      base.dependency 'WLToolsKit/Color'
+      base.dependency 'WLBaseTableView/SM'
       base.dependency 'WLProfileKit/RXCocoa/Button'
       base.dependency 'RxDataSources'
     end
@@ -220,9 +220,9 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/Login/Style'
       base.dependency 'WLProfileKit/RXCocoa/Button'
       base.dependency 'WLProfileKit/RXCocoa/TextField'
-      base.dependency 'WLToolsKit/WLColor'
-      base.dependency 'WLToolsKit/WLThen'
-      base.dependency 'WLToolsKit/WLCommon'
+      base.dependency 'WLToolsKit/Color'
+      base.dependency 'WLToolsKit/Then'
+      base.dependency 'WLToolsKit/Common'
       base.dependency 'WLComponentView/TextFeild/Vcode'
       base.dependency 'WLComponentView/TextFeild/Password'
       base.dependency 'WLThirdUtil/Hud'
@@ -262,9 +262,9 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/Login/Config'
       base.dependency 'WLProfileKit/Login/Style'
       base.dependency 'WLProfileKit/RXCocoa/Button'
-      base.dependency 'WLToolsKit/WLColor'
-      base.dependency 'WLToolsKit/WLThen'
-      base.dependency 'WLToolsKit/WLCommon'
+      base.dependency 'WLToolsKit/Color'
+      base.dependency 'WLToolsKit/Then'
+      base.dependency 'WLToolsKit/Common'
       base.dependency 'WLComponentView/TextFeild/Vcode'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLThirdUtil/JPush'
@@ -360,20 +360,20 @@ Pod::Spec.new do |spec|
       view.subspec 'Empty' do |empty|
         empty.source_files = "Code/Project/Black/View/Empty/*.{swift}"
         empty.dependency 'WLBaseTableView/WLEmpty'
-        empty.dependency 'WLToolsKit/WLColor'
+        empty.dependency 'WLToolsKit/Color'
       end
       
       view.subspec 'TV' do |tv|
         tv.source_files = "Code/Project/Black/View/TV/*.{swift}"
-        tv.dependency 'WLBaseTableView/WLRTV'
+        tv.dependency 'WLBaseTableView/RTV'
       end
       
       view.subspec 'Cell' do |cell|
         cell.source_files = "Code/Project/Black/View/Cell/*.{swift}"
-        cell.dependency 'WLBaseTableView/WLBaseTableViewCell'
-        cell.dependency 'WLToolsKit/WLColor'
-        cell.dependency 'WLToolsKit/WLThen'
-        cell.dependency 'WLToolsKit/WLCommon'
+        cell.dependency 'WLBaseTableView/BTVC'
+        cell.dependency 'WLToolsKit/Color'
+        cell.dependency 'WLToolsKit/Then'
+        cell.dependency 'WLToolsKit/Common'
         cell.dependency 'Kingfisher'
         cell.dependency 'SnapKit'
         cell.dependency 'WLProfileKit/Black/Config'
@@ -400,9 +400,9 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/Black/View'
       vc.dependency 'WLProfileKit/Black/Style'
       vc.dependency 'WLProfileKit/Black/Config'
-      vc.dependency 'WLToolsKit/WLThen'
-      vc.dependency 'WLToolsKit/WLCommon'
-      vc.dependency 'WLBaseTableView/WLAnimationSectionModel'
+      vc.dependency 'WLToolsKit/Then'
+      vc.dependency 'WLToolsKit/Common'
+      vc.dependency 'WLBaseTableView/ASM'
       vc.dependency 'WLThirdUtil/Hud'
       vc.dependency 'RxDataSources'
     end
@@ -433,20 +433,20 @@ Pod::Spec.new do |spec|
       view.subspec 'Empty' do |empty|
         empty.source_files = "Code/Project/Focus/View/Empty/*.{swift}"
         empty.dependency 'WLBaseTableView/WLEmpty'
-        empty.dependency 'WLToolsKit/WLColor'
+        empty.dependency 'WLToolsKit/Color'
       end
       
       view.subspec 'TV' do |tv|
         tv.source_files = "Code/Project/Focus/View/TV/*.{swift}"
-        tv.dependency 'WLBaseTableView/WLRTV'
+        tv.dependency 'WLBaseTableView/RTV'
       end
       
       view.subspec 'Cell' do |cell|
         cell.source_files = "Code/Project/Focus/View/Cell/*.{swift}"
-        cell.dependency 'WLBaseTableView/WLBaseTableViewCell'
-        cell.dependency 'WLToolsKit/WLColor'
-        cell.dependency 'WLToolsKit/WLThen'
-        cell.dependency 'WLToolsKit/WLCommon'
+        cell.dependency 'WLBaseTableView/BTVC'
+        cell.dependency 'WLToolsKit/Color'
+        cell.dependency 'WLToolsKit/Then'
+        cell.dependency 'WLToolsKit/Common'
         cell.dependency 'Kingfisher'
         cell.dependency 'SnapKit'
         cell.dependency 'WLProfileKit/Focus/Config'
@@ -473,9 +473,9 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/Focus/View'
       vc.dependency 'WLProfileKit/Focus/Style'
       vc.dependency 'WLProfileKit/Focus/Config'
-      vc.dependency 'WLToolsKit/WLThen'
-      vc.dependency 'WLToolsKit/WLCommon'
-      vc.dependency 'WLBaseTableView/WLAnimationSectionModel'
+      vc.dependency 'WLToolsKit/Then'
+      vc.dependency 'WLToolsKit/Common'
+      vc.dependency 'WLBaseTableView/ASM'
       vc.dependency 'WLThirdUtil/Hud'
       vc.dependency 'RxDataSources'
     end
@@ -498,8 +498,8 @@ Pod::Spec.new do |spec|
     setting.subspec 'View' do |view|
       view.source_files = "Code/Project/Setting/View/*.{swift}"
       view.dependency 'WLProfileKit/Setting/Bean'
-      view.dependency 'WLBaseTableView/WLBTV'
-      view.dependency 'WLBaseTableView/WLBaseTableViewCell'
+      view.dependency 'WLBaseTableView/BTV'
+      view.dependency 'WLBaseTableView/BTVC'
       view.dependency 'SnapKit'
     end
     setting.subspec 'VM' do |vm|
@@ -514,7 +514,7 @@ Pod::Spec.new do |spec|
       vc.source_files = "Code/Project/Setting/VC/*.{swift}"
       vc.dependency 'WLProfileKit/Setting/VM'
       vc.dependency 'WLProfileKit/Setting/View'
-      vc.dependency 'WLBaseTableView/WLSectionModel'
+      vc.dependency 'WLBaseTableView/SM'
       vc.dependency 'WLProfileKit/Black/Create'
       vc.dependency 'WLProfileKit/Login/CheckLogin'
     end
@@ -543,11 +543,11 @@ Pod::Spec.new do |spec|
       view.source_files = "Code/Project/UserInfo/View/*.{swift}"
       view.dependency 'WLProfileKit/UserInfo/Bean'
       view.dependency 'WLProfileKit/UserInfo/Config'
-      view.dependency 'WLBaseTableView/WLBaseTableViewCell'
-      view.dependency 'WLBaseTableView/WLBTV'
-      view.dependency 'WLToolsKit/WLColor'
-      view.dependency 'WLToolsKit/WLThen'
-      view.dependency 'WLToolsKit/WLString'
+      view.dependency 'WLBaseTableView/BTVC'
+      view.dependency 'WLBaseTableView/BTV'
+      view.dependency 'WLToolsKit/Color'
+      view.dependency 'WLToolsKit/Then'
+      view.dependency 'WLToolsKit/String'
       view.dependency 'Kingfisher'
       view.dependency 'SnapKit'
     end
@@ -574,9 +574,9 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/UserInfo/VM'
       vc.dependency 'WLProfileKit/UserInfo/Config'
       vc.dependency 'WLProfileKit/UserInfo/View'
-      vc.dependency 'WLToolsKit/WLThen'
-      vc.dependency 'WLToolsKit/WLCommon'
-      vc.dependency 'WLBaseTableView/WLSectionModel'
+      vc.dependency 'WLToolsKit/Then'
+      vc.dependency 'WLToolsKit/Common'
+      vc.dependency 'WLBaseTableView/SM'
       vc.dependency 'WLThirdUtil/Hud'
       vc.dependency 'WLProfileKit/Prepare/ActionShow'
       vc.dependency 'RxDataSources'
@@ -594,7 +594,7 @@ Pod::Spec.new do |spec|
     
     sign.subspec 'VM' do |vm|
       vm.source_files = "Code/Project/Signature/VM/*.{swift}"
-      vm.dependency 'WLToolsKit/WLString'
+      vm.dependency 'WLToolsKit/String'
       vm.dependency 'WLProfileKit/Prepare/Result'
       vm.dependency 'WLProfileKit/Prepare/Cache'
       vm.dependency 'WLProfileKit/Prepare/Req'
@@ -611,19 +611,19 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/Prepare/Base'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLProfileKit/UserInfo/Config'
-      base.dependency 'WLToolsKit/WLThen'
+      base.dependency 'WLToolsKit/Then'
     end
     
     sign.subspec 'VC' do |vc|
       vc.source_files = "Code/Project/Signature/VC/*.{swift}"
       vc.dependency 'WLProfileKit/Signature/Base'
-      vc.dependency 'WLToolsKit/WLColor'
-      vc.dependency 'WLToolsKit/WLCommon'
+      vc.dependency 'WLToolsKit/Color'
+      vc.dependency 'WLToolsKit/Common'
     end
     sign.subspec 'Create' do |create|
       create.source_files = "Code/Project/Signature/Create/*.{swift}"
       create.dependency 'WLProfileKit/Signature/VC'
-      create.dependency 'WLBaseViewController/WLNavi'
+      create.dependency 'WLBaseViewController/Navi'
     end
   end
   
@@ -632,7 +632,7 @@ Pod::Spec.new do |spec|
     
     name.subspec 'VM' do |vm|
       vm.source_files = "Code/Project/NickName/VM/*.{swift}"
-      vm.dependency 'WLToolsKit/WLString'
+      vm.dependency 'WLToolsKit/String'
       vm.dependency 'WLProfileKit/Prepare/Result'
       vm.dependency 'WLBaseViewModel'
       vm.dependency 'RxSwift'
@@ -649,7 +649,7 @@ Pod::Spec.new do |spec|
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLProfileKit/UserInfo/Bean'
       base.dependency 'WLProfileKit/UserInfo/Config'
-      base.dependency 'WLToolsKit/WLThen'
+      base.dependency 'WLToolsKit/Then'
       base.dependency 'WLProfileKit/Prepare/Cache'
       base.dependency 'WLComponentView/TextFeild/NickName'
     end
@@ -657,13 +657,13 @@ Pod::Spec.new do |spec|
     name.subspec 'VC' do |vc|
       vc.source_files = "Code/Project/NickName/VC/*.{swift}"
       vc.dependency 'WLProfileKit/NickName/Base'
-      vc.dependency 'WLToolsKit/WLColor'
-      vc.dependency 'WLToolsKit/WLCommon'
+      vc.dependency 'WLToolsKit/Color'
+      vc.dependency 'WLToolsKit/Common'
     end
     name.subspec 'Create' do |create|
       create.source_files = "Code/Project/NickName/Create/*.{swift}"
       create.dependency 'WLProfileKit/NickName/VC'
-      create.dependency 'WLBaseViewController/WLNavi'
+      create.dependency 'WLBaseViewController/Navi'
     end
   end
   
@@ -676,16 +676,16 @@ Pod::Spec.new do |spec|
     
     about.subspec 'Bean' do |bean|
       bean.source_files = "Code/Project/About/Bean/*.{swift}"
-      bean.dependency 'WLToolsKit/WLString'
+      bean.dependency 'WLToolsKit/String'
     end
     
     about.subspec 'View' do |view|
       view.source_files = "Code/Project/About/View/*.{swift}"
       view.dependency 'WLProfileKit/About/Bean'
       view.dependency 'WLProfileKit/About/Config'
-      view.dependency 'WLBaseTableView/WLBTV'
-      view.dependency 'WLBaseTableView/WLSectionModel'
-      view.dependency 'WLBaseTableView/WLBaseTableViewCell'
+      view.dependency 'WLBaseTableView/BTV'
+      view.dependency 'WLBaseTableView/SM'
+      view.dependency 'WLBaseTableView/BTVC'
       view.dependency 'SnapKit'
       
     end
@@ -704,7 +704,7 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/About/Config'
       vc.dependency 'WLProfileKit/Prepare/Base'
       vc.dependency 'RxDataSources'
-      vc.dependency 'WLToolsKit/WLCommon'
+      vc.dependency 'WLToolsKit/Common'
     end
     about.subspec 'Create' do |create|
       create.source_files = "Code/Project/About/Create/*.{swift}"
@@ -742,9 +742,9 @@ Pod::Spec.new do |spec|
       view.dependency 'Kingfisher'
       view.dependency 'RxCocoa'
       view.dependency 'WLProfileKit/Profile/Bean'
-      view.dependency 'WLBaseTableView/WLBTV'
-      view.dependency 'WLBaseTableView/WLBaseTableViewCell'
-      view.dependency 'WLToolsKit/WLColor'
+      view.dependency 'WLBaseTableView/BTV'
+      view.dependency 'WLBaseTableView/BTVC'
+      view.dependency 'WLToolsKit/Color'
       view.dependency 'SnapKit'
     end
     
@@ -794,8 +794,8 @@ Pod::Spec.new do |spec|
   #    end
   #    pub.subspec 'View' do |view|
   #      view.source_files = "Code/Publish/View/*.{swift}"
-  #      view.dependency 'WLBaseTableView/WLBTV'
-  #      view.dependency 'WLBaseTableView/WLBaseTableViewCell'
+  #      view.dependency 'WLBaseTableView/BTV'
+  #      view.dependency 'WLBaseTableView/BTVC'
   #    end
   #    pub.subspec 'Base' do |base|
   #      base.source_files = "Code/Publish/Base/*.{swift}"
