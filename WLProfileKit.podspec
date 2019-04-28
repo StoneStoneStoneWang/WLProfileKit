@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.5"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -764,6 +764,8 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/About/Create'
       base.dependency 'WLProfileKit/Setting/Create'
       base.dependency 'WLProfileKit/Focus/Create'
+      base.dependency 'WLToolsKit/OpenUrl'
+      base.dependency 'WLToolsKit/DeviceInfo'
       base.dependency 'RxDataSources'
       base.dependency 'WLThirdUtil/Hud'
     end
