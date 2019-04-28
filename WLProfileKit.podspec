@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -120,7 +120,7 @@ Pod::Spec.new do |spec|
     end
   end
   
-  ## Welcome
+  # Welcome
   spec.subspec 'Welcome' do |welcome|
     ## 'Style'
     welcome.subspec 'Style' do |style|
@@ -338,7 +338,6 @@ Pod::Spec.new do |spec|
     end
   end
   
-  
   # Black
   spec.subspec 'Black' do |black|
     
@@ -359,7 +358,7 @@ Pod::Spec.new do |spec|
       
       view.subspec 'Empty' do |empty|
         empty.source_files = "Code/Project/Black/View/Empty/*.{swift}"
-        empty.dependency 'WLBaseTableView/WLEmpty'
+        empty.dependency 'WLBaseTableView/Empty'
         empty.dependency 'WLToolsKit/Color'
       end
       
@@ -412,7 +411,7 @@ Pod::Spec.new do |spec|
     end
   end
   
-  # Black
+  # Focus
   spec.subspec 'Focus' do |focus|
     
     focus.subspec 'Bean' do |bean|
@@ -432,7 +431,7 @@ Pod::Spec.new do |spec|
       
       view.subspec 'Empty' do |empty|
         empty.source_files = "Code/Project/Focus/View/Empty/*.{swift}"
-        empty.dependency 'WLBaseTableView/WLEmpty'
+        empty.dependency 'WLBaseTableView/Empty'
         empty.dependency 'WLToolsKit/Color'
       end
       
@@ -525,9 +524,7 @@ Pod::Spec.new do |spec|
     end
   end
   
-  
-  
-  # Black
+  # UserInfo
   spec.subspec 'UserInfo' do |info|
     
     info.subspec 'Bean' do |bean|
