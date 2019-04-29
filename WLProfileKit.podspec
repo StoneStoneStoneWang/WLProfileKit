@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -711,7 +711,6 @@ Pod::Spec.new do |spec|
   
   # Profile
   spec.subspec 'Profile' do |profile|
-    
     
     profile.subspec 'Config' do |config|
       config.source_files = "Code/Project/Profile/Config/*.{swift}"

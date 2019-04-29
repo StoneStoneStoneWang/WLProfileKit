@@ -43,7 +43,9 @@ extension WLSettingType {
         
         switch self {
             
-        case .pwd: return WLAccountCache.default.isLogin() ? "修改密码" : "忘记密码"
+        case .pwd: return "忘记密码"
+            
+        case .password: return "修改密码"
             
         case .logout: return "退出登录"
             

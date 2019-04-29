@@ -17,11 +17,21 @@ public final class WLSignatureViewController: WLSignatureBaseViewController {
         
         if let config = config {
             
-            completeItem.setTitleColor(WLHEXCOLOR(hexColor: config.itemColor), for: .normal)
-            
-            completeItem.setTitleColor(WLHEXCOLOR(hexColor: config.itemColor), for: .highlighted)
-            
-            completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: config.itemColor + "60"), for: .disabled)
+            if config.itemColor != "#ffffff" {
+                
+                completeItem.setTitleColor(WLHEXCOLOR(hexColor: "#ffffff"), for: .normal)
+                
+                completeItem.setTitleColor(WLHEXCOLOR(hexColor: "#ffffff"), for: .highlighted)
+                
+                completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: "#ffffff" + "60"), for: .disabled)
+            } else {
+                
+                completeItem.setTitleColor(WLHEXCOLOR(hexColor: config.itemColor), for: .normal)
+                
+                completeItem.setTitleColor(WLHEXCOLOR(hexColor: config.itemColor), for: .highlighted)
+                
+                completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: config.itemColor + "60"), for: .disabled)
+            }
             
         }
     }
