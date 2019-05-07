@@ -27,7 +27,7 @@ extension Reactive where Base: WLNameUpdateBaseViewController {
             
             let updateName = WLNameUpdateBaseViewController.createNickName(config)
             
-            updateName.nickname.value = nickname
+            updateName.nickname.accept(nickname)
             
             let nav = WLNaviController(rootViewController: updateName)
             

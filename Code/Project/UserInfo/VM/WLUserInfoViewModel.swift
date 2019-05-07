@@ -28,7 +28,7 @@ public struct WLUserInfoViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLUserInfoBean,IndexPath)>
         
-        let tableData: Variable<[WLUserInfoBean]>
+        let tableData: BehaviorRelay<[WLUserInfoBean]> = BehaviorRelay<[WLUserInfoBean]>(value: WLUserInfoBean.types)
     }
     public init(_ input: WLInput ,disposed: DisposeBag) {
         
@@ -36,9 +36,7 @@ public struct WLUserInfoViewModel: WLBaseViewModel {
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
-        let tableData: Variable<[WLUserInfoBean]> = Variable<[WLUserInfoBean]>(WLUserInfoBean.types)
-        
-        let output = WLOutput(zip: zip, tableData: tableData)
+        let output = WLOutput(zip: zip)
         
         WLUserInfoCache.default
             .rx

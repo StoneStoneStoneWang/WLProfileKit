@@ -1,0 +1,45 @@
+platform :ios, '10.0'
+use_modular_headers!
+target 'WLProfileKitDemo' do
+  ## 工具类
+  pod 'WLToolsKit'
+  ## json解析
+  pod 'ObjectMapper'
+  ## tableivew
+  pod 'WLBaseTableView'
+  ## 请求
+  pod 'WLReqKit'
+  ## viewmodel
+  pod 'WLBaseViewModel'
+  ## 转场router
+  #pod 'WLBaseRouter'
+  ## 图文
+  pod 'WLAttributedLabel'
+  
+  pod 'WLBaseViewController'
+  ## 图片加载
+  pod 'Kingfisher'
+  ## 布局
+  pod 'SnapKit'
+  
+  ## RxSwift
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxOptional'
+  ## 键盘管理
+  
+  pod 'WLAttributedLabel'
+  
+  ## 阿里云对象服务器
+  pod 'AliyunOSSiOS'
+  
+  #pod 'WLDatePicker'
+  
+  pod 'WLThirdUtil'
+  
+  pod 'WLBaseRouter'
+  
+  pod 'WLComponentView'
+end
+

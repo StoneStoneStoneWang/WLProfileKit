@@ -1,0 +1,6 @@
+module WLBaseRouter {
+  umbrella header "WLBaseRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,6 +10,7 @@ import Foundation
 import WLBaseViewModel
 import RxCocoa
 import RxSwift
+
 struct WLSettingViewModel: WLBaseViewModel {
     
     var input: WLInput
@@ -26,7 +27,7 @@ struct WLSettingViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLSettingType,IndexPath)>
         
-        let tableData: Variable<[WLSettingType]>
+        let tableData: BehaviorRelay<[WLSettingType]> = BehaviorRelay<[WLSettingType]>(value: WLSettingType.types)
     }
     init(_ input: WLInput ,disposed: DisposeBag) {
         
@@ -34,9 +35,7 @@ struct WLSettingViewModel: WLBaseViewModel {
     
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
-        let tableData: Variable<[WLSettingType]> = Variable<[WLSettingType]>(WLSettingType.types)
-        
-        self.output = WLOutput(zip: zip, tableData: tableData)
+        self.output = WLOutput(zip: zip)
     }
 }
 

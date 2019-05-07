@@ -28,7 +28,7 @@ extension Reactive where Base: WLSignatureBaseViewController {
             
             let sa = WLSignatureBaseViewController.creatSignature(config)
             
-            sa.signature.value = signature
+            sa.signature.accept(signature)
             
             let nav = WLNaviController(rootViewController: sa)
             

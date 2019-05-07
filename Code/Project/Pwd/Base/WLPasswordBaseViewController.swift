@@ -128,7 +128,7 @@ open class WLPasswordBaseViewController: WLBaseDisposeViewController {
         // 验证码结果序列
         viewModel
             .output
-            .sms
+            .smsRelay
             .asObservable()
             .bind(to: vcode.vcodeItem.rx.sms)
             .disposed(by: disposed)
@@ -140,8 +140,6 @@ open class WLPasswordBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                
-                
                 switch result {
                 case let .failed(message: msg):
                     WLHudUtil.pop()
@@ -151,7 +149,7 @@ open class WLPasswordBaseViewController: WLBaseDisposeViewController {
                     WLHudUtil.showInfo(msg)
                 case let .smsOk(isEnabled: isEnabled, title: title):
                     
-                    self.viewModel.output.sms.value = (isEnabled,title)
+                    self.viewModel.output.smsRelay.accept((isEnabled,title))
                 default: break
                     
                 }

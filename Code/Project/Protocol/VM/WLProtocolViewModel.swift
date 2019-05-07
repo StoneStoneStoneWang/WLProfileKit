@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import WLBaseViewModel
+import RxCocoa
 
 struct WLProtocolViewModel: WLBaseViewModel {
     
@@ -22,7 +23,7 @@ struct WLProtocolViewModel: WLBaseViewModel {
     
     struct WLOutput {
         
-        let contented: Variable<String> = Variable<String>("")
+        let contented: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
     }
     init(_ input: WLInput) {
         
@@ -40,7 +41,7 @@ struct WLProtocolViewModel: WLBaseViewModel {
                     
                     do {
                         
-                        output.contented.value = try String(contentsOf: url)
+                        output.contented.accept(try String(contentsOf: url))
                         
                     } catch  {
                         

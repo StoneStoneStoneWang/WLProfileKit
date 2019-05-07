@@ -46,8 +46,10 @@ struct WLPwdViewModel: WLBaseViewModel {
         let completing: Driver<Void>
         
         let completed: Driver<WLUserResult>
-        
+        @available(*, deprecated, message: "Please use smsRelay")
         let sms: Variable<(Bool,String)> = Variable<(Bool,String)>((true,"获取验证码"))
+        
+        let smsRelay: BehaviorRelay<(Bool,String)> = BehaviorRelay<(Bool,String)>(value: (true,"获取验证码"))
         
         let passwordItemed: Driver<Bool>
         

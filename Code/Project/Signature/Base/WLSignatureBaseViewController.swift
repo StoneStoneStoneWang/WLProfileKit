@@ -35,9 +35,9 @@ open class WLSignatureBaseViewController: WLF1DisposeViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    let signature: Variable<String> = Variable<String>("")
+    let signature: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
     
-    let userBean: Variable<WLUserBean> = Variable<WLUserBean>(WLUserInfoCache.default.userBean)
+    let userBean: BehaviorRelay<WLUserBean> = BehaviorRelay<WLUserBean>(value: WLUserInfoCache.default.userBean)
     
     final let signaturetv: UITextView = UITextView(frame: .zero).then {
         
@@ -114,7 +114,7 @@ open class WLSignatureBaseViewController: WLF1DisposeViewController {
                 switch result {
                 case let .updateUserInfoSucc(user, msg: msg):
                     
-                    self.userBean.value = user as! WLUserBean
+                    self.userBean.accept(user as! WLUserBean)
                     
                     WLHudUtil.showInfo(msg)
                     

@@ -70,8 +70,8 @@ open class WLFocusViewController: WLLoadingDisposeF1ViewController {
         self.tableView.mj_footer.isHidden = true
         
         let input = WLFocusViewModel.WLInput(modelSelect: tableView.rx.modelSelected(WLFocusBean.self),
-                                                 itemSelect: tableView.rx.itemSelected,
-                                                 headerRefresh: tableView.mj_header.rx.refreshing.asDriver())
+                                             itemSelect: tableView.rx.itemSelected,
+                                             headerRefresh: tableView.mj_header.rx.refreshing.asDriver())
         
         viewModel = WLFocusViewModel(input, disposed: disposed)
         
@@ -178,27 +178,36 @@ extension WLFocusViewController: UITableViewDelegate {
                 
                 WLHudUtil.show(withStatus: "移除\(type.users.nickname)中...")
                 
-                onUserVoidResp(WLUserApi.focus(type.users.encoded, targetEncoded: type.encoded))
-                    .subscribe(onNext: { [weak self] (_) in
-
+                WLFocusViewModel
+                    .removeFocus(type.users.encoded, encode: type.encoded)
+                    .drive(onNext: { [weak self] (result) in
+                        
                         guard let `self` = self else { return }
-
-                        WLHudUtil.pop()
-
-                        WLHudUtil.showInfo("移除\(type.users.nickname)成功")
-
-                        self.viewModel.output.tableData.value.remove(at: ip.section)
-
-                        if self.viewModel.output.tableData.value.isEmpty {
-
-                            self.tableView.emptyViewShow(WLFocusList1Empty())
-                        }
-
-                        }, onError: { (error) in
-
+                        switch result {
+                        case .ok:
+                            
                             WLHudUtil.pop()
-
+                            
+                            WLHudUtil.showInfo("移除\(type.users.nickname)成功")
+                            
+                            var value = self.viewModel.output.tableData.value
+                            
+                            value.remove(at: ip.section)
+                            
+                            self.viewModel.output.tableData.accept(value)
+                            
+                            if self.viewModel.output.tableData.value.isEmpty {
+                                
+                                self.tableView.emptyViewShow(WLFocusList1Empty())
+                            }
+                        case .failed:
+                            
+                            WLHudUtil.pop()
+                            
                             WLHudUtil.showInfo("移除\(type.users.nickname)失败")
+                        default: break;
+                            
+                        }
                     })
                     .disposed(by: self.disposed)
             }

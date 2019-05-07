@@ -51,8 +51,12 @@ struct WLSwiftLoginViewModel: WLBaseViewModel {
         let backLogin: Driver<Void>
         /*  协议... 序列*/
         let pro: Driver<Void>
-
+        
+        @available(*, deprecated, message: "Please use smsRelay")
         let sms: Variable<(Bool,String)> = Variable<(Bool,String)>((true,"获取验证码"))
+        
+        let smsRelay: BehaviorRelay<(Bool,String)> = BehaviorRelay<(Bool,String)>(value: (true,"获取验证码"))
+        
     }
     
     init(_ input: WLInput ,disposed: DisposeBag) {

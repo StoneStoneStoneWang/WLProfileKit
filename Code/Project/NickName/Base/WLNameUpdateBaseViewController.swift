@@ -36,9 +36,9 @@ open class WLNameUpdateBaseViewController: WLF1DisposeViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    let nickname: Variable<String> = Variable<String>("")
+    let nickname: BehaviorRelay<String> = BehaviorRelay<String>(value: "")
     
-    let userBean: Variable<WLUserBean> = Variable<WLUserBean>(WLUserInfoCache.default.userBean)
+    let userBean: BehaviorRelay<WLUserBean> = BehaviorRelay<WLUserBean>(value: WLUserInfoCache.default.userBean)
     
     public final let name: WLNickNameTextField = WLNickNameTextField(frame: .zero).then {
         
@@ -121,7 +121,7 @@ open class WLNameUpdateBaseViewController: WLF1DisposeViewController {
                 switch result {
                 case let .updateUserInfoSucc(user, msg: msg):
                     
-                    self.userBean.value = user as! WLUserBean
+                    self.userBean.accept(user as! WLUserBean)
                     
                     WLHudUtil.showInfo(msg)
                     

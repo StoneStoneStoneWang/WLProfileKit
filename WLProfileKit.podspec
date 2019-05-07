@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -184,6 +184,7 @@ Pod::Spec.new do |spec|
       vm.source_files = "Code/Project/Protocol/VM/*.{swift}"
       vm.dependency 'WLProfileKit/Prepare/Manager'
       vm.dependency 'RxSwift'
+      vm.dependency 'RxCocoa'
       vm.dependency 'WLBaseViewModel'
     end
     ## VC
@@ -781,36 +782,115 @@ Pod::Spec.new do |spec|
   end
   
   
-  ## Publish
-  #  spec.subspec 'Publish' do |pub|
-  #    pub.subspec 'Style' do |style|
-  #      style.source_files = "Code/Publish/Style/*.{swift}"
-  #    end
-  #    pub.subspec 'VM' do |vm|
-  #      vm.source_files = "Code/Publish/VM/*.{swift}"
-  #      vm.dependency 'WLBaseViewModel'
-  #    end
-  #    pub.subspec 'View' do |view|
-  #      view.source_files = "Code/Publish/View/*.{swift}"
-  #      view.dependency 'WLBaseTableView/BTV'
-  #      view.dependency 'WLBaseTableView/BTVC'
-  #    end
-  #    pub.subspec 'Base' do |base|
-  #      base.source_files = "Code/Publish/Base/*.{swift}"
-  #      base.dependency 'WLProfileKit/Prepare/Base'
-  #      base.dependency 'WLProfileKit/Publish/VM'
-  #      base.dependency 'WLProfileKit/Publish/View'
-  #    end
-  #    pub.subspec 'VC' do |vc|
-  #      vc.source_files = "Code/Publish/VC/*.{swift}"
-  #      vc.dependency 'WLProfileKit/Publish/Base'
-  #    end
-  #    pub.subspec 'Create' do |create|
-  #      create.source_files = "Code/Publish/Create/*.{swift}"
-  #      create.dependency 'WLProfileKit/Publish/VC'
-  #      create.dependency 'WLProfileKit/Publish/Style'
-  #    end
-  #  end
+  # Publish
+  spec.subspec 'Publish' do |pub|
+    
+    pub.subspec 'Prepare' do |prepare|
+      
+      prepare.subspec 'Delegate' do |delegate|
+        delegate.source_files = "Code/Publish/Prepare/Delegate/*.{swift}"
+        delegate.dependency 'WLProfileKit/Publish/Prepare/Bean'
+      end
+      
+      prepare.subspec 'Bean' do |bean|
+        bean.source_files = "Code/Publish/Prepare/Bean/*.{swift}"
+        bean.dependency 'ObjectMapper'
+        bean.dependency 'RxDataSources'
+        bean.dependency 'WLProfileKit/Prepare/Bean'
+      end
+      
+      prepare.subspec 'Convert' do |convert|
+        convert.source_files = "Code/Publish/Prepare/VideoConvert/*.{swift}"
+      end
+      
+      prepare.subspec 'Config' do |config|
+        config.source_files = "Code/Publish/Prepare/Config/*.{swift}"
+      end
+      
+      prepare.subspec 'Style' do |style|
+        style.source_files = "Code/Publish/Prepare/Style/*.{swift}"
+      end
+      
+      prepare.subspec 'TextEdit' do |te|
+        te.subspec 'Base' do |base|
+          base.source_files = "Code/Publish/Prepare/TextEdit/Base/*.{swift}"
+          base.dependency 'WLProfileKit/Prepare/Base'
+          base.dependency 'WLBaseViewController/Navi'
+          base.dependency 'WLProfileKit/Publish/Prepare/Config'
+          base.dependency 'WLToolsKit/Color'
+          base.dependency 'WLToolsKit/Then'
+          base.dependency 'RxCocoa'
+          base.dependency 'RxSwift'
+        end
+        te.subspec 'VC' do |vc|
+          vc.source_files = "Code/Publish/Prepare/TextEdit/VC/*.{swift}"
+          vc.dependency 'WLProfileKit/Publish/Prepare/TextEdit/Base'
+          vc.dependency 'WLToolsKit/Common'
+        end
+        te.subspec 'Create' do |create|
+          create.source_files = "Code/Publish/Prepare/TextEdit/Create/*.{swift}"
+          create.dependency 'WLProfileKit/Publish/Prepare/TextEdit/VC'
+          create.dependency 'WLBaseViewController/Navi'
+        end
+      end
+      
+    end
+    pub.subspec 'VM' do |vm|
+      vm.source_files = "Code/Publish/VM/*.{swift}"
+      vm.dependency 'WLBaseViewModel'
+      vm.dependency 'RxCocoa'
+      vm.dependency 'RxSwift'
+      vm.dependency 'WLReqKit'
+      vm.dependency 'WLToolsKit/String'
+      vm.dependency 'WLToolsKit/JsonCast'
+      vm.dependency 'WLProfileKit/Publish/Prepare/Bean'
+      vm.dependency 'WLProfileKit/Publish/Prepare/Style'
+      vm.dependency 'WLProfileKit/Prepare/Result'
+      vm.dependency 'WLProfileKit/Prepare/Req'
+    end
+    
+    pub.subspec 'Table' do |table|
+      
+      table.subspec 'View' do |view|
+        view.source_files = "Code/Publish/Table/View/*.{swift}"
+        view.dependency 'SnapKit'
+        view.dependency 'RxCocoa'
+        view.dependency 'WLComponentView/TextFeild/NickName'
+        view.dependency 'WLBaseTableView/BTV'
+        view.dependency 'WLBaseTableView/BTVC'
+        view.dependency 'WLToolsKit/Color'
+        view.dependency 'WLToolsKit/Then'
+        view.dependency 'SnapKit'
+      end
+      table.subspec 'Base' do |base|
+        base.source_files = "Code/Publish/Table/Base/*.{swift}"
+        base.dependency 'WLBaseViewController/Navi'
+        base.dependency 'WLProfileKit/Publish/Table/View'
+        base.dependency 'WLProfileKit/Publish/VM'
+        base.dependency 'WLProfileKit/Publish/Prepare/Delegate'
+        base.dependency 'WLProfileKit/Publish/Prepare/Convert'
+        base.dependency 'WLProfileKit/Publish/Prepare/Style'
+        base.dependency 'WLProfileKit/Publish/Prepare/TextEdit/Create'
+        base.dependency 'WLProfileKit/Prepare/PickerImpl'
+        base.dependency 'WLProfileKit/Prepare/ActionShow'
+        base.dependency 'WLBaseTableView/ASM'
+        base.dependency 'WLThirdUtil/Hud'
+        base.dependency 'RxDataSources'
+        base.dependency 'WLProfileKit/UserInfo/VM'
+      end
+      #
+      table.subspec 'VC' do |vc|
+        vc.source_files = "Code/Publish/Table/VC/*.{swift}"
+        vc.dependency 'WLProfileKit/Publish/Table/Base'
+        vc.dependency 'WLToolsKit/Common'
+      end
+      table.subspec 'Create' do |create|
+        create.source_files = "Code/Publish/Table/Create/*.{swift}"
+        create.dependency 'WLProfileKit/Publish/Table/VC'
+        create.dependency 'WLBaseViewController/Navi'
+      end
+    end
+  end
   
   #  ## SO
   #  spec.subspec 'WLSOManager' do |so|
@@ -823,9 +903,7 @@ Pod::Spec.new do |spec|
   #    so.dependency 'WLReqKit'
   #    so.dependency 'RxSwift'
   #  end
-  
-  
-  
+  #
 end
 
 

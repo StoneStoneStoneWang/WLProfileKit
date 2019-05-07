@@ -28,7 +28,7 @@ struct WLProfileViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLProfileType,IndexPath)>
         
-        let tableData: Variable<[WLProfileType]>
+        let tableData: BehaviorRelay<[WLProfileType]> = BehaviorRelay<[WLProfileType]>(value: WLProfileType.types)
         
         let userInfo: Observable<WLUserBean?>
     }
@@ -48,9 +48,7 @@ struct WLProfileViewModel: WLBaseViewModel {
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
-        let tableData: Variable<[WLProfileType]> = Variable<[WLProfileType]>(WLProfileType.types)
-        
-        self.output = WLOutput(zip: zip, tableData: tableData, userInfo: userInfo)
+        self.output = WLOutput(zip: zip, userInfo: userInfo)
     }
 }
 

@@ -31,12 +31,15 @@ struct WLWelcomViewModel: WLBaseViewModel {
         /* 定时器 序列*/
         let timer: Observable<Int> = Observable<Int>.timer(0, period: 1, scheduler: MainScheduler.instance)
         
+        @available(*, deprecated, message: "Please use durationRelay")
         let duration: Variable<Int> = Variable<Int>(3)
+        
+        let durationRelay: BehaviorRelay<Int> = BehaviorRelay<Int>(value: 3)
     }
     
     struct WLOutput {
         
-        let tableData: Variable<[String]>
+        let tableData: BehaviorRelay<[String]>
         
         let numofpage: Observable<Int>
         
@@ -44,7 +47,7 @@ struct WLWelcomViewModel: WLBaseViewModel {
         
         let pageHidden: Observable<Bool>
         
-        let skipHidden: Variable<Bool>
+        let skipHidden: BehaviorRelay<Bool>
         
         let skiped: Driver<Void>
         
@@ -55,7 +58,7 @@ struct WLWelcomViewModel: WLBaseViewModel {
         
         self.input = input
         
-        let tableData: Variable<[String]> = Variable<[String]>(input.welcomeImgs)
+        let tableData: BehaviorRelay<[String]> = BehaviorRelay<[String]>(value: input.welcomeImgs)
         
         let numofpage: Observable<Int> = Observable<Int>.just(tableData.value.count)
         
@@ -65,11 +68,11 @@ struct WLWelcomViewModel: WLBaseViewModel {
         
         let combine = Observable.combineLatest(input.contentoffSetX, currentpage)
         
-        let skipHidden: Variable<Bool> = Variable<Bool>(false)
+        let skipHidden: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
         
         input
             .contentoffSetX
-            .subscribe(onNext: { skipHidden.value = input.duration.value != 0 ? Int($0 / WL_SCREEN_WIDTH) != (tableData.value.count - 1) : false })
+            .subscribe(onNext: { skipHidden.accept(input.durationRelay.value != 0 ? Int($0 / WL_SCREEN_WIDTH) != (tableData.value.count - 1) : false) })
             .disposed(by: disposed)
         
         let timered: Observable<String> = Observable<String>.create({ (ob) -> Disposable in
@@ -78,7 +81,7 @@ struct WLWelcomViewModel: WLBaseViewModel {
                 
                 if p == tableData.value.count - 1 {
                     
-                    let duration = input.duration.value
+                    let duration = input.durationRelay.value
                     
                     if duration != 0 {
                         
@@ -89,11 +92,11 @@ struct WLWelcomViewModel: WLBaseViewModel {
                             .map({ $0 })
                             .subscribe(onNext: {
                                 
-                                input.duration.value = $0
+                                input.durationRelay.accept($0)
                                 
                                 if $0 == 0 {
                                     
-                                    skipHidden.value = false
+                                    skipHidden.accept(false)
                                     
                                     ob.onNext("立即体验")
                                     

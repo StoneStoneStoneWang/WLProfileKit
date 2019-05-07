@@ -167,9 +167,16 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
             })
             .disposed(by: disposed)
         
+        //        viewModel
+        //            .output
+        //            .sms
+        //            .asObservable()
+        //            .bind(to: vcode.vcodeItem.rx.sms)
+        //            .disposed(by: disposed)
+        
         viewModel
             .output
-            .sms
+            .smsRelay
             .asObservable()
             .bind(to: vcode.vcodeItem.rx.sms)
             .disposed(by: disposed)
@@ -189,13 +196,13 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
                     WLHudUtil.showInfo(msg)
                 case let .smsOk(isEnabled: isEnabled, title: title):
                     
-                    self.viewModel.output.sms.value = (isEnabled,title)
+                    self.viewModel.output.smsRelay.accept((isEnabled,title))
                 default: break
                     
                 }
             })
             .disposed(by: disposed)
-
+        
     }
     
     open override func configNaviItem() {

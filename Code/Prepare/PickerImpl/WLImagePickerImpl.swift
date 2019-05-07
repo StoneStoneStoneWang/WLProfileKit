@@ -11,8 +11,8 @@ import UIKit
 import CoreServices
 import WLToolsKit
 public typealias WLImagePickerHandler = (_ img: UIImage?) -> ()
-
-@objc public final class WLImagePickerImpl: NSObject {
+@objc (WLImagePickerImpl)
+public final class WLImagePickerImpl: NSObject {
     
     final let imagePicker: UIImagePickerController = UIImagePickerController().then {
         

@@ -43,7 +43,6 @@ public final class WLNameUpdateViewController: WLNameUpdateBaseViewController {
                 
                 completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: config.itemColor + "60"), for: .disabled)
             }
-            
         }
     }
 }

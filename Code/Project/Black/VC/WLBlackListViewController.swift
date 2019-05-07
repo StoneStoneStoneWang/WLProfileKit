@@ -162,6 +162,8 @@ extension WLBlackListViewController: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
+        
+        
         let delete = UITableViewRowAction(style: .destructive, title: "删除") { [weak self] (a, ip) in
             
             guard let `self` = self else { return }
@@ -178,27 +180,36 @@ extension WLBlackListViewController: UITableViewDelegate {
                 
                 WLHudUtil.show(withStatus: "移除\(type.users.nickname)中...")
                 
-                onUserVoidResp(WLUserApi.removeBlack(type.identity))
-                    .subscribe(onNext: { [weak self] (_) in
+                WLBlackListViewModel
+                    .removeBlack(type.identity)
+                    .drive(onNext: { [weak self] (result) in
                         
                         guard let `self` = self else { return }
-                        
-                        WLHudUtil.pop()
-                        
-                        WLHudUtil.showInfo("移除\(type.users.nickname)成功")
-                        
-                        self.viewModel.output.tableData.value.remove(at: ip.section)
-                        
-                        if self.viewModel.output.tableData.value.isEmpty {
+                        switch result {
+                        case .ok:
                             
-                            self.tableView.emptyViewShow(WLBlackList1Empty())
-                        }
-                        
-                        }, onError: { (error) in
+                            WLHudUtil.pop()
+                            
+                            WLHudUtil.showInfo("移除\(type.users.nickname)成功")
+                            
+                            var value = self.viewModel.output.tableData.value
+                            
+                            value.remove(at: ip.section)
+                            
+                            self.viewModel.output.tableData.accept(value)
+                            
+                            if self.viewModel.output.tableData.value.isEmpty {
+                                
+                                self.tableView.emptyViewShow(WLBlackList1Empty())
+                            }
+                        case .failed:
                             
                             WLHudUtil.pop()
                             
                             WLHudUtil.showInfo("移除\(type.users.nickname)失败")
+                        default: break;
+                            
+                        }
                     })
                     .disposed(by: self.disposed)
             }

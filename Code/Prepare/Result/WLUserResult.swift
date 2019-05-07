@@ -28,4 +28,6 @@ public enum WLUserResult {
     case updateUserInfoSucc(_ user: Mappable ,msg: String)
     
     case fetchList(_ list: [Mappable])
+    
+    case operation(_ obj: Mappable)
 }

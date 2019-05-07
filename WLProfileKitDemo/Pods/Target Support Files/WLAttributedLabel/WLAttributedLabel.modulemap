@@ -1,0 +1,6 @@
+module WLAttributedLabel {
+  umbrella header "WLAttributedLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

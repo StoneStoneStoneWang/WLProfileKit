@@ -12,8 +12,8 @@ import CoreServices
 import WLToolsKit
 
 public typealias WLVideoPickerHandler = (_ url: URL?) -> ()
-
-@objc public final class WLVideoPickerImpl: NSObject {
+@objc (WLVideoPickerImpl)
+public final class WLVideoPickerImpl: NSObject {
     
     final let imagePicker: UIImagePickerController = UIImagePickerController().then {
         
@@ -61,7 +61,7 @@ extension WLVideoPickerImpl: UIImagePickerControllerDelegate ,UINavigationContro
     }
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-//        printLog(message: imagePicker)
+        //        printLog(message: imagePicker)
         
         let videoUrl = info[UIImagePickerController.InfoKey.mediaURL] as? URL
         

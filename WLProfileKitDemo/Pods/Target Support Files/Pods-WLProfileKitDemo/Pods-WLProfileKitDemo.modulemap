@@ -1,0 +1,6 @@
+module Pods_WLProfileKitDemo {
+  umbrella header "Pods-WLProfileKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

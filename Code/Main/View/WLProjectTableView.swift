@@ -1,14 +1,14 @@
+////
+////  WLProjectTableView.swift
+////  WLUserKitDemo
+////
+////  Created by three stone 王 on 2019/4/8.
+////  Copyright © 2019 three stone 王. All rights reserved.
+////
 //
-//  WLProjectTableView.swift
-//  WLUserKitDemo
+//import Foundation
+//import WLBaseTableView
 //
-//  Created by three stone 王 on 2019/4/8.
-//  Copyright © 2019 three stone 王. All rights reserved.
+//public final class WLProjectTableView: WLBaseRefreshTableView {
 //
-
-import Foundation
-import WLBaseTableView
-
-public final class WLProjectTableView: WLBaseRefreshTableView {
-    
-}
+//}

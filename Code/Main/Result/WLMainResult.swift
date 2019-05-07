@@ -1,22 +1,22 @@
+////
+////  WLMainResult.swift
+////  WLUserKitDemo
+////
+////  Created by three stone 王 on 2019/4/8.
+////  Copyright © 2019 three stone 王. All rights reserved.
+////
 //
-//  WLMainResult.swift
-//  WLUserKitDemo
+//import Foundation
 //
-//  Created by three stone 王 on 2019/4/8.
-//  Copyright © 2019 three stone 王. All rights reserved.
+//public enum WLMainResult {
 //
-
-import Foundation
-
-public enum WLMainResult {
-    
-    case begin(_ msg: String)
-    
-    case ok(_ msg: String)
-    
-    case failed(_ msg: String)
-    
-    case empty
-    
-    case projectList(_ list: [WLProjectBean])
-}
+//    case begin(_ msg: String)
+//
+//    case ok(_ msg: String)
+//
+//    case failed(_ msg: String)
+//
+//    case empty
+//    
+//    case projectList(_ list: [WLProjectBean])
+//}

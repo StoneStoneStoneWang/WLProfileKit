@@ -40,6 +40,8 @@ public enum WLUserApi {
     case removeBlack(_ encode: String)
     
     case focus(_ OUsEncoded: String,targetEncoded: String)
+    
+    case fetchMyFocus(_ page: Int)
 }
 
 extension WLUserApi: WLObserverReq {
@@ -74,6 +76,8 @@ extension WLUserApi: WLObserverReq {
         case .removeBlack: return "mob/blacklist_mobDelBlacklist"
             
         case .focus: return "mob/attention_mobSucrAttention?"
+            
+        case .fetchMyFocus: return "mob/attention_mobListAttention?"
         }
     }
     
@@ -106,6 +110,7 @@ extension WLUserApi: WLObserverReq {
         case let .removeBlack(encoded): return ["projectId":WLGlobalManager.default.styleConfig.prprEncode,"bt.encoded": encoded]
             
         case let .focus(OUsEncoded, targetEncoded: targetEncoded): return ["atn.OUsEncoded":OUsEncoded,"atn.targetEncoded":targetEncoded,"projectId": WLGlobalManager.default.styleConfig.prprEncode,"atn.tableName":"Users"]
+        case let .fetchMyFocus(page): return ["page":page,"projectId": WLGlobalManager.default.styleConfig.prprEncode]
         }
     }
     

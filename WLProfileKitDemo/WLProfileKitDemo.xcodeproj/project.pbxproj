@@ -1,0 +1,2436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B39A7493CC44BF6B64FDC48 /* libPods-WLProfileKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98F6013F3220F4CB2FFB28 /* libPods-WLProfileKitDemo.a */; };
+		6C5C10BA2280779D00B129EA /* WLVideoConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10B92280779D00B129EA /* WLVideoConvert.swift */; };
+		6C5C10BD228104DD00B129EA /* WLPublishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */; };
+		6C5C10D42281089800B129EA /* WLProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10C02281089800B129EA /* WLProjectListViewModel.swift */; };
+		6C5C10D52281089800B129EA /* WLMainResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10C22281089800B129EA /* WLMainResult.swift */; };
+		6C5C10D62281089800B129EA /* WLMainConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10C42281089800B129EA /* WLMainConfig.swift */; };
+		6C5C10D92281089800B129EA /* WLProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10C92281089800B129EA /* WLProjectListViewController.swift */; };
+		6C5C10DA2281089800B129EA /* WLProjectMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10CB2281089800B129EA /* WLProjectMediaCell.swift */; };
+		6C5C10DB2281089800B129EA /* WLProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10CC2281089800B129EA /* WLProjectTableViewCell.swift */; };
+		6C5C10DC2281089800B129EA /* WLProjectFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10CD2281089800B129EA /* WLProjectFuncCell.swift */; };
+		6C5C10DD2281089800B129EA /* WLUserCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10CE2281089800B129EA /* WLUserCommonView.swift */; };
+		6C5C10DE2281089800B129EA /* WLProjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10CF2281089800B129EA /* WLProjectTableView.swift */; };
+		6C5C10DF2281089800B129EA /* WLProjectFuncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10D02281089800B129EA /* WLProjectFuncView.swift */; };
+		6C5C10E02281089800B129EA /* WLProjectMeidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10D12281089800B129EA /* WLProjectMeidaView.swift */; };
+		6C77ADC3227FD32900BAD69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADC2227FD32900BAD69B /* AppDelegate.swift */; };
+		6C77ADC5227FD32900BAD69B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADC4227FD32900BAD69B /* ViewController.swift */; };
+		6C77ADC8227FD32900BAD69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C77ADC6227FD32900BAD69B /* Main.storyboard */; };
+		6C77ADCA227FD32A00BAD69B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C77ADC9227FD32A00BAD69B /* Assets.xcassets */; };
+		6C77ADCD227FD32A00BAD69B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C77ADCB227FD32A00BAD69B /* LaunchScreen.storyboard */; };
+		6C77ADD8227FD32A00BAD69B /* WLProfileKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADD7227FD32A00BAD69B /* WLProfileKitDemoTests.swift */; };
+		6C77ADE3227FD32A00BAD69B /* WLProfileKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADE2227FD32A00BAD69B /* WLProfileKitDemoUITests.swift */; };
+		6C77AF1C227FD36100BAD69B /* TextField+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADF3227FD36100BAD69B /* TextField+RX.swift */; };
+		6C77AF1D227FD36100BAD69B /* Button+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADF5227FD36100BAD69B /* Button+RX.swift */; };
+		6C77AF1E227FD36100BAD69B /* WLUserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADF8227FD36100BAD69B /* WLUserResult.swift */; };
+		6C77AF1F227FD36100BAD69B /* WLAccountCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADFA227FD36100BAD69B /* WLAccountCache.swift */; };
+		6C77AF20227FD36100BAD69B /* WLUserInfoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADFB227FD36100BAD69B /* WLUserInfoCache.swift */; };
+		6C77AF21227FD36100BAD69B /* UIViewController+ActionShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADFD227FD36100BAD69B /* UIViewController+ActionShow.swift */; };
+		6C77AF22227FD36100BAD69B /* WLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADFF227FD36100BAD69B /* WLConfig.swift */; };
+		6C77AF23227FD36100BAD69B /* WLAccountBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE01227FD36100BAD69B /* WLAccountBean.swift */; };
+		6C77AF24227FD36100BAD69B /* WLUserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE02227FD36100BAD69B /* WLUserBean.swift */; };
+		6C77AF25227FD36100BAD69B /* WLBaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE04227FD36100BAD69B /* WLBaseBean.swift */; };
+		6C77AF26227FD36100BAD69B /* WLUserReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE05227FD36100BAD69B /* WLUserReq.swift */; };
+		6C77AF27227FD36100BAD69B /* WLGlobalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE07227FD36100BAD69B /* WLGlobalManager.swift */; };
+		6C77AF28227FD36100BAD69B /* WLMainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE09227FD36100BAD69B /* WLMainApi.swift */; };
+		6C77AF29227FD36100BAD69B /* WLUserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE0A227FD36100BAD69B /* WLUserApi.swift */; };
+		6C77AF2A227FD36100BAD69B /* WLBaseDisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE0C227FD36100BAD69B /* WLBaseDisposeViewController.swift */; };
+		6C77AF2B227FD36100BAD69B /* WLTextCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE0E227FD36100BAD69B /* WLTextCheck.swift */; };
+		6C77AF2C227FD36100BAD69B /* WLUploadReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE10227FD36100BAD69B /* WLUploadReq.swift */; };
+		6C77AF2D227FD36100BAD69B /* WLVideoPickerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE12227FD36100BAD69B /* WLVideoPickerImpl.swift */; };
+		6C77AF2E227FD36100BAD69B /* WLImagePickerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE13227FD36100BAD69B /* WLImagePickerImpl.swift */; };
+		6C77AF2F227FD36100BAD69B /* WLCommentBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE14227FD36100BAD69B /* WLCommentBean.swift */; };
+		6C77AF30227FD36100BAD69B /* WLSwiftLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE18227FD36100BAD69B /* WLSwiftLoginViewModel.swift */; };
+		6C77AF31227FD36100BAD69B /* WLSwiftLogin1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE1A227FD36100BAD69B /* WLSwiftLogin1ViewController.swift */; };
+		6C77AF32227FD36100BAD69B /* WLSwiftLogin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE1B227FD36100BAD69B /* WLSwiftLogin3ViewController.swift */; };
+		6C77AF33227FD36100BAD69B /* WLSwiftLogin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE1C227FD36100BAD69B /* WLSwiftLogin2ViewController.swift */; };
+		6C77AF34227FD36100BAD69B /* WLSwiftLogin4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE1D227FD36100BAD69B /* WLSwiftLogin4ViewController.swift */; };
+		6C77AF35227FD36100BAD69B /* WLSwiftLogin5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE1E227FD36100BAD69B /* WLSwiftLogin5ViewController.swift */; };
+		6C77AF36227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE20227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift */; };
+		6C77AF37227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE22227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift */; };
+		6C77AF38227FD36100BAD69B /* WLModifyPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE25227FD36100BAD69B /* WLModifyPwdViewModel.swift */; };
+		6C77AF39227FD36100BAD69B /* WLPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE26227FD36100BAD69B /* WLPwdViewModel.swift */; };
+		6C77AF3A227FD36100BAD69B /* WLModifyPwd1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE28227FD36100BAD69B /* WLModifyPwd1ViewController.swift */; };
+		6C77AF3B227FD36100BAD69B /* WLModifyPwd2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE29227FD36100BAD69B /* WLModifyPwd2ViewController.swift */; };
+		6C77AF3C227FD36100BAD69B /* WLModifyPwd3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2A227FD36100BAD69B /* WLModifyPwd3ViewController.swift */; };
+		6C77AF3D227FD36100BAD69B /* WLModifyPwd5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2B227FD36100BAD69B /* WLModifyPwd5ViewController.swift */; };
+		6C77AF3E227FD36100BAD69B /* WLModifyPwd4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2C227FD36100BAD69B /* WLModifyPwd4ViewController.swift */; };
+		6C77AF3F227FD36100BAD69B /* WLPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2D227FD36100BAD69B /* WLPassword2ViewController.swift */; };
+		6C77AF40227FD36100BAD69B /* WLPassword3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2E227FD36100BAD69B /* WLPassword3ViewController.swift */; };
+		6C77AF41227FD36100BAD69B /* WLPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE2F227FD36100BAD69B /* WLPassword1ViewController.swift */; };
+		6C77AF42227FD36100BAD69B /* WLPassword5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE30227FD36100BAD69B /* WLPassword5ViewController.swift */; };
+		6C77AF43227FD36100BAD69B /* WLPassword4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE31227FD36100BAD69B /* WLPassword4ViewController.swift */; };
+		6C77AF44227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE33227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift */; };
+		6C77AF45227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE34227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift */; };
+		6C77AF46227FD36100BAD69B /* WLPasswordBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE36227FD36100BAD69B /* WLPasswordBaseViewController.swift */; };
+		6C77AF47227FD36100BAD69B /* WLModifyPwdBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE37227FD36100BAD69B /* WLModifyPwdBaseViewController.swift */; };
+		6C77AF48227FD36100BAD69B /* WLSignatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE3A227FD36100BAD69B /* WLSignatureViewModel.swift */; };
+		6C77AF49227FD36100BAD69B /* WLSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE3C227FD36100BAD69B /* WLSignatureViewController.swift */; };
+		6C77AF4A227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE3E227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift */; };
+		6C77AF4B227FD36100BAD69B /* WLSignatureBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */; };
+		6C77AF4C227FD36100BAD69B /* WLAboutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */; };
+		6C77AF4D227FD36100BAD69B /* WLAboutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE45227FD36100BAD69B /* WLAboutType.swift */; };
+		6C77AF4E227FD36100BAD69B /* WLAboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */; };
+		6C77AF4F227FD36100BAD69B /* WLAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */; };
+		6C77AF50227FD36100BAD69B /* WLAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */; };
+		6C77AF51227FD36100BAD69B /* WLAboutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */; };
+		6C77AF52227FD36100BAD69B /* WLAboutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */; };
+		6C77AF53227FD36100BAD69B /* WLAboutViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */; };
+		6C77AF54227FD36100BAD69B /* WLProtocolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE52227FD36100BAD69B /* WLProtocolViewModel.swift */; };
+		6C77AF55227FD36100BAD69B /* WLProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE54227FD36100BAD69B /* WLProtocolViewController.swift */; };
+		6C77AF56227FD36100BAD69B /* WLProtocolViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE56227FD36100BAD69B /* WLProtocolViewController+Create.swift */; };
+		6C77AF57227FD36100BAD69B /* WLWelComeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE59227FD36100BAD69B /* WLWelComeConfig.swift */; };
+		6C77AF58227FD36100BAD69B /* WLWelComeBaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE5B227FD36100BAD69B /* WLWelComeBaseDelegate.swift */; };
+		6C77AF59227FD36100BAD69B /* WLWelcomeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE5D227FD36100BAD69B /* WLWelcomeStyle.swift */; };
+		6C77AF5A227FD36100BAD69B /* WLWelcomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE5F227FD36100BAD69B /* WLWelcomViewModel.swift */; };
+		6C77AF5B227FD36100BAD69B /* WLWelCome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE61227FD36100BAD69B /* WLWelCome2ViewController.swift */; };
+		6C77AF5C227FD36100BAD69B /* WLWelCome1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE62227FD36100BAD69B /* WLWelCome1ViewController.swift */; };
+		6C77AF5D227FD36100BAD69B /* WLPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE64227FD36100BAD69B /* WLPageCollectionView.swift */; };
+		6C77AF5E227FD36100BAD69B /* WLPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE65227FD36100BAD69B /* WLPageCollectionViewCell.swift */; };
+		6C77AF5F227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE67227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift */; };
+		6C77AF60227FD36100BAD69B /* WLWelComeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE69227FD36100BAD69B /* WLWelComeBaseViewController.swift */; };
+		6C77AF61227FD36100BAD69B /* WLFocusListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE6C227FD36100BAD69B /* WLFocusListConfig.swift */; };
+		6C77AF62227FD36100BAD69B /* WLFocusBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE6E227FD36100BAD69B /* WLFocusBean.swift */; };
+		6C77AF63227FD36100BAD69B /* WLFocusListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE70227FD36100BAD69B /* WLFocusListStyle.swift */; };
+		6C77AF64227FD36100BAD69B /* WLFocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE72227FD36100BAD69B /* WLFocusViewModel.swift */; };
+		6C77AF65227FD36100BAD69B /* WLFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE74227FD36100BAD69B /* WLFocusViewController.swift */; };
+		6C77AF66227FD36100BAD69B /* WLFocusList1Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE77227FD36100BAD69B /* WLFocusList1Empty.swift */; };
+		6C77AF67227FD36100BAD69B /* WLFocusListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE79227FD36100BAD69B /* WLFocusListTableView.swift */; };
+		6C77AF68227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE7B227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift */; };
+		6C77AF69227FD36100BAD69B /* WLFocusList1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE7C227FD36100BAD69B /* WLFocusList1TableViewCell.swift */; };
+		6C77AF6A227FD36100BAD69B /* WLFocusViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE7E227FD36100BAD69B /* WLFocusViewController+Create.swift */; };
+		6C77AF6B227FD36100BAD69B /* WLProfileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE81227FD36100BAD69B /* WLProfileConfig.swift */; };
+		6C77AF6C227FD36100BAD69B /* WLProfileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE83227FD36100BAD69B /* WLProfileType.swift */; };
+		6C77AF6D227FD36100BAD69B /* WLProfileStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE85227FD36100BAD69B /* WLProfileStyle.swift */; };
+		6C77AF6E227FD36100BAD69B /* WLProfileConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE87227FD36100BAD69B /* WLProfileConfigManager.swift */; };
+		6C77AF6F227FD36100BAD69B /* WLProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE89227FD36100BAD69B /* WLProfileViewModel.swift */; };
+		6C77AF70227FD36100BAD69B /* WLProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE8B227FD36100BAD69B /* WLProfileViewController.swift */; };
+		6C77AF71227FD36100BAD69B /* WLProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE8D227FD36100BAD69B /* WLProfileTableView.swift */; };
+		6C77AF72227FD36100BAD69B /* WLProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE8E227FD36100BAD69B /* WLProfileTableViewCell.swift */; };
+		6C77AF73227FD36100BAD69B /* WLProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE8F227FD36100BAD69B /* WLProfileHeaderView.swift */; };
+		6C77AF74227FD36100BAD69B /* WLProfileViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE91227FD36100BAD69B /* WLProfileViewController+Create.swift */; };
+		6C77AF75227FD36100BAD69B /* WLProfileBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE93227FD36100BAD69B /* WLProfileBaseViewController.swift */; };
+		6C77AF76227FD36100BAD69B /* WLUpdateNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE96227FD36100BAD69B /* WLUpdateNameViewModel.swift */; };
+		6C77AF77227FD36100BAD69B /* WLNameUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE98227FD36100BAD69B /* WLNameUpdateViewController.swift */; };
+		6C77AF78227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE9A227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift */; };
+		6C77AF79227FD36100BAD69B /* WLNameUpdateBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE9C227FD36100BAD69B /* WLNameUpdateBaseViewController.swift */; };
+		6C77AF7A227FD36100BAD69B /* WLUserInfoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE9F227FD36100BAD69B /* WLUserInfoConfig.swift */; };
+		6C77AF7B227FD36100BAD69B /* WLUserInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEA1227FD36100BAD69B /* WLUserInfoType.swift */; };
+		6C77AF7C227FD36100BAD69B /* WLUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEA3227FD36100BAD69B /* WLUserInfoViewModel.swift */; };
+		6C77AF7D227FD36100BAD69B /* WLUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEA5227FD36100BAD69B /* WLUserInfoViewController.swift */; };
+		6C77AF7E227FD36100BAD69B /* WLUserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEA7227FD36100BAD69B /* WLUserInfoTableViewCell.swift */; };
+		6C77AF7F227FD36100BAD69B /* WLUserInfoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEA8227FD36100BAD69B /* WLUserInfoTableView.swift */; };
+		6C77AF80227FD36100BAD69B /* WLUserInfoViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEAA227FD36100BAD69B /* WLUserInfoViewController+Create.swift */; };
+		6C77AF81227FD36100BAD69B /* WLSettingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEAD227FD36100BAD69B /* WLSettingType.swift */; };
+		6C77AF82227FD36100BAD69B /* WLSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEAF227FD36100BAD69B /* WLSettingViewModel.swift */; };
+		6C77AF83227FD36100BAD69B /* WLSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEB1227FD36100BAD69B /* WLSettingViewController.swift */; };
+		6C77AF84227FD36100BAD69B /* WLSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEB3227FD36100BAD69B /* WLSettingTableViewCell.swift */; };
+		6C77AF85227FD36100BAD69B /* WLSettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEB4227FD36100BAD69B /* WLSettingTableView.swift */; };
+		6C77AF86227FD36100BAD69B /* WLSettingViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEB6227FD36100BAD69B /* WLSettingViewController+Create.swift */; };
+		6C77AF87227FD36100BAD69B /* WLBlackListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEB9227FD36100BAD69B /* WLBlackListConfig.swift */; };
+		6C77AF88227FD36100BAD69B /* WLBlackListBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEBB227FD36100BAD69B /* WLBlackListBean.swift */; };
+		6C77AF89227FD36100BAD69B /* WLBlackListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEBD227FD36100BAD69B /* WLBlackListStyle.swift */; };
+		6C77AF8A227FD36100BAD69B /* WLBlackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEBF227FD36100BAD69B /* WLBlackListViewModel.swift */; };
+		6C77AF8B227FD36100BAD69B /* WLBlackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEC1227FD36100BAD69B /* WLBlackListViewController.swift */; };
+		6C77AF8C227FD36100BAD69B /* WLBlackList1Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEC4227FD36100BAD69B /* WLBlackList1Empty.swift */; };
+		6C77AF8D227FD36100BAD69B /* WLBlackListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEC6227FD36100BAD69B /* WLBlackListTableView.swift */; };
+		6C77AF8E227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEC8227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift */; };
+		6C77AF8F227FD36100BAD69B /* WLBlackList1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEC9227FD36100BAD69B /* WLBlackList1TableViewCell.swift */; };
+		6C77AF90227FD36100BAD69B /* WLBlackListViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AECB227FD36100BAD69B /* WLBlackListViewController+Create.swift */; };
+		6C77AF91227FD36100BAD69B /* UIViewController+TokenInvalid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AECE227FD36100BAD69B /* UIViewController+TokenInvalid.swift */; };
+		6C77AF92227FD36100BAD69B /* WLLoginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED0227FD36100BAD69B /* WLLoginConfig.swift */; };
+		6C77AF93227FD36100BAD69B /* WLLoginStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED2227FD36100BAD69B /* WLLoginStyle.swift */; };
+		6C77AF94227FD36100BAD69B /* WLLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED4227FD36100BAD69B /* WLLoginViewModel.swift */; };
+		6C77AF95227FD36100BAD69B /* WLLogin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED6227FD36100BAD69B /* WLLogin2ViewController.swift */; };
+		6C77AF96227FD36100BAD69B /* WLLogin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED7227FD36100BAD69B /* WLLogin3ViewController.swift */; };
+		6C77AF97227FD36100BAD69B /* WLLogin1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED8227FD36100BAD69B /* WLLogin1ViewController.swift */; };
+		6C77AF98227FD36100BAD69B /* WLLogin5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AED9227FD36100BAD69B /* WLLogin5ViewController.swift */; };
+		6C77AF99227FD36100BAD69B /* WLLogin4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEDA227FD36100BAD69B /* WLLogin4ViewController.swift */; };
+		6C77AF9A227FD36100BAD69B /* UIViewController+CheckLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEDC227FD36100BAD69B /* UIViewController+CheckLogin.swift */; };
+		6C77AF9B227FD36100BAD69B /* WLLoginBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEDE227FD36100BAD69B /* WLLoginBaseViewController+Create.swift */; };
+		6C77AF9C227FD36100BAD69B /* WLLoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEE0227FD36100BAD69B /* WLLoginBaseViewController.swift */; };
+		6C77AFD5227FD7FD00BAD69B /* WLPublishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */; };
+		6C77AFD7227FD7FD00BAD69B /* WLPublish3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */; };
+		6C77AFD8227FD7FD00BAD69B /* WLPublish2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */; };
+		6C77AFD9227FD7FD00BAD69B /* WLPublish4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */; };
+		6C77AFDA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */; };
+		6C77AFDB227FD7FD00BAD69B /* WLPublishHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */; };
+		6C77AFDC227FD7FD00BAD69B /* WLPublishImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */; };
+		6C77AFDD227FD7FD00BAD69B /* WLPublishCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */; };
+		6C77AFDE227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */; };
+		6C77AFF2228011BF00BAD69B /* WLPublishTableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */; };
+		6C77AFF3228011BF00BAD69B /* WLPublishTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */; };
+		6C77AFF4228011BF00BAD69B /* WLPublishTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */; };
+		6C77AFF5228011BF00BAD69B /* WLPublishTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */; };
+		6C77AFF6228011BF00BAD69B /* WLPublishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */; };
+		6C77AFFB2280171600BAD69B /* WLPublish1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */; };
+		6C77AFFE228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */; };
+		6C77B000228032BF00BAD69B /* WLMainV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFF228032BF00BAD69B /* WLMainV.swift */; };
+		6C77B00922803D9000BAD69B /* WLPublishConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00322803D9000BAD69B /* WLPublishConfig.swift */; };
+		6C77B00A22803D9000BAD69B /* WLProjectBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00522803D9000BAD69B /* WLProjectBean.swift */; };
+		6C77B00B22803D9000BAD69B /* WLPublishBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00622803D9000BAD69B /* WLPublishBean.swift */; };
+		6C77B00C22803D9000BAD69B /* WLPublishStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00822803D9000BAD69B /* WLPublishStyle.swift */; };
+		6C77B01722803DE800BAD69B /* WLTextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */; };
+		6C77B01822803DE800BAD69B /* WLTextEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */; };
+		6C77B01922803DE800BAD69B /* WLTextEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C77ADD4227FD32A00BAD69B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C77ADB7227FD32900BAD69B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C77ADBE227FD32900BAD69B;
+			remoteInfo = WLProfileKitDemo;
+		};
+		6C77ADDF227FD32A00BAD69B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C77ADB7227FD32900BAD69B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C77ADBE227FD32900BAD69B;
+			remoteInfo = WLProfileKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		691C05400282E99FEF96A0E0 /* Pods-WLProfileKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLProfileKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C5C10B92280779D00B129EA /* WLVideoConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVideoConvert.swift; sourceTree = "<group>"; };
+		6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLPublishDelegate.swift; sourceTree = "<group>"; };
+		6C5C10C02281089800B129EA /* WLProjectListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectListViewModel.swift; sourceTree = "<group>"; };
+		6C5C10C22281089800B129EA /* WLMainResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLMainResult.swift; sourceTree = "<group>"; };
+		6C5C10C42281089800B129EA /* WLMainConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLMainConfig.swift; sourceTree = "<group>"; };
+		6C5C10C92281089800B129EA /* WLProjectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectListViewController.swift; sourceTree = "<group>"; };
+		6C5C10CB2281089800B129EA /* WLProjectMediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectMediaCell.swift; sourceTree = "<group>"; };
+		6C5C10CC2281089800B129EA /* WLProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectTableViewCell.swift; sourceTree = "<group>"; };
+		6C5C10CD2281089800B129EA /* WLProjectFuncCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectFuncCell.swift; sourceTree = "<group>"; };
+		6C5C10CE2281089800B129EA /* WLUserCommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserCommonView.swift; sourceTree = "<group>"; };
+		6C5C10CF2281089800B129EA /* WLProjectTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectTableView.swift; sourceTree = "<group>"; };
+		6C5C10D02281089800B129EA /* WLProjectFuncView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectFuncView.swift; sourceTree = "<group>"; };
+		6C5C10D12281089800B129EA /* WLProjectMeidaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectMeidaView.swift; sourceTree = "<group>"; };
+		6C77ADBF227FD32900BAD69B /* WLProfileKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLProfileKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C77ADC2227FD32900BAD69B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C77ADC4227FD32900BAD69B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C77ADC7227FD32900BAD69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C77ADC9227FD32A00BAD69B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C77ADCC227FD32A00BAD69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C77ADCE227FD32A00BAD69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C77ADD3227FD32A00BAD69B /* WLProfileKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLProfileKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C77ADD7227FD32A00BAD69B /* WLProfileKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProfileKitDemoTests.swift; sourceTree = "<group>"; };
+		6C77ADD9227FD32A00BAD69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C77ADDE227FD32A00BAD69B /* WLProfileKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLProfileKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C77ADE2227FD32A00BAD69B /* WLProfileKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProfileKitDemoUITests.swift; sourceTree = "<group>"; };
+		6C77ADE4227FD32A00BAD69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C77ADF3227FD36100BAD69B /* TextField+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+RX.swift"; sourceTree = "<group>"; };
+		6C77ADF5227FD36100BAD69B /* Button+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+RX.swift"; sourceTree = "<group>"; };
+		6C77ADF8227FD36100BAD69B /* WLUserResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserResult.swift; sourceTree = "<group>"; };
+		6C77ADFA227FD36100BAD69B /* WLAccountCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAccountCache.swift; sourceTree = "<group>"; };
+		6C77ADFB227FD36100BAD69B /* WLUserInfoCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoCache.swift; sourceTree = "<group>"; };
+		6C77ADFD227FD36100BAD69B /* UIViewController+ActionShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionShow.swift"; sourceTree = "<group>"; };
+		6C77ADFF227FD36100BAD69B /* WLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLConfig.swift; sourceTree = "<group>"; };
+		6C77AE01227FD36100BAD69B /* WLAccountBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAccountBean.swift; sourceTree = "<group>"; };
+		6C77AE02227FD36100BAD69B /* WLUserBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserBean.swift; sourceTree = "<group>"; };
+		6C77AE04227FD36100BAD69B /* WLBaseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseBean.swift; sourceTree = "<group>"; };
+		6C77AE05227FD36100BAD69B /* WLUserReq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserReq.swift; sourceTree = "<group>"; };
+		6C77AE07227FD36100BAD69B /* WLGlobalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLGlobalManager.swift; sourceTree = "<group>"; };
+		6C77AE09227FD36100BAD69B /* WLMainApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLMainApi.swift; sourceTree = "<group>"; };
+		6C77AE0A227FD36100BAD69B /* WLUserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserApi.swift; sourceTree = "<group>"; };
+		6C77AE0C227FD36100BAD69B /* WLBaseDisposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseDisposeViewController.swift; sourceTree = "<group>"; };
+		6C77AE0E227FD36100BAD69B /* WLTextCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextCheck.swift; sourceTree = "<group>"; };
+		6C77AE10227FD36100BAD69B /* WLUploadReq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUploadReq.swift; sourceTree = "<group>"; };
+		6C77AE12227FD36100BAD69B /* WLVideoPickerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLVideoPickerImpl.swift; sourceTree = "<group>"; };
+		6C77AE13227FD36100BAD69B /* WLImagePickerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLImagePickerImpl.swift; sourceTree = "<group>"; };
+		6C77AE14227FD36100BAD69B /* WLCommentBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentBean.swift; sourceTree = "<group>"; };
+		6C77AE18227FD36100BAD69B /* WLSwiftLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLoginViewModel.swift; sourceTree = "<group>"; };
+		6C77AE1A227FD36100BAD69B /* WLSwiftLogin1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin1ViewController.swift; sourceTree = "<group>"; };
+		6C77AE1B227FD36100BAD69B /* WLSwiftLogin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin3ViewController.swift; sourceTree = "<group>"; };
+		6C77AE1C227FD36100BAD69B /* WLSwiftLogin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin2ViewController.swift; sourceTree = "<group>"; };
+		6C77AE1D227FD36100BAD69B /* WLSwiftLogin4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin4ViewController.swift; sourceTree = "<group>"; };
+		6C77AE1E227FD36100BAD69B /* WLSwiftLogin5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin5ViewController.swift; sourceTree = "<group>"; };
+		6C77AE20227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLSwiftLoginBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE22227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLoginBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE25227FD36100BAD69B /* WLModifyPwdViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwdViewModel.swift; sourceTree = "<group>"; };
+		6C77AE26227FD36100BAD69B /* WLPwdViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPwdViewModel.swift; sourceTree = "<group>"; };
+		6C77AE28227FD36100BAD69B /* WLModifyPwd1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd1ViewController.swift; sourceTree = "<group>"; };
+		6C77AE29227FD36100BAD69B /* WLModifyPwd2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd2ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2A227FD36100BAD69B /* WLModifyPwd3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd3ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2B227FD36100BAD69B /* WLModifyPwd5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd5ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2C227FD36100BAD69B /* WLModifyPwd4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd4ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2D227FD36100BAD69B /* WLPassword2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword2ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2E227FD36100BAD69B /* WLPassword3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword3ViewController.swift; sourceTree = "<group>"; };
+		6C77AE2F227FD36100BAD69B /* WLPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword1ViewController.swift; sourceTree = "<group>"; };
+		6C77AE30227FD36100BAD69B /* WLPassword5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword5ViewController.swift; sourceTree = "<group>"; };
+		6C77AE31227FD36100BAD69B /* WLPassword4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword4ViewController.swift; sourceTree = "<group>"; };
+		6C77AE33227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPasswordBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE34227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLModifyPwdBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE36227FD36100BAD69B /* WLPasswordBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPasswordBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE37227FD36100BAD69B /* WLModifyPwdBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwdBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE3A227FD36100BAD69B /* WLSignatureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSignatureViewModel.swift; sourceTree = "<group>"; };
+		6C77AE3C227FD36100BAD69B /* WLSignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSignatureViewController.swift; sourceTree = "<group>"; };
+		6C77AE3E227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLSignatureBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSignatureBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutConfig.swift; sourceTree = "<group>"; };
+		6C77AE45227FD36100BAD69B /* WLAboutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutType.swift; sourceTree = "<group>"; };
+		6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutViewModel.swift; sourceTree = "<group>"; };
+		6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutViewController.swift; sourceTree = "<group>"; };
+		6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutTableView.swift; sourceTree = "<group>"; };
+		6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutHeaderView.swift; sourceTree = "<group>"; };
+		6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAboutViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE52227FD36100BAD69B /* WLProtocolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewModel.swift; sourceTree = "<group>"; };
+		6C77AE54227FD36100BAD69B /* WLProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewController.swift; sourceTree = "<group>"; };
+		6C77AE56227FD36100BAD69B /* WLProtocolViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLProtocolViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE59227FD36100BAD69B /* WLWelComeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelComeConfig.swift; sourceTree = "<group>"; };
+		6C77AE5B227FD36100BAD69B /* WLWelComeBaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelComeBaseDelegate.swift; sourceTree = "<group>"; };
+		6C77AE5D227FD36100BAD69B /* WLWelcomeStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelcomeStyle.swift; sourceTree = "<group>"; };
+		6C77AE5F227FD36100BAD69B /* WLWelcomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelcomViewModel.swift; sourceTree = "<group>"; };
+		6C77AE61227FD36100BAD69B /* WLWelCome2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelCome2ViewController.swift; sourceTree = "<group>"; };
+		6C77AE62227FD36100BAD69B /* WLWelCome1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelCome1ViewController.swift; sourceTree = "<group>"; };
+		6C77AE64227FD36100BAD69B /* WLPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPageCollectionView.swift; sourceTree = "<group>"; };
+		6C77AE65227FD36100BAD69B /* WLPageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C77AE67227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLWelComeBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE69227FD36100BAD69B /* WLWelComeBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelComeBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE6C227FD36100BAD69B /* WLFocusListConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusListConfig.swift; sourceTree = "<group>"; };
+		6C77AE6E227FD36100BAD69B /* WLFocusBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusBean.swift; sourceTree = "<group>"; };
+		6C77AE70227FD36100BAD69B /* WLFocusListStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusListStyle.swift; sourceTree = "<group>"; };
+		6C77AE72227FD36100BAD69B /* WLFocusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusViewModel.swift; sourceTree = "<group>"; };
+		6C77AE74227FD36100BAD69B /* WLFocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusViewController.swift; sourceTree = "<group>"; };
+		6C77AE77227FD36100BAD69B /* WLFocusList1Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusList1Empty.swift; sourceTree = "<group>"; };
+		6C77AE79227FD36100BAD69B /* WLFocusListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusListTableView.swift; sourceTree = "<group>"; };
+		6C77AE7B227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusListBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AE7C227FD36100BAD69B /* WLFocusList1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLFocusList1TableViewCell.swift; sourceTree = "<group>"; };
+		6C77AE7E227FD36100BAD69B /* WLFocusViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLFocusViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE81227FD36100BAD69B /* WLProfileConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileConfig.swift; sourceTree = "<group>"; };
+		6C77AE83227FD36100BAD69B /* WLProfileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileType.swift; sourceTree = "<group>"; };
+		6C77AE85227FD36100BAD69B /* WLProfileStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileStyle.swift; sourceTree = "<group>"; };
+		6C77AE87227FD36100BAD69B /* WLProfileConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileConfigManager.swift; sourceTree = "<group>"; };
+		6C77AE89227FD36100BAD69B /* WLProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileViewModel.swift; sourceTree = "<group>"; };
+		6C77AE8B227FD36100BAD69B /* WLProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileViewController.swift; sourceTree = "<group>"; };
+		6C77AE8D227FD36100BAD69B /* WLProfileTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileTableView.swift; sourceTree = "<group>"; };
+		6C77AE8E227FD36100BAD69B /* WLProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AE8F227FD36100BAD69B /* WLProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileHeaderView.swift; sourceTree = "<group>"; };
+		6C77AE91227FD36100BAD69B /* WLProfileViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLProfileViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE93227FD36100BAD69B /* WLProfileBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE96227FD36100BAD69B /* WLUpdateNameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUpdateNameViewModel.swift; sourceTree = "<group>"; };
+		6C77AE98227FD36100BAD69B /* WLNameUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLNameUpdateViewController.swift; sourceTree = "<group>"; };
+		6C77AE9A227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLNameUpdateBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AE9C227FD36100BAD69B /* WLNameUpdateBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLNameUpdateBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AE9F227FD36100BAD69B /* WLUserInfoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoConfig.swift; sourceTree = "<group>"; };
+		6C77AEA1227FD36100BAD69B /* WLUserInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoType.swift; sourceTree = "<group>"; };
+		6C77AEA3227FD36100BAD69B /* WLUserInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoViewModel.swift; sourceTree = "<group>"; };
+		6C77AEA5227FD36100BAD69B /* WLUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoViewController.swift; sourceTree = "<group>"; };
+		6C77AEA7227FD36100BAD69B /* WLUserInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AEA8227FD36100BAD69B /* WLUserInfoTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoTableView.swift; sourceTree = "<group>"; };
+		6C77AEAA227FD36100BAD69B /* WLUserInfoViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLUserInfoViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AEAD227FD36100BAD69B /* WLSettingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSettingType.swift; sourceTree = "<group>"; };
+		6C77AEAF227FD36100BAD69B /* WLSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSettingViewModel.swift; sourceTree = "<group>"; };
+		6C77AEB1227FD36100BAD69B /* WLSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSettingViewController.swift; sourceTree = "<group>"; };
+		6C77AEB3227FD36100BAD69B /* WLSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSettingTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AEB4227FD36100BAD69B /* WLSettingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSettingTableView.swift; sourceTree = "<group>"; };
+		6C77AEB6227FD36100BAD69B /* WLSettingViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLSettingViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AEB9227FD36100BAD69B /* WLBlackListConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListConfig.swift; sourceTree = "<group>"; };
+		6C77AEBB227FD36100BAD69B /* WLBlackListBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListBean.swift; sourceTree = "<group>"; };
+		6C77AEBD227FD36100BAD69B /* WLBlackListStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListStyle.swift; sourceTree = "<group>"; };
+		6C77AEBF227FD36100BAD69B /* WLBlackListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListViewModel.swift; sourceTree = "<group>"; };
+		6C77AEC1227FD36100BAD69B /* WLBlackListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListViewController.swift; sourceTree = "<group>"; };
+		6C77AEC4227FD36100BAD69B /* WLBlackList1Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackList1Empty.swift; sourceTree = "<group>"; };
+		6C77AEC6227FD36100BAD69B /* WLBlackListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListTableView.swift; sourceTree = "<group>"; };
+		6C77AEC8227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackListBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AEC9227FD36100BAD69B /* WLBlackList1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBlackList1TableViewCell.swift; sourceTree = "<group>"; };
+		6C77AECB227FD36100BAD69B /* WLBlackListViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLBlackListViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AECE227FD36100BAD69B /* UIViewController+TokenInvalid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TokenInvalid.swift"; sourceTree = "<group>"; };
+		6C77AED0227FD36100BAD69B /* WLLoginConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginConfig.swift; sourceTree = "<group>"; };
+		6C77AED2227FD36100BAD69B /* WLLoginStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginStyle.swift; sourceTree = "<group>"; };
+		6C77AED4227FD36100BAD69B /* WLLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewModel.swift; sourceTree = "<group>"; };
+		6C77AED6227FD36100BAD69B /* WLLogin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin2ViewController.swift; sourceTree = "<group>"; };
+		6C77AED7227FD36100BAD69B /* WLLogin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin3ViewController.swift; sourceTree = "<group>"; };
+		6C77AED8227FD36100BAD69B /* WLLogin1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin1ViewController.swift; sourceTree = "<group>"; };
+		6C77AED9227FD36100BAD69B /* WLLogin5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin5ViewController.swift; sourceTree = "<group>"; };
+		6C77AEDA227FD36100BAD69B /* WLLogin4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin4ViewController.swift; sourceTree = "<group>"; };
+		6C77AEDC227FD36100BAD69B /* UIViewController+CheckLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CheckLogin.swift"; sourceTree = "<group>"; };
+		6C77AEDE227FD36100BAD69B /* WLLoginBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLLoginBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AEE0227FD36100BAD69B /* WLLoginBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishViewModel.swift; sourceTree = "<group>"; };
+		6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish3ViewController.swift; sourceTree = "<group>"; };
+		6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish2ViewController.swift; sourceTree = "<group>"; };
+		6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish4ViewController.swift; sourceTree = "<group>"; };
+		6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishHeaderView.swift; sourceTree = "<group>"; };
+		6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishImageViewCell.swift; sourceTree = "<group>"; };
+		6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishCollectionView.swift; sourceTree = "<group>"; };
+		6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPublishBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableBaseViewController.swift; sourceTree = "<group>"; };
+		6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableFooterView.swift; sourceTree = "<group>"; };
+		6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableView.swift; sourceTree = "<group>"; };
+		6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableHeaderView.swift; sourceTree = "<group>"; };
+		6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableViewCell.swift; sourceTree = "<group>"; };
+		6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish1ViewController.swift; sourceTree = "<group>"; };
+		6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLPublishTableBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77AFFF228032BF00BAD69B /* WLMainV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLMainV.swift; sourceTree = "<group>"; };
+		6C77B00322803D9000BAD69B /* WLPublishConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishConfig.swift; sourceTree = "<group>"; };
+		6C77B00522803D9000BAD69B /* WLProjectBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProjectBean.swift; sourceTree = "<group>"; };
+		6C77B00622803D9000BAD69B /* WLPublishBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishBean.swift; sourceTree = "<group>"; };
+		6C77B00822803D9000BAD69B /* WLPublishStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishStyle.swift; sourceTree = "<group>"; };
+		6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditViewController.swift; sourceTree = "<group>"; };
+		6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLTextEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditBaseViewController.swift; sourceTree = "<group>"; };
+		BC98F6013F3220F4CB2FFB28 /* libPods-WLProfileKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLProfileKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9F81768A29FC3C6A83C5D6 /* Pods-WLProfileKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLProfileKitDemo.release.xcconfig"; path = "Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C77ADBC227FD32900BAD69B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B39A7493CC44BF6B64FDC48 /* libPods-WLProfileKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADD0227FD32A00BAD69B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADDB227FD32A00BAD69B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5019CE56491D9EBD5F51B2B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				691C05400282E99FEF96A0E0 /* Pods-WLProfileKitDemo.debug.xcconfig */,
+				FB9F81768A29FC3C6A83C5D6 /* Pods-WLProfileKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C5C10B82280779100B129EA /* VideoConvert */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10B92280779D00B129EA /* WLVideoConvert.swift */,
+			);
+			path = VideoConvert;
+			sourceTree = "<group>";
+		};
+		6C5C10BB228104D100B129EA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C5C10BE2281089800B129EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10BF2281089800B129EA /* ViewModel */,
+				6C5C10C12281089800B129EA /* Result */,
+				6C5C10C32281089800B129EA /* Config */,
+				6C5C10C82281089800B129EA /* VC */,
+				6C5C10CA2281089800B129EA /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C5C10BF2281089800B129EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10C02281089800B129EA /* WLProjectListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C5C10C12281089800B129EA /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10C22281089800B129EA /* WLMainResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		6C5C10C32281089800B129EA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10C42281089800B129EA /* WLMainConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C5C10C82281089800B129EA /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10C92281089800B129EA /* WLProjectListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C5C10CA2281089800B129EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10CB2281089800B129EA /* WLProjectMediaCell.swift */,
+				6C5C10CC2281089800B129EA /* WLProjectTableViewCell.swift */,
+				6C5C10CD2281089800B129EA /* WLProjectFuncCell.swift */,
+				6C5C10CE2281089800B129EA /* WLUserCommonView.swift */,
+				6C5C10CF2281089800B129EA /* WLProjectTableView.swift */,
+				6C5C10D02281089800B129EA /* WLProjectFuncView.swift */,
+				6C5C10D12281089800B129EA /* WLProjectMeidaView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77ADB6227FD32900BAD69B = {
+			isa = PBXGroup;
+			children = (
+				6C77ADC1227FD32900BAD69B /* WLProfileKitDemo */,
+				6C77ADD6227FD32A00BAD69B /* WLProfileKitDemoTests */,
+				6C77ADE1227FD32A00BAD69B /* WLProfileKitDemoUITests */,
+				6C77ADC0227FD32900BAD69B /* Products */,
+				5019CE56491D9EBD5F51B2B6 /* Pods */,
+				F4DEA96FE0AB1D68C77FDC0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C77ADC0227FD32900BAD69B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADBF227FD32900BAD69B /* WLProfileKitDemo.app */,
+				6C77ADD3227FD32A00BAD69B /* WLProfileKitDemoTests.xctest */,
+				6C77ADDE227FD32A00BAD69B /* WLProfileKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C77ADC1227FD32900BAD69B /* WLProfileKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADC2227FD32900BAD69B /* AppDelegate.swift */,
+				6C77ADC4227FD32900BAD69B /* ViewController.swift */,
+				6C77AFFF228032BF00BAD69B /* WLMainV.swift */,
+				6C77ADF0227FD36100BAD69B /* Code */,
+				6C77ADC6227FD32900BAD69B /* Main.storyboard */,
+				6C77ADC9227FD32A00BAD69B /* Assets.xcassets */,
+				6C77ADCB227FD32A00BAD69B /* LaunchScreen.storyboard */,
+				6C77ADCE227FD32A00BAD69B /* Info.plist */,
+			);
+			path = WLProfileKitDemo;
+			sourceTree = "<group>";
+		};
+		6C77ADD6227FD32A00BAD69B /* WLProfileKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADD7227FD32A00BAD69B /* WLProfileKitDemoTests.swift */,
+				6C77ADD9227FD32A00BAD69B /* Info.plist */,
+			);
+			path = WLProfileKitDemoTests;
+			sourceTree = "<group>";
+		};
+		6C77ADE1227FD32A00BAD69B /* WLProfileKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADE2227FD32A00BAD69B /* WLProfileKitDemoUITests.swift */,
+				6C77ADE4227FD32A00BAD69B /* Info.plist */,
+			);
+			path = WLProfileKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		6C77ADF0227FD36100BAD69B /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10BE2281089800B129EA /* Main */,
+				6C77AFBB227FD7FD00BAD69B /* Publish */,
+				6C77ADF1227FD36100BAD69B /* RXCocoa */,
+				6C77ADF6227FD36100BAD69B /* Prepare */,
+				6C77AE14227FD36100BAD69B /* WLCommentBean.swift */,
+				6C77AE15227FD36100BAD69B /* Project */,
+			);
+			name = Code;
+			path = ../../Code;
+			sourceTree = "<group>";
+		};
+		6C77ADF1227FD36100BAD69B /* RXCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADF2227FD36100BAD69B /* TextField */,
+				6C77ADF4227FD36100BAD69B /* Button */,
+			);
+			path = RXCocoa;
+			sourceTree = "<group>";
+		};
+		6C77ADF2227FD36100BAD69B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADF3227FD36100BAD69B /* TextField+RX.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		6C77ADF4227FD36100BAD69B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADF5227FD36100BAD69B /* Button+RX.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		6C77ADF6227FD36100BAD69B /* Prepare */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADF7227FD36100BAD69B /* Result */,
+				6C77ADF9227FD36100BAD69B /* Cache */,
+				6C77ADFC227FD36100BAD69B /* ActionShow */,
+				6C77ADFE227FD36100BAD69B /* Config */,
+				6C77AE00227FD36100BAD69B /* Bean */,
+				6C77AE03227FD36100BAD69B /* Req */,
+				6C77AE06227FD36100BAD69B /* Manager */,
+				6C77AE08227FD36100BAD69B /* Api */,
+				6C77AE0B227FD36100BAD69B /* Base */,
+				6C77AE0D227FD36100BAD69B /* TextCheck */,
+				6C77AE0F227FD36100BAD69B /* Upload */,
+				6C77AE11227FD36100BAD69B /* PickerImpl */,
+			);
+			path = Prepare;
+			sourceTree = "<group>";
+		};
+		6C77ADF7227FD36100BAD69B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADF8227FD36100BAD69B /* WLUserResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		6C77ADF9227FD36100BAD69B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADFA227FD36100BAD69B /* WLAccountCache.swift */,
+				6C77ADFB227FD36100BAD69B /* WLUserInfoCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		6C77ADFC227FD36100BAD69B /* ActionShow */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADFD227FD36100BAD69B /* UIViewController+ActionShow.swift */,
+			);
+			path = ActionShow;
+			sourceTree = "<group>";
+		};
+		6C77ADFE227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77ADFF227FD36100BAD69B /* WLConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AE00227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE01227FD36100BAD69B /* WLAccountBean.swift */,
+				6C77AE02227FD36100BAD69B /* WLUserBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AE03227FD36100BAD69B /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE04227FD36100BAD69B /* WLBaseBean.swift */,
+				6C77AE05227FD36100BAD69B /* WLUserReq.swift */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		6C77AE06227FD36100BAD69B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE07227FD36100BAD69B /* WLGlobalManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6C77AE08227FD36100BAD69B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE09227FD36100BAD69B /* WLMainApi.swift */,
+				6C77AE0A227FD36100BAD69B /* WLUserApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		6C77AE0B227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE0C227FD36100BAD69B /* WLBaseDisposeViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE0D227FD36100BAD69B /* TextCheck */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE0E227FD36100BAD69B /* WLTextCheck.swift */,
+			);
+			path = TextCheck;
+			sourceTree = "<group>";
+		};
+		6C77AE0F227FD36100BAD69B /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE10227FD36100BAD69B /* WLUploadReq.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		6C77AE11227FD36100BAD69B /* PickerImpl */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE12227FD36100BAD69B /* WLVideoPickerImpl.swift */,
+				6C77AE13227FD36100BAD69B /* WLImagePickerImpl.swift */,
+			);
+			path = PickerImpl;
+			sourceTree = "<group>";
+		};
+		6C77AE15227FD36100BAD69B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE16227FD36100BAD69B /* Reg */,
+				6C77AE23227FD36100BAD69B /* Pwd */,
+				6C77AE38227FD36100BAD69B /* Signature */,
+				6C77AE41227FD36100BAD69B /* About */,
+				6C77AE50227FD36100BAD69B /* Protocol */,
+				6C77AE57227FD36100BAD69B /* Welcome */,
+				6C77AE6A227FD36100BAD69B /* Focus */,
+				6C77AE7F227FD36100BAD69B /* Profile */,
+				6C77AE94227FD36100BAD69B /* NickName */,
+				6C77AE9D227FD36100BAD69B /* UserInfo */,
+				6C77AEAB227FD36100BAD69B /* Setting */,
+				6C77AEB7227FD36100BAD69B /* Black */,
+				6C77AECC227FD36100BAD69B /* Login */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		6C77AE16227FD36100BAD69B /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE17227FD36100BAD69B /* VM */,
+				6C77AE19227FD36100BAD69B /* VC */,
+				6C77AE1F227FD36100BAD69B /* Create */,
+				6C77AE21227FD36100BAD69B /* Base */,
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		6C77AE17227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE18227FD36100BAD69B /* WLSwiftLoginViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE19227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE1A227FD36100BAD69B /* WLSwiftLogin1ViewController.swift */,
+				6C77AE1B227FD36100BAD69B /* WLSwiftLogin3ViewController.swift */,
+				6C77AE1C227FD36100BAD69B /* WLSwiftLogin2ViewController.swift */,
+				6C77AE1D227FD36100BAD69B /* WLSwiftLogin4ViewController.swift */,
+				6C77AE1E227FD36100BAD69B /* WLSwiftLogin5ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE1F227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE20227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE21227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE22227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE23227FD36100BAD69B /* Pwd */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE24227FD36100BAD69B /* VM */,
+				6C77AE27227FD36100BAD69B /* VC */,
+				6C77AE32227FD36100BAD69B /* Create */,
+				6C77AE35227FD36100BAD69B /* Base */,
+			);
+			path = Pwd;
+			sourceTree = "<group>";
+		};
+		6C77AE24227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE25227FD36100BAD69B /* WLModifyPwdViewModel.swift */,
+				6C77AE26227FD36100BAD69B /* WLPwdViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE27227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE28227FD36100BAD69B /* WLModifyPwd1ViewController.swift */,
+				6C77AE29227FD36100BAD69B /* WLModifyPwd2ViewController.swift */,
+				6C77AE2A227FD36100BAD69B /* WLModifyPwd3ViewController.swift */,
+				6C77AE2B227FD36100BAD69B /* WLModifyPwd5ViewController.swift */,
+				6C77AE2C227FD36100BAD69B /* WLModifyPwd4ViewController.swift */,
+				6C77AE2D227FD36100BAD69B /* WLPassword2ViewController.swift */,
+				6C77AE2E227FD36100BAD69B /* WLPassword3ViewController.swift */,
+				6C77AE2F227FD36100BAD69B /* WLPassword1ViewController.swift */,
+				6C77AE30227FD36100BAD69B /* WLPassword5ViewController.swift */,
+				6C77AE31227FD36100BAD69B /* WLPassword4ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE32227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE33227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift */,
+				6C77AE34227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE35227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE36227FD36100BAD69B /* WLPasswordBaseViewController.swift */,
+				6C77AE37227FD36100BAD69B /* WLModifyPwdBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE38227FD36100BAD69B /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE39227FD36100BAD69B /* VM */,
+				6C77AE3B227FD36100BAD69B /* VC */,
+				6C77AE3D227FD36100BAD69B /* Create */,
+				6C77AE3F227FD36100BAD69B /* Base */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		6C77AE39227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE3A227FD36100BAD69B /* WLSignatureViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE3B227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE3C227FD36100BAD69B /* WLSignatureViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE3D227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE3E227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE3F227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE41227FD36100BAD69B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE42227FD36100BAD69B /* Config */,
+				6C77AE44227FD36100BAD69B /* Bean */,
+				6C77AE46227FD36100BAD69B /* VM */,
+				6C77AE48227FD36100BAD69B /* VC */,
+				6C77AE4A227FD36100BAD69B /* View */,
+				6C77AE4E227FD36100BAD69B /* Create */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		6C77AE42227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AE44227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE45227FD36100BAD69B /* WLAboutType.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AE46227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE48227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE4A227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */,
+				6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */,
+				6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AE4E227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE50227FD36100BAD69B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE51227FD36100BAD69B /* VM */,
+				6C77AE53227FD36100BAD69B /* VC */,
+				6C77AE55227FD36100BAD69B /* Create */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6C77AE51227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE52227FD36100BAD69B /* WLProtocolViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE53227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE54227FD36100BAD69B /* WLProtocolViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE55227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE56227FD36100BAD69B /* WLProtocolViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE57227FD36100BAD69B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE58227FD36100BAD69B /* Config */,
+				6C77AE5A227FD36100BAD69B /* Delegate */,
+				6C77AE5C227FD36100BAD69B /* Style */,
+				6C77AE5E227FD36100BAD69B /* VM */,
+				6C77AE60227FD36100BAD69B /* VC */,
+				6C77AE63227FD36100BAD69B /* View */,
+				6C77AE66227FD36100BAD69B /* Create */,
+				6C77AE68227FD36100BAD69B /* Base */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		6C77AE58227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE59227FD36100BAD69B /* WLWelComeConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AE5A227FD36100BAD69B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE5B227FD36100BAD69B /* WLWelComeBaseDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C77AE5C227FD36100BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE5D227FD36100BAD69B /* WLWelcomeStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77AE5E227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE5F227FD36100BAD69B /* WLWelcomViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE60227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE61227FD36100BAD69B /* WLWelCome2ViewController.swift */,
+				6C77AE62227FD36100BAD69B /* WLWelCome1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE63227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE64227FD36100BAD69B /* WLPageCollectionView.swift */,
+				6C77AE65227FD36100BAD69B /* WLPageCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AE66227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE67227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE68227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE69227FD36100BAD69B /* WLWelComeBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE6A227FD36100BAD69B /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE6B227FD36100BAD69B /* Config */,
+				6C77AE6D227FD36100BAD69B /* Bean */,
+				6C77AE6F227FD36100BAD69B /* Style */,
+				6C77AE71227FD36100BAD69B /* VM */,
+				6C77AE73227FD36100BAD69B /* VC */,
+				6C77AE75227FD36100BAD69B /* View */,
+				6C77AE7D227FD36100BAD69B /* Create */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		6C77AE6B227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE6C227FD36100BAD69B /* WLFocusListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AE6D227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE6E227FD36100BAD69B /* WLFocusBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AE6F227FD36100BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE70227FD36100BAD69B /* WLFocusListStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77AE71227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE72227FD36100BAD69B /* WLFocusViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE73227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE74227FD36100BAD69B /* WLFocusViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE75227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE76227FD36100BAD69B /* Empty */,
+				6C77AE78227FD36100BAD69B /* TV */,
+				6C77AE7A227FD36100BAD69B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AE76227FD36100BAD69B /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE77227FD36100BAD69B /* WLFocusList1Empty.swift */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		6C77AE78227FD36100BAD69B /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE79227FD36100BAD69B /* WLFocusListTableView.swift */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		6C77AE7A227FD36100BAD69B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE7B227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift */,
+				6C77AE7C227FD36100BAD69B /* WLFocusList1TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6C77AE7D227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE7E227FD36100BAD69B /* WLFocusViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE7F227FD36100BAD69B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE80227FD36100BAD69B /* Config */,
+				6C77AE82227FD36100BAD69B /* Bean */,
+				6C77AE84227FD36100BAD69B /* Style */,
+				6C77AE86227FD36100BAD69B /* Manager */,
+				6C77AE88227FD36100BAD69B /* VM */,
+				6C77AE8A227FD36100BAD69B /* VC */,
+				6C77AE8C227FD36100BAD69B /* View */,
+				6C77AE90227FD36100BAD69B /* Create */,
+				6C77AE92227FD36100BAD69B /* Base */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6C77AE80227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE81227FD36100BAD69B /* WLProfileConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AE82227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE83227FD36100BAD69B /* WLProfileType.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AE84227FD36100BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE85227FD36100BAD69B /* WLProfileStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77AE86227FD36100BAD69B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE87227FD36100BAD69B /* WLProfileConfigManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6C77AE88227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE89227FD36100BAD69B /* WLProfileViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE8A227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE8B227FD36100BAD69B /* WLProfileViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE8C227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE8D227FD36100BAD69B /* WLProfileTableView.swift */,
+				6C77AE8E227FD36100BAD69B /* WLProfileTableViewCell.swift */,
+				6C77AE8F227FD36100BAD69B /* WLProfileHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AE90227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE91227FD36100BAD69B /* WLProfileViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE92227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE93227FD36100BAD69B /* WLProfileBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE94227FD36100BAD69B /* NickName */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE95227FD36100BAD69B /* VM */,
+				6C77AE97227FD36100BAD69B /* VC */,
+				6C77AE99227FD36100BAD69B /* Create */,
+				6C77AE9B227FD36100BAD69B /* Base */,
+			);
+			path = NickName;
+			sourceTree = "<group>";
+		};
+		6C77AE95227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE96227FD36100BAD69B /* WLUpdateNameViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AE97227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE98227FD36100BAD69B /* WLNameUpdateViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AE99227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE9A227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AE9B227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE9C227FD36100BAD69B /* WLNameUpdateBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AE9D227FD36100BAD69B /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE9E227FD36100BAD69B /* Config */,
+				6C77AEA0227FD36100BAD69B /* Bean */,
+				6C77AEA2227FD36100BAD69B /* VM */,
+				6C77AEA4227FD36100BAD69B /* VC */,
+				6C77AEA6227FD36100BAD69B /* View */,
+				6C77AEA9227FD36100BAD69B /* Create */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		6C77AE9E227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AE9F227FD36100BAD69B /* WLUserInfoConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AEA0227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEA1227FD36100BAD69B /* WLUserInfoType.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AEA2227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEA3227FD36100BAD69B /* WLUserInfoViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AEA4227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEA5227FD36100BAD69B /* WLUserInfoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AEA6227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEA7227FD36100BAD69B /* WLUserInfoTableViewCell.swift */,
+				6C77AEA8227FD36100BAD69B /* WLUserInfoTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AEA9227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEAA227FD36100BAD69B /* WLUserInfoViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AEAB227FD36100BAD69B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEAC227FD36100BAD69B /* Bean */,
+				6C77AEAE227FD36100BAD69B /* VM */,
+				6C77AEB0227FD36100BAD69B /* VC */,
+				6C77AEB2227FD36100BAD69B /* View */,
+				6C77AEB5227FD36100BAD69B /* Create */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6C77AEAC227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEAD227FD36100BAD69B /* WLSettingType.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AEAE227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEAF227FD36100BAD69B /* WLSettingViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AEB0227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEB1227FD36100BAD69B /* WLSettingViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AEB2227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEB3227FD36100BAD69B /* WLSettingTableViewCell.swift */,
+				6C77AEB4227FD36100BAD69B /* WLSettingTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AEB5227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEB6227FD36100BAD69B /* WLSettingViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AEB7227FD36100BAD69B /* Black */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEB8227FD36100BAD69B /* Config */,
+				6C77AEBA227FD36100BAD69B /* Bean */,
+				6C77AEBC227FD36100BAD69B /* Style */,
+				6C77AEBE227FD36100BAD69B /* VM */,
+				6C77AEC0227FD36100BAD69B /* VC */,
+				6C77AEC2227FD36100BAD69B /* View */,
+				6C77AECA227FD36100BAD69B /* Create */,
+			);
+			path = Black;
+			sourceTree = "<group>";
+		};
+		6C77AEB8227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEB9227FD36100BAD69B /* WLBlackListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AEBA227FD36100BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEBB227FD36100BAD69B /* WLBlackListBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77AEBC227FD36100BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEBD227FD36100BAD69B /* WLBlackListStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77AEBE227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEBF227FD36100BAD69B /* WLBlackListViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AEC0227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEC1227FD36100BAD69B /* WLBlackListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AEC2227FD36100BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEC3227FD36100BAD69B /* Empty */,
+				6C77AEC5227FD36100BAD69B /* TV */,
+				6C77AEC7227FD36100BAD69B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AEC3227FD36100BAD69B /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEC4227FD36100BAD69B /* WLBlackList1Empty.swift */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		6C77AEC5227FD36100BAD69B /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEC6227FD36100BAD69B /* WLBlackListTableView.swift */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		6C77AEC7227FD36100BAD69B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEC8227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift */,
+				6C77AEC9227FD36100BAD69B /* WLBlackList1TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6C77AECA227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AECB227FD36100BAD69B /* WLBlackListViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AECC227FD36100BAD69B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AECD227FD36100BAD69B /* TokenInvalid */,
+				6C77AECF227FD36100BAD69B /* Config */,
+				6C77AED1227FD36100BAD69B /* Style */,
+				6C77AED3227FD36100BAD69B /* VM */,
+				6C77AED5227FD36100BAD69B /* VC */,
+				6C77AEDB227FD36100BAD69B /* CheckLogin */,
+				6C77AEDD227FD36100BAD69B /* Create */,
+				6C77AEDF227FD36100BAD69B /* Base */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C77AECD227FD36100BAD69B /* TokenInvalid */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AECE227FD36100BAD69B /* UIViewController+TokenInvalid.swift */,
+			);
+			path = TokenInvalid;
+			sourceTree = "<group>";
+		};
+		6C77AECF227FD36100BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AED0227FD36100BAD69B /* WLLoginConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77AED1227FD36100BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AED2227FD36100BAD69B /* WLLoginStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77AED3227FD36100BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AED4227FD36100BAD69B /* WLLoginViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AED5227FD36100BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AED6227FD36100BAD69B /* WLLogin2ViewController.swift */,
+				6C77AED7227FD36100BAD69B /* WLLogin3ViewController.swift */,
+				6C77AED8227FD36100BAD69B /* WLLogin1ViewController.swift */,
+				6C77AED9227FD36100BAD69B /* WLLogin5ViewController.swift */,
+				6C77AEDA227FD36100BAD69B /* WLLogin4ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AEDB227FD36100BAD69B /* CheckLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEDC227FD36100BAD69B /* UIViewController+CheckLogin.swift */,
+			);
+			path = CheckLogin;
+			sourceTree = "<group>";
+		};
+		6C77AEDD227FD36100BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEDE227FD36100BAD69B /* WLLoginBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AEDF227FD36100BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AEE0227FD36100BAD69B /* WLLoginBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AFBB227FD7FD00BAD69B /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B00122803D9000BAD69B /* Prepare */,
+				6C77AFE12280108800BAD69B /* Collection */,
+				6C77AFE02280107400BAD69B /* Table */,
+				6C77AFC2227FD7FD00BAD69B /* VM */,
+				6C77AFC4227FD7FD00BAD69B /* VC */,
+				6C77AFC9227FD7FD00BAD69B /* View */,
+				6C77AFCE227FD7FD00BAD69B /* Create */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		6C77AFC2227FD7FD00BAD69B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C77AFC4227FD7FD00BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */,
+				6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */,
+				6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AFC9227FD7FD00BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */,
+				6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */,
+				6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */,
+				6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AFCE227FD7FD00BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77AFE02280107400BAD69B /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFFC228018ED00BAD69B /* Create */,
+				6C77AFEB228011BF00BAD69B /* Base */,
+				6C77AFEA228011BF00BAD69B /* VC */,
+				6C77AFED228011BF00BAD69B /* View */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		6C77AFE12280108800BAD69B /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		6C77AFEA228011BF00BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77AFEB228011BF00BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C77AFED228011BF00BAD69B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */,
+				6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */,
+				6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */,
+				6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C77AFFC228018ED00BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77B00122803D9000BAD69B /* Prepare */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C10BB228104D100B129EA /* Delegate */,
+				6C5C10B82280779100B129EA /* VideoConvert */,
+				6C77B00D22803DE800BAD69B /* TextEdit */,
+				6C77B00222803D9000BAD69B /* Config */,
+				6C77B00422803D9000BAD69B /* Bean */,
+				6C77B00722803D9000BAD69B /* Style */,
+			);
+			path = Prepare;
+			sourceTree = "<group>";
+		};
+		6C77B00222803D9000BAD69B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B00322803D9000BAD69B /* WLPublishConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C77B00422803D9000BAD69B /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B00522803D9000BAD69B /* WLProjectBean.swift */,
+				6C77B00622803D9000BAD69B /* WLPublishBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C77B00722803D9000BAD69B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B00822803D9000BAD69B /* WLPublishStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C77B00D22803DE800BAD69B /* TextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B01022803DE800BAD69B /* VC */,
+				6C77B01222803DE800BAD69B /* Create */,
+				6C77B01422803DE800BAD69B /* Base */,
+			);
+			path = TextEdit;
+			sourceTree = "<group>";
+		};
+		6C77B01022803DE800BAD69B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C77B01222803DE800BAD69B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C77B01422803DE800BAD69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F4DEA96FE0AB1D68C77FDC0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC98F6013F3220F4CB2FFB28 /* libPods-WLProfileKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C77ADBE227FD32900BAD69B /* WLProfileKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C77ADE7227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemo" */;
+			buildPhases = (
+				6DA167B4B5BADC4ACCBF6093 /* [CP] Check Pods Manifest.lock */,
+				6C77ADBB227FD32900BAD69B /* Sources */,
+				6C77ADBC227FD32900BAD69B /* Frameworks */,
+				6C77ADBD227FD32900BAD69B /* Resources */,
+				3235B18EF783FAB544CB4EE3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLProfileKitDemo;
+			productName = WLProfileKitDemo;
+			productReference = 6C77ADBF227FD32900BAD69B /* WLProfileKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C77ADD2227FD32A00BAD69B /* WLProfileKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C77ADEA227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemoTests" */;
+			buildPhases = (
+				6C77ADCF227FD32A00BAD69B /* Sources */,
+				6C77ADD0227FD32A00BAD69B /* Frameworks */,
+				6C77ADD1227FD32A00BAD69B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C77ADD5227FD32A00BAD69B /* PBXTargetDependency */,
+			);
+			name = WLProfileKitDemoTests;
+			productName = WLProfileKitDemoTests;
+			productReference = 6C77ADD3227FD32A00BAD69B /* WLProfileKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C77ADDD227FD32A00BAD69B /* WLProfileKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C77ADED227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemoUITests" */;
+			buildPhases = (
+				6C77ADDA227FD32A00BAD69B /* Sources */,
+				6C77ADDB227FD32A00BAD69B /* Frameworks */,
+				6C77ADDC227FD32A00BAD69B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C77ADE0227FD32A00BAD69B /* PBXTargetDependency */,
+			);
+			name = WLProfileKitDemoUITests;
+			productName = WLProfileKitDemoUITests;
+			productReference = 6C77ADDE227FD32A00BAD69B /* WLProfileKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C77ADB7227FD32900BAD69B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "three stone 王";
+				TargetAttributes = {
+					6C77ADBE227FD32900BAD69B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6C77ADD2227FD32A00BAD69B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6C77ADBE227FD32900BAD69B;
+					};
+					6C77ADDD227FD32A00BAD69B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6C77ADBE227FD32900BAD69B;
+					};
+				};
+			};
+			buildConfigurationList = 6C77ADBA227FD32900BAD69B /* Build configuration list for PBXProject "WLProfileKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C77ADB6227FD32900BAD69B;
+			productRefGroup = 6C77ADC0227FD32900BAD69B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C77ADBE227FD32900BAD69B /* WLProfileKitDemo */,
+				6C77ADD2227FD32A00BAD69B /* WLProfileKitDemoTests */,
+				6C77ADDD227FD32A00BAD69B /* WLProfileKitDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C77ADBD227FD32900BAD69B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C77ADCD227FD32A00BAD69B /* LaunchScreen.storyboard in Resources */,
+				6C77ADCA227FD32A00BAD69B /* Assets.xcassets in Resources */,
+				6C77ADC8227FD32900BAD69B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADD1227FD32A00BAD69B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADDC227FD32A00BAD69B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3235B18EF783FAB544CB4EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA167B4B5BADC4ACCBF6093 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLProfileKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C77ADBB227FD32900BAD69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C77AF6D227FD36100BAD69B /* WLProfileStyle.swift in Sources */,
+				6C77AF54227FD36100BAD69B /* WLProtocolViewModel.swift in Sources */,
+				6C77AF34227FD36100BAD69B /* WLSwiftLogin4ViewController.swift in Sources */,
+				6C77AF43227FD36100BAD69B /* WLPassword4ViewController.swift in Sources */,
+				6C77AF73227FD36100BAD69B /* WLProfileHeaderView.swift in Sources */,
+				6C77AF56227FD36100BAD69B /* WLProtocolViewController+Create.swift in Sources */,
+				6C77AF99227FD36100BAD69B /* WLLogin4ViewController.swift in Sources */,
+				6C77AF4E227FD36100BAD69B /* WLAboutViewModel.swift in Sources */,
+				6C77AFDB227FD7FD00BAD69B /* WLPublishHeaderView.swift in Sources */,
+				6C77AF9C227FD36100BAD69B /* WLLoginBaseViewController.swift in Sources */,
+				6C77AF60227FD36100BAD69B /* WLWelComeBaseViewController.swift in Sources */,
+				6C77AF77227FD36100BAD69B /* WLNameUpdateViewController.swift in Sources */,
+				6C77AF3F227FD36100BAD69B /* WLPassword2ViewController.swift in Sources */,
+				6C77AF74227FD36100BAD69B /* WLProfileViewController+Create.swift in Sources */,
+				6C77AF1C227FD36100BAD69B /* TextField+RX.swift in Sources */,
+				6C77AF26227FD36100BAD69B /* WLUserReq.swift in Sources */,
+				6C77AFD9227FD7FD00BAD69B /* WLPublish4ViewController.swift in Sources */,
+				6C77AF8E227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift in Sources */,
+				6C77AF5A227FD36100BAD69B /* WLWelcomViewModel.swift in Sources */,
+				6C77AFF6228011BF00BAD69B /* WLPublishTableViewCell.swift in Sources */,
+				6C77AF6E227FD36100BAD69B /* WLProfileConfigManager.swift in Sources */,
+				6C5C10D42281089800B129EA /* WLProjectListViewModel.swift in Sources */,
+				6C77AF28227FD36100BAD69B /* WLMainApi.swift in Sources */,
+				6C77AF70227FD36100BAD69B /* WLProfileViewController.swift in Sources */,
+				6C77AF22227FD36100BAD69B /* WLConfig.swift in Sources */,
+				6C77AF83227FD36100BAD69B /* WLSettingViewController.swift in Sources */,
+				6C77AFD7227FD7FD00BAD69B /* WLPublish3ViewController.swift in Sources */,
+				6C77B01822803DE800BAD69B /* WLTextEditBaseViewController+Create.swift in Sources */,
+				6C77AF55227FD36100BAD69B /* WLProtocolViewController.swift in Sources */,
+				6C77AF21227FD36100BAD69B /* UIViewController+ActionShow.swift in Sources */,
+				6C77B01722803DE800BAD69B /* WLTextEditViewController.swift in Sources */,
+				6C77AF4D227FD36100BAD69B /* WLAboutType.swift in Sources */,
+				6C77AF71227FD36100BAD69B /* WLProfileTableView.swift in Sources */,
+				6C77AF96227FD36100BAD69B /* WLLogin3ViewController.swift in Sources */,
+				6C77AF8A227FD36100BAD69B /* WLBlackListViewModel.swift in Sources */,
+				6C77AF2E227FD36100BAD69B /* WLImagePickerImpl.swift in Sources */,
+				6C77AF65227FD36100BAD69B /* WLFocusViewController.swift in Sources */,
+				6C77AF67227FD36100BAD69B /* WLFocusListTableView.swift in Sources */,
+				6C77AF24227FD36100BAD69B /* WLUserBean.swift in Sources */,
+				6C77B00B22803D9000BAD69B /* WLPublishBean.swift in Sources */,
+				6C77AF7D227FD36100BAD69B /* WLUserInfoViewController.swift in Sources */,
+				6C77AF38227FD36100BAD69B /* WLModifyPwdViewModel.swift in Sources */,
+				6C77AF4F227FD36100BAD69B /* WLAboutViewController.swift in Sources */,
+				6C77AF7C227FD36100BAD69B /* WLUserInfoViewModel.swift in Sources */,
+				6C77AFD5227FD7FD00BAD69B /* WLPublishViewModel.swift in Sources */,
+				6C77AFF5228011BF00BAD69B /* WLPublishTableHeaderView.swift in Sources */,
+				6C5C10DC2281089800B129EA /* WLProjectFuncCell.swift in Sources */,
+				6C77AF39227FD36100BAD69B /* WLPwdViewModel.swift in Sources */,
+				6C77AF53227FD36100BAD69B /* WLAboutViewController+Create.swift in Sources */,
+				6C77AF6F227FD36100BAD69B /* WLProfileViewModel.swift in Sources */,
+				6C77AF6C227FD36100BAD69B /* WLProfileType.swift in Sources */,
+				6C77AF57227FD36100BAD69B /* WLWelComeConfig.swift in Sources */,
+				6C77AF3B227FD36100BAD69B /* WLModifyPwd2ViewController.swift in Sources */,
+				6C77AF2B227FD36100BAD69B /* WLTextCheck.swift in Sources */,
+				6C77AF92227FD36100BAD69B /* WLLoginConfig.swift in Sources */,
+				6C77B000228032BF00BAD69B /* WLMainV.swift in Sources */,
+				6C77AF88227FD36100BAD69B /* WLBlackListBean.swift in Sources */,
+				6C77AFFB2280171600BAD69B /* WLPublish1ViewController.swift in Sources */,
+				6C77AF29227FD36100BAD69B /* WLUserApi.swift in Sources */,
+				6C77AF27227FD36100BAD69B /* WLGlobalManager.swift in Sources */,
+				6C77AF3C227FD36100BAD69B /* WLModifyPwd3ViewController.swift in Sources */,
+				6C77AF66227FD36100BAD69B /* WLFocusList1Empty.swift in Sources */,
+				6C77AF97227FD36100BAD69B /* WLLogin1ViewController.swift in Sources */,
+				6C77AF8D227FD36100BAD69B /* WLBlackListTableView.swift in Sources */,
+				6C77AF20227FD36100BAD69B /* WLUserInfoCache.swift in Sources */,
+				6C77B00A22803D9000BAD69B /* WLProjectBean.swift in Sources */,
+				6C77AF50227FD36100BAD69B /* WLAboutTableViewCell.swift in Sources */,
+				6C77AF30227FD36100BAD69B /* WLSwiftLoginViewModel.swift in Sources */,
+				6C77AF4B227FD36100BAD69B /* WLSignatureBaseViewController.swift in Sources */,
+				6C77AF44227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift in Sources */,
+				6C77AF48227FD36100BAD69B /* WLSignatureViewModel.swift in Sources */,
+				6C77AF45227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift in Sources */,
+				6C77ADC5227FD32900BAD69B /* ViewController.swift in Sources */,
+				6C77AF82227FD36100BAD69B /* WLSettingViewModel.swift in Sources */,
+				6C77AF81227FD36100BAD69B /* WLSettingType.swift in Sources */,
+				6C77AF75227FD36100BAD69B /* WLProfileBaseViewController.swift in Sources */,
+				6C5C10BA2280779D00B129EA /* WLVideoConvert.swift in Sources */,
+				6C77AF63227FD36100BAD69B /* WLFocusListStyle.swift in Sources */,
+				6C77AF7B227FD36100BAD69B /* WLUserInfoType.swift in Sources */,
+				6C5C10DF2281089800B129EA /* WLProjectFuncView.swift in Sources */,
+				6C77AF8C227FD36100BAD69B /* WLBlackList1Empty.swift in Sources */,
+				6C5C10DE2281089800B129EA /* WLProjectTableView.swift in Sources */,
+				6C77AF9B227FD36100BAD69B /* WLLoginBaseViewController+Create.swift in Sources */,
+				6C77AF85227FD36100BAD69B /* WLSettingTableView.swift in Sources */,
+				6C77AF4C227FD36100BAD69B /* WLAboutConfig.swift in Sources */,
+				6C77AFDC227FD7FD00BAD69B /* WLPublishImageViewCell.swift in Sources */,
+				6C77AF58227FD36100BAD69B /* WLWelComeBaseDelegate.swift in Sources */,
+				6C77ADC3227FD32900BAD69B /* AppDelegate.swift in Sources */,
+				6C77AFDA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift in Sources */,
+				6C77AF2D227FD36100BAD69B /* WLVideoPickerImpl.swift in Sources */,
+				6C77AF86227FD36100BAD69B /* WLSettingViewController+Create.swift in Sources */,
+				6C77AF8F227FD36100BAD69B /* WLBlackList1TableViewCell.swift in Sources */,
+				6C77AF52227FD36100BAD69B /* WLAboutHeaderView.swift in Sources */,
+				6C77AF42227FD36100BAD69B /* WLPassword5ViewController.swift in Sources */,
+				6C77AF3A227FD36100BAD69B /* WLModifyPwd1ViewController.swift in Sources */,
+				6C77AF68227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift in Sources */,
+				6C77AF90227FD36100BAD69B /* WLBlackListViewController+Create.swift in Sources */,
+				6C77AF5F227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift in Sources */,
+				6C5C10D52281089800B129EA /* WLMainResult.swift in Sources */,
+				6C77AF6A227FD36100BAD69B /* WLFocusViewController+Create.swift in Sources */,
+				6C77AF25227FD36100BAD69B /* WLBaseBean.swift in Sources */,
+				6C77AF95227FD36100BAD69B /* WLLogin2ViewController.swift in Sources */,
+				6C5C10BD228104DD00B129EA /* WLPublishDelegate.swift in Sources */,
+				6C77AF1E227FD36100BAD69B /* WLUserResult.swift in Sources */,
+				6C77AF41227FD36100BAD69B /* WLPassword1ViewController.swift in Sources */,
+				6C77AF49227FD36100BAD69B /* WLSignatureViewController.swift in Sources */,
+				6C77AF40227FD36100BAD69B /* WLPassword3ViewController.swift in Sources */,
+				6C77AF7A227FD36100BAD69B /* WLUserInfoConfig.swift in Sources */,
+				6C77AFF3228011BF00BAD69B /* WLPublishTableFooterView.swift in Sources */,
+				6C77AF79227FD36100BAD69B /* WLNameUpdateBaseViewController.swift in Sources */,
+				6C5C10D62281089800B129EA /* WLMainConfig.swift in Sources */,
+				6C77AF94227FD36100BAD69B /* WLLoginViewModel.swift in Sources */,
+				6C77AF37227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift in Sources */,
+				6C77AF1D227FD36100BAD69B /* Button+RX.swift in Sources */,
+				6C77AF64227FD36100BAD69B /* WLFocusViewModel.swift in Sources */,
+				6C77AFDE227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift in Sources */,
+				6C77B00C22803D9000BAD69B /* WLPublishStyle.swift in Sources */,
+				6C77AF84227FD36100BAD69B /* WLSettingTableViewCell.swift in Sources */,
+				6C5C10DB2281089800B129EA /* WLProjectTableViewCell.swift in Sources */,
+				6C77AF59227FD36100BAD69B /* WLWelcomeStyle.swift in Sources */,
+				6C5C10DA2281089800B129EA /* WLProjectMediaCell.swift in Sources */,
+				6C77AFDD227FD7FD00BAD69B /* WLPublishCollectionView.swift in Sources */,
+				6C77B00922803D9000BAD69B /* WLPublishConfig.swift in Sources */,
+				6C77AF6B227FD36100BAD69B /* WLProfileConfig.swift in Sources */,
+				6C77AFFE228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift in Sources */,
+				6C77AF5B227FD36100BAD69B /* WLWelCome2ViewController.swift in Sources */,
+				6C77AF3E227FD36100BAD69B /* WLModifyPwd4ViewController.swift in Sources */,
+				6C5C10D92281089800B129EA /* WLProjectListViewController.swift in Sources */,
+				6C77AF2A227FD36100BAD69B /* WLBaseDisposeViewController.swift in Sources */,
+				6C77AF5D227FD36100BAD69B /* WLPageCollectionView.swift in Sources */,
+				6C77AF78227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift in Sources */,
+				6C77AF61227FD36100BAD69B /* WLFocusListConfig.swift in Sources */,
+				6C77AF9A227FD36100BAD69B /* UIViewController+CheckLogin.swift in Sources */,
+				6C77AF87227FD36100BAD69B /* WLBlackListConfig.swift in Sources */,
+				6C77AF51227FD36100BAD69B /* WLAboutTableView.swift in Sources */,
+				6C77AF3D227FD36100BAD69B /* WLModifyPwd5ViewController.swift in Sources */,
+				6C77AF5C227FD36100BAD69B /* WLWelCome1ViewController.swift in Sources */,
+				6C77AF46227FD36100BAD69B /* WLPasswordBaseViewController.swift in Sources */,
+				6C77AF8B227FD36100BAD69B /* WLBlackListViewController.swift in Sources */,
+				6C77AF36227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift in Sources */,
+				6C77AFF4228011BF00BAD69B /* WLPublishTableView.swift in Sources */,
+				6C77AF4A227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift in Sources */,
+				6C77AF2F227FD36100BAD69B /* WLCommentBean.swift in Sources */,
+				6C77AF2C227FD36100BAD69B /* WLUploadReq.swift in Sources */,
+				6C77AF23227FD36100BAD69B /* WLAccountBean.swift in Sources */,
+				6C77AF35227FD36100BAD69B /* WLSwiftLogin5ViewController.swift in Sources */,
+				6C77AF98227FD36100BAD69B /* WLLogin5ViewController.swift in Sources */,
+				6C77AF93227FD36100BAD69B /* WLLoginStyle.swift in Sources */,
+				6C77AF7E227FD36100BAD69B /* WLUserInfoTableViewCell.swift in Sources */,
+				6C77AFD8227FD7FD00BAD69B /* WLPublish2ViewController.swift in Sources */,
+				6C77AF72227FD36100BAD69B /* WLProfileTableViewCell.swift in Sources */,
+				6C77AF1F227FD36100BAD69B /* WLAccountCache.swift in Sources */,
+				6C77AF47227FD36100BAD69B /* WLModifyPwdBaseViewController.swift in Sources */,
+				6C77AF80227FD36100BAD69B /* WLUserInfoViewController+Create.swift in Sources */,
+				6C77AFF2228011BF00BAD69B /* WLPublishTableBaseViewController.swift in Sources */,
+				6C5C10DD2281089800B129EA /* WLUserCommonView.swift in Sources */,
+				6C77B01922803DE800BAD69B /* WLTextEditBaseViewController.swift in Sources */,
+				6C77AF91227FD36100BAD69B /* UIViewController+TokenInvalid.swift in Sources */,
+				6C77AF5E227FD36100BAD69B /* WLPageCollectionViewCell.swift in Sources */,
+				6C77AF62227FD36100BAD69B /* WLFocusBean.swift in Sources */,
+				6C77AF76227FD36100BAD69B /* WLUpdateNameViewModel.swift in Sources */,
+				6C77AF31227FD36100BAD69B /* WLSwiftLogin1ViewController.swift in Sources */,
+				6C77AF69227FD36100BAD69B /* WLFocusList1TableViewCell.swift in Sources */,
+				6C77AF33227FD36100BAD69B /* WLSwiftLogin2ViewController.swift in Sources */,
+				6C77AF32227FD36100BAD69B /* WLSwiftLogin3ViewController.swift in Sources */,
+				6C77AF89227FD36100BAD69B /* WLBlackListStyle.swift in Sources */,
+				6C5C10E02281089800B129EA /* WLProjectMeidaView.swift in Sources */,
+				6C77AF7F227FD36100BAD69B /* WLUserInfoTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADCF227FD32A00BAD69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C77ADD8227FD32A00BAD69B /* WLProfileKitDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C77ADDA227FD32A00BAD69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C77ADE3227FD32A00BAD69B /* WLProfileKitDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C77ADD5227FD32A00BAD69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C77ADBE227FD32900BAD69B /* WLProfileKitDemo */;
+			targetProxy = 6C77ADD4227FD32A00BAD69B /* PBXContainerItemProxy */;
+		};
+		6C77ADE0227FD32A00BAD69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C77ADBE227FD32900BAD69B /* WLProfileKitDemo */;
+			targetProxy = 6C77ADDF227FD32A00BAD69B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C77ADC6227FD32900BAD69B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C77ADC7227FD32900BAD69B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C77ADCB227FD32A00BAD69B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C77ADCC227FD32A00BAD69B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C77ADE5227FD32A00BAD69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C77ADE6227FD32A00BAD69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C77ADE8227FD32A00BAD69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691C05400282E99FEF96A0E0 /* Pods-WLProfileKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35C4LR8Q5F;
+				INFOPLIST_FILE = WLProfileKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6C77ADE9227FD32A00BAD69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9F81768A29FC3C6A83C5D6 /* Pods-WLProfileKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35C4LR8Q5F;
+				INFOPLIST_FILE = WLProfileKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6C77ADEB227FD32A00BAD69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLProfileKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLProfileKitDemo.app/WLProfileKitDemo";
+			};
+			name = Debug;
+		};
+		6C77ADEC227FD32A00BAD69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLProfileKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLProfileKitDemo.app/WLProfileKitDemo";
+			};
+			name = Release;
+		};
+		6C77ADEE227FD32A00BAD69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLProfileKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WLProfileKitDemo;
+			};
+			name = Debug;
+		};
+		6C77ADEF227FD32A00BAD69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLProfileKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.djs.WLProfileKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WLProfileKitDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C77ADBA227FD32900BAD69B /* Build configuration list for PBXProject "WLProfileKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C77ADE5227FD32A00BAD69B /* Debug */,
+				6C77ADE6227FD32A00BAD69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C77ADE7227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C77ADE8227FD32A00BAD69B /* Debug */,
+				6C77ADE9227FD32A00BAD69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C77ADEA227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C77ADEB227FD32A00BAD69B /* Debug */,
+				6C77ADEC227FD32A00BAD69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C77ADED227FD32A00BAD69B /* Build configuration list for PBXNativeTarget "WLProfileKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C77ADEE227FD32A00BAD69B /* Debug */,
+				6C77ADEF227FD32A00BAD69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C77ADB7227FD32900BAD69B /* Project object */;
+}

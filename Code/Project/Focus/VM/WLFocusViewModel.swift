@@ -31,7 +31,7 @@ struct WLFocusViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLFocusBean,IndexPath)>
         
-        let tableData: Variable<[WLFocusBean]> = Variable<[WLFocusBean]>([])
+        let tableData: BehaviorRelay<[WLFocusBean]> = BehaviorRelay<[WLFocusBean]>(value: [])
         
         let endHeaderRefreshing: Driver<WLUserResult>
     }
@@ -43,9 +43,8 @@ struct WLFocusViewModel: WLBaseViewModel {
         
         let headerRefreshData = input
             .headerRefresh
-            .startWith(())
             .flatMapLatest({_ in
-                return onUserArrayResp(WLMainApi.fetchMyFocus(1))
+                return onUserArrayResp(WLUserApi.fetchMyFocus(1))
                     .mapArray(type: WLFocusBean.self)
                     .map({ return $0.count > 0 ? WLUserResult.fetchList($0) : WLUserResult.empty })
                     .asDriver(onErrorRecover: { return Driver.just(WLUserResult.failed(($0 as! WLBaseError).description.0)) })
@@ -61,7 +60,7 @@ struct WLFocusViewModel: WLBaseViewModel {
                 switch result {
                 case let .fetchList(items):
                     
-                    output.tableData.value = items as! [WLFocusBean]
+                    output.tableData.accept(items as! [WLFocusBean])
                     
                 default: break
                 }
@@ -69,5 +68,14 @@ struct WLFocusViewModel: WLBaseViewModel {
             .disposed(by: disposed)
         
         self.output = output
+    }
+}
+extension WLFocusViewModel {
+    
+    public static func removeFocus(_ uid: String ,encode: String) -> Driver<WLUserResult> {
+        
+        return onUserVoidResp(WLUserApi.focus(uid, targetEncoded: encode))
+            .flatMapLatest({ return Driver.just(WLUserResult.ok("移除成功")) })
+            .asDriver(onErrorRecover: { return Driver.just(WLUserResult.failed(($0 as! WLBaseError).description.0)) })
     }
 }

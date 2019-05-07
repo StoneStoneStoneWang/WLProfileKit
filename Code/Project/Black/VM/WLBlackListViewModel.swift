@@ -31,7 +31,7 @@ struct WLBlackListViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLBlackListBean,IndexPath)>
         
-        let tableData: Variable<[WLBlackListBean]> = Variable<[WLBlackListBean]>([])
+        let tableData: BehaviorRelay<[WLBlackListBean]> = BehaviorRelay<[WLBlackListBean]>(value: [])
         
         let endHeaderRefreshing: Driver<WLUserResult>
     }
@@ -60,7 +60,7 @@ struct WLBlackListViewModel: WLBaseViewModel {
                 switch result {
                 case let .fetchList(items):
                     
-                    output.tableData.value = items as! [WLBlackListBean]
+                    output.tableData.accept(items as! [WLBlackListBean])
                     
                 default: break
                 }
@@ -68,5 +68,14 @@ struct WLBlackListViewModel: WLBaseViewModel {
             .disposed(by: disposed)
         
         self.output = output
+    }
+}
+extension WLBlackListViewModel {
+    
+    static func removeBlack(_ encode: String) -> Driver<WLUserResult> {
+        
+        return onUserVoidResp(WLUserApi.removeBlack(encode))
+            .flatMapLatest({ return Driver.just(WLUserResult.ok("移除成功")) })
+            .asDriver(onErrorRecover: { return Driver.just(WLUserResult.failed(($0 as! WLBaseError).description.0)) })
     }
 }
