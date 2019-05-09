@@ -24,7 +24,7 @@ extension WLPublishTableBaseViewController {
     }
 }
 
-@objc (WLPublishBaseViewController)
+@objc (WLPublishTableBaseViewController)
 open class WLPublishTableBaseViewController: WLF1DisposeViewController ,UITableViewDelegate {
     
     fileprivate var pTag: String = ""
@@ -141,29 +141,6 @@ open class WLPublishTableBaseViewController: WLF1DisposeViewController ,UITableV
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: completeItem)
     }
-    
-    //    open func configCell(_ cv: UICollectionView,ip: IndexPath,item: (WLPublishStyle ,WLPublishBean)?) -> UICollectionViewCell {
-    //
-    //        let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: ip) as! WLPublishCollectionViewCell
-    //
-    //        cell.bean = item
-    //
-    //        return cell
-    //    }
-    //
-    //    open func configSupplementaryHeaderView(_ cv: UICollectionView,ip: IndexPath) -> UICollectionReusableView {
-    //
-    //        let view = cv.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: ip)
-    //
-    //        return view
-    //    }
-    //
-    //    open func configSupplementaryFooterView(_ cv: UICollectionView,ip: IndexPath) -> UICollectionReusableView {
-    //
-    //        let view = cv.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "header", for: ip)
-    //
-    //        return view
-    //    }
 }
 extension WLPublishTableBaseViewController {
     
@@ -260,7 +237,6 @@ extension WLPublishTableBaseViewController {
             .drive(onNext: { [weak self] (_) in
                 
                 guard let `self` = self else { return }
-                
                 
                 self.isAdd = true
                 
@@ -360,7 +336,7 @@ extension WLPublishTableBaseViewController {
                     
                     if let delegate = self.mDelegate {
                         
-                        delegate.onPublishSucc(self, pubBean: obj as! WLProjectBean)
+                        delegate.onPublishSucc(self, pubBean: obj.toJSON())
                     } else {
                         
                         if let navi = self.navigationController {
@@ -372,10 +348,6 @@ extension WLPublishTableBaseViewController {
                         }
                         self.navigationController?.popViewController(animated: true)
                     }
-                    
-                    
-                    
-                    
                 default: break
                 }
             })

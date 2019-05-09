@@ -35,6 +35,7 @@ final public class WLTableViewEmptyView: UIView {
         iconImageView.frame = source.emptyIconFrame
         
         iconImageView.image = UIImage(named: source.emptyIcon)
+        
     }
 }
 extension WLTableViewEmptyView {
@@ -42,5 +43,7 @@ extension WLTableViewEmptyView {
     public func commitInit() {
         
         addSubview(titleLabel)
+        
+        addSubview(iconImageView)
     }
 }

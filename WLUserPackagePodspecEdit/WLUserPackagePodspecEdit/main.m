@@ -15,3 +15,24 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+
+
+@protocol WLPrototcol <NSObject>
+
+@property (nonatomic ,copy ,readonly) NSString *name;
+
+@end
+
+@interface WLProtocolImpl: NSObject <WLPrototcol>
+
+
+@end
+
+@implementation WLProtocolImpl
+
+
+- (NSString *)name {
+    
+    return @"王磊";
+}
+@end

@@ -41,7 +41,7 @@ public final class WLBlackList1TableViewCell: WLBlackListBaseTableViewCell {
             
             let icon = newValue.0.users.headImg + "?x-oss-process=image/resize,w_200,h_200"
             
-            iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: newValue.1.itemColor), options: [
+            iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: newValue.1.defaultIcon), options: [
                 .processor(processor),
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.3)),

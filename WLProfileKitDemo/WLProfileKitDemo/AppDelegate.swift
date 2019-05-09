@@ -46,6 +46,7 @@ class WLWWWWW: WLWelComeConfig {
     
     var itemColor: String { return "#84aaf7"}
 }
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate ,WLWelComeBaseDelegate {
     

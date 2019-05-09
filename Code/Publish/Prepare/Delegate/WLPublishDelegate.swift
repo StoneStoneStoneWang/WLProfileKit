@@ -12,5 +12,5 @@ import ObjectMapper
 @objc (WLPublishDelegate)
 public protocol WLPublishDelegate {
     
-    func onPublishSucc(_ from: UIViewController ,pubBean: WLProjectBean)
+    func onPublishSucc(_ from: UIViewController ,pubBean: [String: Any])
 }

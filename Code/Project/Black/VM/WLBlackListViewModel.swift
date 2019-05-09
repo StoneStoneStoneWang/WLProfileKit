@@ -43,6 +43,7 @@ struct WLBlackListViewModel: WLBaseViewModel {
         
         let headerRefreshData = input
             .headerRefresh
+            .startWith(())
             .flatMapLatest({_ in
                 return onUserArrayResp(WLUserApi.fetchBlackList)
                     .mapArray(type: WLBlackListBean.self)

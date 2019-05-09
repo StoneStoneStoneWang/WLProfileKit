@@ -65,7 +65,7 @@ open class WLFocusViewController: WLLoadingDisposeF1ViewController {
     
     override open func configViewModel() {
         
-        self.tableView.mj_header.beginRefreshing()
+//        self.tableView.mj_header.beginRefreshing()
         
         self.tableView.mj_footer.isHidden = true
         
@@ -79,7 +79,7 @@ open class WLFocusViewController: WLLoadingDisposeF1ViewController {
         
         let dataSource = RxTableViewSectionedAnimatedDataSource<Section>(
             animationConfiguration: AnimationConfiguration(insertAnimation: .top, reloadAnimation: .fade, deleteAnimation: .left),
-            
+            decideViewTransition: { _,_,_  in return .reload },
             configureCell: { ds, tv, ip, item in
                 
                 let cell = tv.dequeueReusableCell(withIdentifier: "cell") as! WLFocusListBaseTableViewCell
@@ -88,16 +88,13 @@ open class WLFocusViewController: WLLoadingDisposeF1ViewController {
                 
                 return cell
         }
-            ,canEditRowAtIndexPath: {_,_ in
-                
-                return true
-        })
+            ,canEditRowAtIndexPath: { _,_ in return true })
         
         viewModel
             .output
             .tableData
             .asDriver()
-            .map({ $0.map({ Section(header: "", items: [$0]) }) })
+            .map({ $0.map({ Section(header: $0.encoded, items: [$0]) }) })
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposed)
         
@@ -196,7 +193,7 @@ extension WLFocusViewController: UITableViewDelegate {
                             
                             self.viewModel.output.tableData.accept(value)
                             
-                            if self.viewModel.output.tableData.value.isEmpty {
+                            if value.isEmpty {
                                 
                                 self.tableView.emptyViewShow(WLFocusList1Empty())
                             }

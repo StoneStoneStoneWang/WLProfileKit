@@ -43,6 +43,7 @@ struct WLFocusViewModel: WLBaseViewModel {
         
         let headerRefreshData = input
             .headerRefresh
+            .startWith(())
             .flatMapLatest({_ in
                 return onUserArrayResp(WLUserApi.fetchMyFocus(1))
                     .mapArray(type: WLFocusBean.self)

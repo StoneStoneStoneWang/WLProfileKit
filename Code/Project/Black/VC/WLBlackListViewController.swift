@@ -65,7 +65,7 @@ open class WLBlackListViewController: WLLoadingDisposeF1ViewController {
     
     override open func configViewModel() {
         
-        self.tableView.mj_header.beginRefreshing()
+//        self.tableView.mj_header.beginRefreshing()
         
         self.tableView.mj_footer.isHidden = true
         
@@ -79,7 +79,7 @@ open class WLBlackListViewController: WLLoadingDisposeF1ViewController {
         
         let dataSource = RxTableViewSectionedAnimatedDataSource<Section>(
             animationConfiguration: AnimationConfiguration(insertAnimation: .top, reloadAnimation: .fade, deleteAnimation: .left),
-            
+            decideViewTransition: { _,_,_  in return .reload },
             configureCell: { ds, tv, ip, item in
                 
                 let cell = tv.dequeueReusableCell(withIdentifier: "cell") as! WLBlackListBaseTableViewCell
@@ -88,16 +88,13 @@ open class WLBlackListViewController: WLLoadingDisposeF1ViewController {
                 
                 return cell
         }
-            ,canEditRowAtIndexPath: {_,_ in
-                
-                return true
-        })
+            ,canEditRowAtIndexPath: {_,_ in return true })
         
         viewModel
             .output
             .tableData
             .asDriver()
-            .map({ $0.map({ Section(header: "", items: [$0]) }) })
+            .map({ $0.map({ Section(header: $0.encoded, items: [$0]) }) })
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposed)
         
@@ -162,8 +159,6 @@ extension WLBlackListViewController: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        
-        
         let delete = UITableViewRowAction(style: .destructive, title: "删除") { [weak self] (a, ip) in
             
             guard let `self` = self else { return }
@@ -198,7 +193,7 @@ extension WLBlackListViewController: UITableViewDelegate {
                             
                             self.viewModel.output.tableData.accept(value)
                             
-                            if self.viewModel.output.tableData.value.isEmpty {
+                            if value.isEmpty {
                                 
                                 self.tableView.emptyViewShow(WLBlackList1Empty())
                             }

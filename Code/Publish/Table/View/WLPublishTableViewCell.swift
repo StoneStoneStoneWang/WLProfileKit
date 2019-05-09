@@ -9,6 +9,7 @@
 import Foundation
 import WLBaseTableView
 import SnapKit
+import WLToolsKit
 
 public class WLPublishImageTableViewCell: WLBaseTableViewCell {
     
@@ -73,7 +74,7 @@ public class WLPublishTextTableViewCell: WLBaseTableViewCell {
             
             make.right.equalTo(-15)
             
-            make.center.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
     }
 }
