@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import ObjectMapper
+
 @objc (WLPublishDelegate)
 public protocol WLPublishDelegate {
     
