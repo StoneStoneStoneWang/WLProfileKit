@@ -27,7 +27,7 @@ struct WLAboutViewModel: WLBaseViewModel {
         
         let zip: Observable<(WLAboutType,IndexPath)>
         
-        let tableData: BehaviorRelay<[WLAboutType]>
+        let tableData: Variable<[WLAboutType]>
     }
     init(_ input: WLInput ,disposed: DisposeBag) {
         
@@ -35,7 +35,7 @@ struct WLAboutViewModel: WLBaseViewModel {
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
-        let tableData: BehaviorRelay<[WLAboutType]> = BehaviorRelay<[WLAboutType]>(value: WLAboutType.types)
+        let tableData: Variable<[WLAboutType]> = Variable<[WLAboutType]>(WLAboutType.types)
         
         self.output = WLOutput(zip: zip, tableData: tableData)
     }
