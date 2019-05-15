@@ -32,11 +32,11 @@ class WLAAA: WLNaviControllerConfig {
     
     var Title_FontSize: CGFloat { return 20 }
     
-    var Title_HEXColor: String { return "#ffffff" }
+    var Title_HEXColor: String { return "#333333" }
     
-    var Background_HEXColor: String { return "#84aaf7"}
+    var Background_HEXColor: String { return "#f1f1f1"}
     
-    var NaviBackground_HEXColor: String { return "#84aaf7" }
+    var NaviBackground_HEXColor: String { return "#ffffff" }
 }
 
 

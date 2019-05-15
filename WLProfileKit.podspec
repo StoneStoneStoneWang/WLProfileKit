@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.1.0"
+  spec.version      = "1.1.1"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -617,6 +617,7 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/Signature/Base'
       vc.dependency 'WLToolsKit/Color'
       vc.dependency 'WLToolsKit/Common'
+      vc.dependency 'WLBaseViewController/Navi'
     end
     sign.subspec 'Create' do |create|
       create.source_files = "Code/Project/Signature/Create/*.{swift}"
@@ -657,6 +658,7 @@ Pod::Spec.new do |spec|
       vc.dependency 'WLProfileKit/NickName/Base'
       vc.dependency 'WLToolsKit/Color'
       vc.dependency 'WLToolsKit/Common'
+      vc.dependency 'WLBaseViewController/Navi'
     end
     name.subspec 'Create' do |create|
       create.source_files = "Code/Project/NickName/Create/*.{swift}"
@@ -716,6 +718,9 @@ Pod::Spec.new do |spec|
     profile.subspec 'Config' do |config|
       config.source_files = "Code/Project/Profile/Config/*.{swift}"
     end
+    profile.subspec 'Delegate' do |delegate|
+      delegate.source_files = "Code/Project/Profile/Delegate/*.{swift}"
+    end
     profile.subspec 'Style' do |style|
       style.source_files = "Code/Project/Profile/Style/*.{swift}"
     end
@@ -758,6 +763,7 @@ Pod::Spec.new do |spec|
       base.dependency 'WLProfileKit/Profile/View'
       base.dependency 'WLProfileKit/Profile/Manager'
       base.dependency 'WLProfileKit/Profile/VM'
+      base.dependency 'WLProfileKit/Profile/Delegate'
       base.dependency 'WLProfileKit/UserInfo/Create'
       base.dependency 'WLProfileKit/Login/TokenInvalid'
       base.dependency 'WLProfileKit/Login/CheckLogin'

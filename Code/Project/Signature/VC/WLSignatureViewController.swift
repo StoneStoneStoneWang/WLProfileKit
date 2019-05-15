@@ -8,6 +8,7 @@
 
 import Foundation
 import WLToolsKit
+import WLBaseViewController
 
 @objc (WLSignatureViewController)
 public final class WLSignatureViewController: WLSignatureBaseViewController {
@@ -15,15 +16,16 @@ public final class WLSignatureViewController: WLSignatureBaseViewController {
     override public func configNaviItem() {
         super.configNaviItem()
         
-        if let config = config {
+        if let config = config ,let nconfig = WLNaviConfig.shared.config {
             
-            if config.itemColor != "#ffffff" {
+            if nconfig.NaviBackground_HEXColor != "#ffffff" {
                 
                 completeItem.setTitleColor(WLHEXCOLOR(hexColor: "#ffffff"), for: .normal)
                 
                 completeItem.setTitleColor(WLHEXCOLOR(hexColor: "#ffffff"), for: .highlighted)
                 
                 completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: "#ffffff" + "60"), for: .disabled)
+
             } else {
                 
                 completeItem.setTitleColor(WLHEXCOLOR(hexColor: config.itemColor), for: .normal)
@@ -32,7 +34,6 @@ public final class WLSignatureViewController: WLSignatureBaseViewController {
                 
                 completeItem.setTitleColor(WLHEXCOLOR_ALPHA(hexColor: config.itemColor + "60"), for: .disabled)
             }
-            
         }
     }
     

@@ -8,66 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B39A7493CC44BF6B64FDC48 /* libPods-WLProfileKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC98F6013F3220F4CB2FFB28 /* libPods-WLProfileKitDemo.a */; };
-		6C0A54E52282761000BEB3A3 /* WLReportConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54E42282761000BEB3A3 /* WLReportConfig.swift */; };
-		6C0A54E7228277D700BEB3A3 /* WLReportStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54E6228277D700BEB3A3 /* WLReportStyle.swift */; };
-		6C0A54E92282786100BEB3A3 /* WLReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54E82282786100BEB3A3 /* WLReportViewModel.swift */; };
-		6C0A54EC2282796C00BEB3A3 /* WLReportBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54EB2282796C00BEB3A3 /* WLReportBean.swift */; };
-		6C0A54EE22827B7000BEB3A3 /* WLReportTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54ED22827B7000BEB3A3 /* WLReportTableView.swift */; };
-		6C0A54F022827FE100BEB3A3 /* WLReportBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54EF22827FE100BEB3A3 /* WLReportBaseViewController.swift */; };
-		6C0A54F22282809D00BEB3A3 /* WLReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54F12282809D00BEB3A3 /* WLReportTableViewCell.swift */; };
-		6C0A54F4228282FD00BEB3A3 /* WLReport1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54F3228282FD00BEB3A3 /* WLReport1TableViewCell.swift */; };
-		6C0A54F6228284D800BEB3A3 /* WLReport1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54F5228284D800BEB3A3 /* WLReport1ViewController.swift */; };
-		6C0A54F92282857000BEB3A3 /* WLReportBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54F82282857000BEB3A3 /* WLReportBaseViewController+Create.swift */; };
-		6C0A54FB2282A8E500BEB3A3 /* WLReportFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A54FA2282A8E500BEB3A3 /* WLReportFooterView.swift */; };
-		6C0A55062282B79900BEB3A3 /* WLCommentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55052282B79900BEB3A3 /* WLCommentConfig.swift */; };
-		6C0A55082282B7DD00BEB3A3 /* WLCommentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55072282B7DD00BEB3A3 /* WLCommentStyle.swift */; };
-		6C0A550A2282B80C00BEB3A3 /* WLCommentBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55092282B80C00BEB3A3 /* WLCommentBean.swift */; };
-		6C0A550C2282BA0600BEB3A3 /* WLCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A550B2282BA0600BEB3A3 /* WLCommentViewModel.swift */; };
-		6C0A550E2282BCAF00BEB3A3 /* WLCommentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A550D2282BCAF00BEB3A3 /* WLCommentBaseViewController.swift */; };
-		6C0A55102282C0FD00BEB3A3 /* WLCommentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A550F2282C0FD00BEB3A3 /* WLCommentTableView.swift */; };
-		6C0A55122282C10D00BEB3A3 /* WLCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55112282C10D00BEB3A3 /* WLCommentTableViewCell.swift */; };
-		6C0A55142282C46000BEB3A3 /* WLCommentEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55132282C46000BEB3A3 /* WLCommentEmptyTableViewCell.swift */; };
-		6C0A55162282C48900BEB3A3 /* WLCommentNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55152282C48900BEB3A3 /* WLCommentNormalTableViewCell.swift */; };
-		6C0A55182282C5F000BEB3A3 /* WLCommentBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55172282C5F000BEB3A3 /* WLCommentBaseViewController+Create.swift */; };
-		6C0A551A2282C5FC00BEB3A3 /* WLComment1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55192282C5FC00BEB3A3 /* WLComment1ViewController.swift */; };
-		6C0A551C2282C66800BEB3A3 /* WLCommentNoMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A551B2282C66800BEB3A3 /* WLCommentNoMoreTableViewCell.swift */; };
-		6C0A55262282D29F00BEB3A3 /* WLContentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55252282D29F00BEB3A3 /* WLContentConfig.swift */; };
-		6C0A55282282D2BD00BEB3A3 /* WLContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55272282D2BD00BEB3A3 /* WLContentDelegate.swift */; };
-		6C0A552A2282D2E900BEB3A3 /* WLContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55292282D2E900BEB3A3 /* WLContentStyle.swift */; };
-		6C0A552C2282D32B00BEB3A3 /* WLContentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A552B2282D32B00BEB3A3 /* WLContentBaseViewController.swift */; };
-		6C0A552E2282D5C300BEB3A3 /* WLContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A552D2282D5C300BEB3A3 /* WLContentViewModel.swift */; };
-		6C0A55312282D6FE00BEB3A3 /* WLContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55302282D6FE00BEB3A3 /* WLContentTableView.swift */; };
-		6C0A55332282D96600BEB3A3 /* WLContentTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55322282D96600BEB3A3 /* WLContentTextTableViewCell.swift */; };
-		6C0A55352282D97700BEB3A3 /* WLContentImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55342282D97700BEB3A3 /* WLContentImageTableViewCell.swift */; };
-		6C0A55372282D98300BEB3A3 /* WLContentVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55362282D98300BEB3A3 /* WLContentVideoTableViewCell.swift */; };
-		6C0A55392282DEDF00BEB3A3 /* WLContent1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55382282DEDF00BEB3A3 /* WLContent1ViewController.swift */; };
-		6C0A553B2282DEEF00BEB3A3 /* WLContentBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A553A2282DEEF00BEB3A3 /* WLContentBaseViewController+Create.swift */; };
-		6C0A553D2282ECAB00BEB3A3 /* WLContentHeaderVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A553C2282ECAB00BEB3A3 /* WLContentHeaderVIew.swift */; };
-		6C0A55442282F0AC00BEB3A3 /* WLCircleDetailBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55432282F0AC00BEB3A3 /* WLCircleDetailBaseViewController.swift */; };
-		6C0A55462282F2A100BEB3A3 /* WLCircleDetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55452282F2A100BEB3A3 /* WLCircleDetailScrollView.swift */; };
-		6C0A55492282F87800BEB3A3 /* WLCircleDetailBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55482282F87800BEB3A3 /* WLCircleDetailBaseViewController+Create.swift */; };
-		6C0A554B22832CDB00BEB3A3 /* WLCommentTotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A554A22832CDB00BEB3A3 /* WLCommentTotalTableViewCell.swift */; };
-		6C0A554D2283302E00BEB3A3 /* WLCommentRectangleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A554C2283302E00BEB3A3 /* WLCommentRectangleTableViewCell.swift */; };
-		6C0A554F228330F600BEB3A3 /* WLCommentFailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A554E228330F600BEB3A3 /* WLCommentFailedTableViewCell.swift */; };
-		6C0A55512283D6EB00BEB3A3 /* WLCircleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A55502283D6EB00BEB3A3 /* WLCircleDetailViewModel.swift */; };
-		6C2DBACC228411EF006F47E1 /* WLCricleDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DBACB228411EF006F47E1 /* WLCricleDetail1ViewController.swift */; };
-		6C2DBACF22841320006F47E1 /* WLCircleDetailStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DBACE22841320006F47E1 /* WLCircleDetailStyle.swift */; };
-		6C2DBAD222841A76006F47E1 /* WLCircleDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DBAD122841A76006F47E1 /* WLCircleDetailDelegate.swift */; };
-		6C2DBAD522841A9E006F47E1 /* WLCommentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DBAD422841A9E006F47E1 /* WLCommentDelegate.swift */; };
-		6C5C10BA2280779D00B129EA /* WLVideoConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10B92280779D00B129EA /* WLVideoConvert.swift */; };
-		6C5C10BD228104DD00B129EA /* WLPublishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */; };
-		6C5C10EB228178E300B129EA /* WLCircleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10EA228178E300B129EA /* WLCircleConfig.swift */; };
-		6C5C10ED228178F900B129EA /* WLCircleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10EC228178F900B129EA /* WLCircleBaseViewController.swift */; };
-		6C5C10EF2281791500B129EA /* WLCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10EE2281791500B129EA /* WLCircleViewModel.swift */; };
-		6C5C10F222817F0700B129EA /* WLCircleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C10F122817F0700B129EA /* WLCircleStyle.swift */; };
-		6C5C11C92281A64600B129EA /* WLCircle1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C11C82281A64600B129EA /* WLCircle1ViewController.swift */; };
-		6C5C11CC2281A74800B129EA /* WLCircleBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C11CB2281A74800B129EA /* WLCircleBaseViewController+Create.swift */; };
-		6C5C11CF2281A9A700B129EA /* WLCircleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C11CE2281A9A700B129EA /* WLCircleDelegate.swift */; };
-		6C5C11D12281D13900B129EA /* WLCircleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C11D02281D13900B129EA /* WLCircleTableView.swift */; };
-		6C61F4602281D4D200F20F36 /* WLCircleBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61F45F2281D4D200F20F36 /* WLCircleBaseTableViewCell.swift */; };
-		6C61F4622281EC8300F20F36 /* WLCircle2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61F4612281EC8300F20F36 /* WLCircle2ViewController.swift */; };
-		6C61F4642281EDC700F20F36 /* WLCircle1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61F4632281EDC700F20F36 /* WLCircle1TableViewCell.swift */; };
-		6C61F4662281EDE900F20F36 /* WLCircle2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61F4652281EDE900F20F36 /* WLCircle2TableViewCell.swift */; };
+		6C5795EB228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5795EA228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift */; };
 		6C77ADC3227FD32900BAD69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADC2227FD32900BAD69B /* AppDelegate.swift */; };
 		6C77ADC5227FD32900BAD69B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77ADC4227FD32900BAD69B /* ViewController.swift */; };
 		6C77ADC8227FD32900BAD69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C77ADC6227FD32900BAD69B /* Main.storyboard */; };
@@ -203,31 +144,7 @@
 		6C77AF9A227FD36100BAD69B /* UIViewController+CheckLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEDC227FD36100BAD69B /* UIViewController+CheckLogin.swift */; };
 		6C77AF9B227FD36100BAD69B /* WLLoginBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEDE227FD36100BAD69B /* WLLoginBaseViewController+Create.swift */; };
 		6C77AF9C227FD36100BAD69B /* WLLoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AEE0227FD36100BAD69B /* WLLoginBaseViewController.swift */; };
-		6C77AFD5227FD7FD00BAD69B /* WLPublishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */; };
-		6C77AFD7227FD7FD00BAD69B /* WLPublish3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */; };
-		6C77AFD8227FD7FD00BAD69B /* WLPublish2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */; };
-		6C77AFD9227FD7FD00BAD69B /* WLPublish4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */; };
-		6C77AFDA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */; };
-		6C77AFDB227FD7FD00BAD69B /* WLPublishHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */; };
-		6C77AFDC227FD7FD00BAD69B /* WLPublishImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */; };
-		6C77AFDD227FD7FD00BAD69B /* WLPublishCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */; };
-		6C77AFDE227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */; };
-		6C77AFF2228011BF00BAD69B /* WLPublishTableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */; };
-		6C77AFF3228011BF00BAD69B /* WLPublishTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */; };
-		6C77AFF4228011BF00BAD69B /* WLPublishTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */; };
-		6C77AFF5228011BF00BAD69B /* WLPublishTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */; };
-		6C77AFF6228011BF00BAD69B /* WLPublishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */; };
-		6C77AFFB2280171600BAD69B /* WLPublish1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */; };
-		6C77AFFE228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */; };
 		6C77B000228032BF00BAD69B /* WLMainV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AFFF228032BF00BAD69B /* WLMainV.swift */; };
-		6C77B00922803D9000BAD69B /* WLPublishConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00322803D9000BAD69B /* WLPublishConfig.swift */; };
-		6C77B00A22803D9000BAD69B /* WLCircleBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00522803D9000BAD69B /* WLCircleBean.swift */; };
-		6C77B00B22803D9000BAD69B /* WLPublishBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00622803D9000BAD69B /* WLPublishBean.swift */; };
-		6C77B00C22803D9000BAD69B /* WLPublishStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B00822803D9000BAD69B /* WLPublishStyle.swift */; };
-		6C77B01722803DE800BAD69B /* WLTextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */; };
-		6C77B01822803DE800BAD69B /* WLTextEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */; };
-		6C77B01922803DE800BAD69B /* WLTextEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */; };
-		6C84B3CC2284454100DE50E7 /* WLCircle1Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C84B3CB2284454100DE50E7 /* WLCircle1Empty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,66 +166,7 @@
 
 /* Begin PBXFileReference section */
 		691C05400282E99FEF96A0E0 /* Pods-WLProfileKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLProfileKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6C0A54E42282761000BEB3A3 /* WLReportConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportConfig.swift; sourceTree = "<group>"; };
-		6C0A54E6228277D700BEB3A3 /* WLReportStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportStyle.swift; sourceTree = "<group>"; };
-		6C0A54E82282786100BEB3A3 /* WLReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportViewModel.swift; sourceTree = "<group>"; };
-		6C0A54EB2282796C00BEB3A3 /* WLReportBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportBean.swift; sourceTree = "<group>"; };
-		6C0A54ED22827B7000BEB3A3 /* WLReportTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportTableView.swift; sourceTree = "<group>"; };
-		6C0A54EF22827FE100BEB3A3 /* WLReportBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportBaseViewController.swift; sourceTree = "<group>"; };
-		6C0A54F12282809D00BEB3A3 /* WLReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A54F3228282FD00BEB3A3 /* WLReport1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReport1TableViewCell.swift; sourceTree = "<group>"; };
-		6C0A54F5228284D800BEB3A3 /* WLReport1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReport1ViewController.swift; sourceTree = "<group>"; };
-		6C0A54F82282857000BEB3A3 /* WLReportBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLReportBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C0A54FA2282A8E500BEB3A3 /* WLReportFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReportFooterView.swift; sourceTree = "<group>"; };
-		6C0A55052282B79900BEB3A3 /* WLCommentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentConfig.swift; sourceTree = "<group>"; };
-		6C0A55072282B7DD00BEB3A3 /* WLCommentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentStyle.swift; sourceTree = "<group>"; };
-		6C0A55092282B80C00BEB3A3 /* WLCommentBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentBean.swift; sourceTree = "<group>"; };
-		6C0A550B2282BA0600BEB3A3 /* WLCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentViewModel.swift; sourceTree = "<group>"; };
-		6C0A550D2282BCAF00BEB3A3 /* WLCommentBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentBaseViewController.swift; sourceTree = "<group>"; };
-		6C0A550F2282C0FD00BEB3A3 /* WLCommentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentTableView.swift; sourceTree = "<group>"; };
-		6C0A55112282C10D00BEB3A3 /* WLCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55132282C46000BEB3A3 /* WLCommentEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentEmptyTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55152282C48900BEB3A3 /* WLCommentNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentNormalTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55172282C5F000BEB3A3 /* WLCommentBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLCommentBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C0A55192282C5FC00BEB3A3 /* WLComment1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLComment1ViewController.swift; sourceTree = "<group>"; };
-		6C0A551B2282C66800BEB3A3 /* WLCommentNoMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentNoMoreTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55252282D29F00BEB3A3 /* WLContentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentConfig.swift; sourceTree = "<group>"; };
-		6C0A55272282D2BD00BEB3A3 /* WLContentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentDelegate.swift; sourceTree = "<group>"; };
-		6C0A55292282D2E900BEB3A3 /* WLContentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentStyle.swift; sourceTree = "<group>"; };
-		6C0A552B2282D32B00BEB3A3 /* WLContentBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentBaseViewController.swift; sourceTree = "<group>"; };
-		6C0A552D2282D5C300BEB3A3 /* WLContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentViewModel.swift; sourceTree = "<group>"; };
-		6C0A55302282D6FE00BEB3A3 /* WLContentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentTableView.swift; sourceTree = "<group>"; };
-		6C0A55322282D96600BEB3A3 /* WLContentTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentTextTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55342282D97700BEB3A3 /* WLContentImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentImageTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55362282D98300BEB3A3 /* WLContentVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentVideoTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55382282DEDF00BEB3A3 /* WLContent1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContent1ViewController.swift; sourceTree = "<group>"; };
-		6C0A553A2282DEEF00BEB3A3 /* WLContentBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLContentBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C0A553C2282ECAB00BEB3A3 /* WLContentHeaderVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLContentHeaderVIew.swift; sourceTree = "<group>"; };
-		6C0A55432282F0AC00BEB3A3 /* WLCircleDetailBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDetailBaseViewController.swift; sourceTree = "<group>"; };
-		6C0A55452282F2A100BEB3A3 /* WLCircleDetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDetailScrollView.swift; sourceTree = "<group>"; };
-		6C0A55482282F87800BEB3A3 /* WLCircleDetailBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLCircleDetailBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C0A554A22832CDB00BEB3A3 /* WLCommentTotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentTotalTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A554C2283302E00BEB3A3 /* WLCommentRectangleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentRectangleTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A554E228330F600BEB3A3 /* WLCommentFailedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentFailedTableViewCell.swift; sourceTree = "<group>"; };
-		6C0A55502283D6EB00BEB3A3 /* WLCircleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDetailViewModel.swift; sourceTree = "<group>"; };
-		6C2DBACB228411EF006F47E1 /* WLCricleDetail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCricleDetail1ViewController.swift; sourceTree = "<group>"; };
-		6C2DBACE22841320006F47E1 /* WLCircleDetailStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDetailStyle.swift; sourceTree = "<group>"; };
-		6C2DBAD122841A76006F47E1 /* WLCircleDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDetailDelegate.swift; sourceTree = "<group>"; };
-		6C2DBAD422841A9E006F47E1 /* WLCommentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommentDelegate.swift; sourceTree = "<group>"; };
-		6C5C10B92280779D00B129EA /* WLVideoConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVideoConvert.swift; sourceTree = "<group>"; };
-		6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLPublishDelegate.swift; sourceTree = "<group>"; };
-		6C5C10EA228178E300B129EA /* WLCircleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleConfig.swift; sourceTree = "<group>"; };
-		6C5C10EC228178F900B129EA /* WLCircleBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleBaseViewController.swift; sourceTree = "<group>"; };
-		6C5C10EE2281791500B129EA /* WLCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleViewModel.swift; sourceTree = "<group>"; };
-		6C5C10F122817F0700B129EA /* WLCircleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleStyle.swift; sourceTree = "<group>"; };
-		6C5C11C82281A64600B129EA /* WLCircle1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircle1ViewController.swift; sourceTree = "<group>"; };
-		6C5C11CB2281A74800B129EA /* WLCircleBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLCircleBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C5C11CE2281A9A700B129EA /* WLCircleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleDelegate.swift; sourceTree = "<group>"; };
-		6C5C11D02281D13900B129EA /* WLCircleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleTableView.swift; sourceTree = "<group>"; };
-		6C61F45F2281D4D200F20F36 /* WLCircleBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircleBaseTableViewCell.swift; sourceTree = "<group>"; };
-		6C61F4612281EC8300F20F36 /* WLCircle2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircle2ViewController.swift; sourceTree = "<group>"; };
-		6C61F4632281EDC700F20F36 /* WLCircle1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircle1TableViewCell.swift; sourceTree = "<group>"; };
-		6C61F4652281EDE900F20F36 /* WLCircle2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircle2TableViewCell.swift; sourceTree = "<group>"; };
+		6C5795EA228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProfileViewControllerDelegate.swift; sourceTree = "<group>"; };
 		6C77ADBF227FD32900BAD69B /* WLProfileKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLProfileKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C77ADC2227FD32900BAD69B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C77ADC4227FD32900BAD69B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -450,31 +308,7 @@
 		6C77AEDC227FD36100BAD69B /* UIViewController+CheckLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CheckLogin.swift"; sourceTree = "<group>"; };
 		6C77AEDE227FD36100BAD69B /* WLLoginBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLLoginBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C77AEE0227FD36100BAD69B /* WLLoginBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginBaseViewController.swift; sourceTree = "<group>"; };
-		6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishViewModel.swift; sourceTree = "<group>"; };
-		6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish3ViewController.swift; sourceTree = "<group>"; };
-		6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish2ViewController.swift; sourceTree = "<group>"; };
-		6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish4ViewController.swift; sourceTree = "<group>"; };
-		6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishCollectionViewCell.swift; sourceTree = "<group>"; };
-		6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishHeaderView.swift; sourceTree = "<group>"; };
-		6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishImageViewCell.swift; sourceTree = "<group>"; };
-		6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishCollectionView.swift; sourceTree = "<group>"; };
-		6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPublishBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableBaseViewController.swift; sourceTree = "<group>"; };
-		6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableFooterView.swift; sourceTree = "<group>"; };
-		6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableView.swift; sourceTree = "<group>"; };
-		6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableHeaderView.swift; sourceTree = "<group>"; };
-		6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableViewCell.swift; sourceTree = "<group>"; };
-		6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish1ViewController.swift; sourceTree = "<group>"; };
-		6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLPublishTableBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C77AFFF228032BF00BAD69B /* WLMainV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLMainV.swift; sourceTree = "<group>"; };
-		6C77B00322803D9000BAD69B /* WLPublishConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishConfig.swift; sourceTree = "<group>"; };
-		6C77B00522803D9000BAD69B /* WLCircleBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleBean.swift; sourceTree = "<group>"; };
-		6C77B00622803D9000BAD69B /* WLPublishBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishBean.swift; sourceTree = "<group>"; };
-		6C77B00822803D9000BAD69B /* WLPublishStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishStyle.swift; sourceTree = "<group>"; };
-		6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditViewController.swift; sourceTree = "<group>"; };
-		6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLTextEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditBaseViewController.swift; sourceTree = "<group>"; };
-		6C84B3CB2284454100DE50E7 /* WLCircle1Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCircle1Empty.swift; sourceTree = "<group>"; };
 		BC98F6013F3220F4CB2FFB28 /* libPods-WLProfileKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLProfileKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9F81768A29FC3C6A83C5D6 /* Pods-WLProfileKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLProfileKitDemo.release.xcconfig"; path = "Target Support Files/Pods-WLProfileKitDemo/Pods-WLProfileKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -514,432 +348,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6C0A54DD2282760100BEB3A3 /* Report */ = {
+		6C5795E9228C03470000AD07 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				6C0A54F72282856100BEB3A3 /* Create */,
-				6C0A54EA2282791300BEB3A3 /* Bean */,
-				6C0A54DE2282760100BEB3A3 /* Config */,
-				6C0A54DF2282760100BEB3A3 /* Style */,
-				6C0A54E02282760100BEB3A3 /* VM */,
-				6C0A54E12282760100BEB3A3 /* VC */,
-				6C0A54E22282760100BEB3A3 /* View */,
-				6C0A54E32282760100BEB3A3 /* Base */,
-			);
-			path = Report;
-			sourceTree = "<group>";
-		};
-		6C0A54DE2282760100BEB3A3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54E42282761000BEB3A3 /* WLReportConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C0A54DF2282760100BEB3A3 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54E6228277D700BEB3A3 /* WLReportStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C0A54E02282760100BEB3A3 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54E82282786100BEB3A3 /* WLReportViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C0A54E12282760100BEB3A3 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54F5228284D800BEB3A3 /* WLReport1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C0A54E22282760100BEB3A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54ED22827B7000BEB3A3 /* WLReportTableView.swift */,
-				6C0A54F12282809D00BEB3A3 /* WLReportTableViewCell.swift */,
-				6C0A54F3228282FD00BEB3A3 /* WLReport1TableViewCell.swift */,
-				6C0A54FA2282A8E500BEB3A3 /* WLReportFooterView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C0A54E32282760100BEB3A3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54EF22827FE100BEB3A3 /* WLReportBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C0A54EA2282791300BEB3A3 /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54EB2282796C00BEB3A3 /* WLReportBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C0A54F72282856100BEB3A3 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A54F82282857000BEB3A3 /* WLReportBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C0A54FC2282B74300BEB3A3 /* Comment */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBAD322841A85006F47E1 /* Delegate */,
-				6C0A54FD2282B74300BEB3A3 /* Config */,
-				6C0A54FE2282B74300BEB3A3 /* Bean */,
-				6C0A54FF2282B74300BEB3A3 /* Style */,
-				6C0A55002282B74300BEB3A3 /* VM */,
-				6C0A55012282B74300BEB3A3 /* VC */,
-				6C0A55022282B74300BEB3A3 /* View */,
-				6C0A55032282B74300BEB3A3 /* Create */,
-				6C0A55042282B74300BEB3A3 /* Base */,
-			);
-			path = Comment;
-			sourceTree = "<group>";
-		};
-		6C0A54FD2282B74300BEB3A3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55052282B79900BEB3A3 /* WLCommentConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C0A54FE2282B74300BEB3A3 /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55092282B80C00BEB3A3 /* WLCommentBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C0A54FF2282B74300BEB3A3 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55072282B7DD00BEB3A3 /* WLCommentStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C0A55002282B74300BEB3A3 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A550B2282BA0600BEB3A3 /* WLCommentViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C0A55012282B74300BEB3A3 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55192282C5FC00BEB3A3 /* WLComment1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C0A55022282B74300BEB3A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A550F2282C0FD00BEB3A3 /* WLCommentTableView.swift */,
-				6C0A55112282C10D00BEB3A3 /* WLCommentTableViewCell.swift */,
-				6C0A55132282C46000BEB3A3 /* WLCommentEmptyTableViewCell.swift */,
-				6C0A55152282C48900BEB3A3 /* WLCommentNormalTableViewCell.swift */,
-				6C0A551B2282C66800BEB3A3 /* WLCommentNoMoreTableViewCell.swift */,
-				6C0A554A22832CDB00BEB3A3 /* WLCommentTotalTableViewCell.swift */,
-				6C0A554C2283302E00BEB3A3 /* WLCommentRectangleTableViewCell.swift */,
-				6C0A554E228330F600BEB3A3 /* WLCommentFailedTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C0A55032282B74300BEB3A3 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55172282C5F000BEB3A3 /* WLCommentBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C0A55042282B74300BEB3A3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A550D2282BCAF00BEB3A3 /* WLCommentBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C0A551D2282D29200BEB3A3 /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A552F2282D6F200BEB3A3 /* View */,
-				6C0A551E2282D29200BEB3A3 /* Config */,
-				6C0A551F2282D29200BEB3A3 /* Delegate */,
-				6C0A55202282D29200BEB3A3 /* Style */,
-				6C0A55212282D29200BEB3A3 /* VM */,
-				6C0A55222282D29200BEB3A3 /* VC */,
-				6C0A55232282D29200BEB3A3 /* Create */,
-				6C0A55242282D29200BEB3A3 /* Base */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		6C0A551E2282D29200BEB3A3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55252282D29F00BEB3A3 /* WLContentConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C0A551F2282D29200BEB3A3 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55272282D2BD00BEB3A3 /* WLContentDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		6C0A55202282D29200BEB3A3 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55292282D2E900BEB3A3 /* WLContentStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C0A55212282D29200BEB3A3 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A552D2282D5C300BEB3A3 /* WLContentViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C0A55222282D29200BEB3A3 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55382282DEDF00BEB3A3 /* WLContent1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C0A55232282D29200BEB3A3 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A553A2282DEEF00BEB3A3 /* WLContentBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C0A55242282D29200BEB3A3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A552B2282D32B00BEB3A3 /* WLContentBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C0A552F2282D6F200BEB3A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55302282D6FE00BEB3A3 /* WLContentTableView.swift */,
-				6C0A55322282D96600BEB3A3 /* WLContentTextTableViewCell.swift */,
-				6C0A55342282D97700BEB3A3 /* WLContentImageTableViewCell.swift */,
-				6C0A55362282D98300BEB3A3 /* WLContentVideoTableViewCell.swift */,
-				6C0A553C2282ECAB00BEB3A3 /* WLContentHeaderVIew.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C0A553E2282F09800BEB3A3 /* CircleDetail */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBAD0228418F8006F47E1 /* Delegate */,
-				6C2DBACD22841310006F47E1 /* Style */,
-				6C0A55472282F5BC00BEB3A3 /* Create */,
-				6C0A553F2282F09800BEB3A3 /* VM */,
-				6C0A55402282F09800BEB3A3 /* VC */,
-				6C0A55412282F09800BEB3A3 /* View */,
-				6C0A55422282F09800BEB3A3 /* Base */,
-			);
-			path = CircleDetail;
-			sourceTree = "<group>";
-		};
-		6C0A553F2282F09800BEB3A3 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55502283D6EB00BEB3A3 /* WLCircleDetailViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C0A55402282F09800BEB3A3 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBACB228411EF006F47E1 /* WLCricleDetail1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C0A55412282F09800BEB3A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55452282F2A100BEB3A3 /* WLCircleDetailScrollView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C0A55422282F09800BEB3A3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55432282F0AC00BEB3A3 /* WLCircleDetailBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C0A55472282F5BC00BEB3A3 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C0A55482282F87800BEB3A3 /* WLCircleDetailBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C2DBACD22841310006F47E1 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBACE22841320006F47E1 /* WLCircleDetailStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C2DBAD0228418F8006F47E1 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBAD122841A76006F47E1 /* WLCircleDetailDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		6C2DBAD322841A85006F47E1 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C2DBAD422841A9E006F47E1 /* WLCommentDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		6C5C10B82280779100B129EA /* VideoConvert */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10B92280779D00B129EA /* WLVideoConvert.swift */,
-			);
-			path = VideoConvert;
-			sourceTree = "<group>";
-		};
-		6C5C10BB228104D100B129EA /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10BC228104DD00B129EA /* WLPublishDelegate.swift */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		6C5C10E2228178D300B129EA /* Circle */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C11CD2281A99D00B129EA /* Delegate */,
-				6C5C11CA2281A70B00B129EA /* Create */,
-				6C5C10F022817EF900B129EA /* Style */,
-				6C5C10E3228178D300B129EA /* Config */,
-				6C5C10E4228178D300B129EA /* VM */,
-				6C5C10E5228178D300B129EA /* VC */,
-				6C5C10E7228178D300B129EA /* View */,
-				6C5C10E8228178D300B129EA /* Base */,
-			);
-			path = Circle;
-			sourceTree = "<group>";
-		};
-		6C5C10E3228178D300B129EA /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10EA228178E300B129EA /* WLCircleConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C5C10E4228178D300B129EA /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10EE2281791500B129EA /* WLCircleViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C5C10E5228178D300B129EA /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C11C82281A64600B129EA /* WLCircle1ViewController.swift */,
-				6C61F4612281EC8300F20F36 /* WLCircle2ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C5C10E7228178D300B129EA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C11D02281D13900B129EA /* WLCircleTableView.swift */,
-				6C61F45F2281D4D200F20F36 /* WLCircleBaseTableViewCell.swift */,
-				6C61F4632281EDC700F20F36 /* WLCircle1TableViewCell.swift */,
-				6C61F4652281EDE900F20F36 /* WLCircle2TableViewCell.swift */,
-				6C84B3CB2284454100DE50E7 /* WLCircle1Empty.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C5C10E8228178D300B129EA /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10EC228178F900B129EA /* WLCircleBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C5C10F022817EF900B129EA /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10F122817F0700B129EA /* WLCircleStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C5C11CA2281A70B00B129EA /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C11CB2281A74800B129EA /* WLCircleBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C5C11CD2281A99D00B129EA /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C11CE2281A9A700B129EA /* WLCircleDelegate.swift */,
+				6C5795EA228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -1002,12 +414,6 @@
 		6C77ADF0227FD36100BAD69B /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				6C0A553E2282F09800BEB3A3 /* CircleDetail */,
-				6C0A551D2282D29200BEB3A3 /* Content */,
-				6C0A54FC2282B74300BEB3A3 /* Comment */,
-				6C0A54DD2282760100BEB3A3 /* Report */,
-				6C5C10E2228178D300B129EA /* Circle */,
-				6C77AFBB227FD7FD00BAD69B /* Publish */,
 				6C77ADF1227FD36100BAD69B /* RXCocoa */,
 				6C77ADF6227FD36100BAD69B /* Prepare */,
 				6C77AE15227FD36100BAD69B /* Project */,
@@ -1604,6 +1010,7 @@
 		6C77AE7F227FD36100BAD69B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6C5795E9228C03470000AD07 /* Delegate */,
 				6C77AE80227FD36100BAD69B /* Config */,
 				6C77AE82227FD36100BAD69B /* Bean */,
 				6C77AE84227FD36100BAD69B /* Style */,
@@ -2029,182 +1436,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		6C77AFBB227FD7FD00BAD69B /* Publish */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B00122803D9000BAD69B /* Prepare */,
-				6C77AFE12280108800BAD69B /* Collection */,
-				6C77AFE02280107400BAD69B /* Table */,
-				6C77AFC2227FD7FD00BAD69B /* VM */,
-				6C77AFC4227FD7FD00BAD69B /* VC */,
-				6C77AFC9227FD7FD00BAD69B /* View */,
-				6C77AFCE227FD7FD00BAD69B /* Create */,
-			);
-			path = Publish;
-			sourceTree = "<group>";
-		};
-		6C77AFC2227FD7FD00BAD69B /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFC3227FD7FD00BAD69B /* WLPublishViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C77AFC4227FD7FD00BAD69B /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFC6227FD7FD00BAD69B /* WLPublish3ViewController.swift */,
-				6C77AFC7227FD7FD00BAD69B /* WLPublish2ViewController.swift */,
-				6C77AFC8227FD7FD00BAD69B /* WLPublish4ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C77AFC9227FD7FD00BAD69B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFCA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift */,
-				6C77AFCB227FD7FD00BAD69B /* WLPublishHeaderView.swift */,
-				6C77AFCC227FD7FD00BAD69B /* WLPublishImageViewCell.swift */,
-				6C77AFCD227FD7FD00BAD69B /* WLPublishCollectionView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C77AFCE227FD7FD00BAD69B /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFCF227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C77AFE02280107400BAD69B /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFFC228018ED00BAD69B /* Create */,
-				6C77AFEB228011BF00BAD69B /* Base */,
-				6C77AFEA228011BF00BAD69B /* VC */,
-				6C77AFED228011BF00BAD69B /* View */,
-			);
-			path = Table;
-			sourceTree = "<group>";
-		};
-		6C77AFE12280108800BAD69B /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		6C77AFEA228011BF00BAD69B /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFFA2280171600BAD69B /* WLPublish1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C77AFEB228011BF00BAD69B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFEC228011BF00BAD69B /* WLPublishTableBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C77AFED228011BF00BAD69B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFEE228011BF00BAD69B /* WLPublishTableFooterView.swift */,
-				6C77AFEF228011BF00BAD69B /* WLPublishTableView.swift */,
-				6C77AFF0228011BF00BAD69B /* WLPublishTableHeaderView.swift */,
-				6C77AFF1228011BF00BAD69B /* WLPublishTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C77AFFC228018ED00BAD69B /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AFFD228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C77B00122803D9000BAD69B /* Prepare */ = {
-			isa = PBXGroup;
-			children = (
-				6C5C10BB228104D100B129EA /* Delegate */,
-				6C5C10B82280779100B129EA /* VideoConvert */,
-				6C77B00D22803DE800BAD69B /* TextEdit */,
-				6C77B00222803D9000BAD69B /* Config */,
-				6C77B00422803D9000BAD69B /* Bean */,
-				6C77B00722803D9000BAD69B /* Style */,
-			);
-			path = Prepare;
-			sourceTree = "<group>";
-		};
-		6C77B00222803D9000BAD69B /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B00322803D9000BAD69B /* WLPublishConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C77B00422803D9000BAD69B /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B00522803D9000BAD69B /* WLCircleBean.swift */,
-				6C77B00622803D9000BAD69B /* WLPublishBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C77B00722803D9000BAD69B /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B00822803D9000BAD69B /* WLPublishStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C77B00D22803DE800BAD69B /* TextEdit */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B01022803DE800BAD69B /* VC */,
-				6C77B01222803DE800BAD69B /* Create */,
-				6C77B01422803DE800BAD69B /* Base */,
-			);
-			path = TextEdit;
-			sourceTree = "<group>";
-		};
-		6C77B01022803DE800BAD69B /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B01122803DE800BAD69B /* WLTextEditViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C77B01222803DE800BAD69B /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B01322803DE800BAD69B /* WLTextEditBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C77B01422803DE800BAD69B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C77B01522803DE800BAD69B /* WLTextEditBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		F4DEA96FE0AB1D68C77FDC0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2391,207 +1622,125 @@
 				6C77AF6D227FD36100BAD69B /* WLProfileStyle.swift in Sources */,
 				6C77AF54227FD36100BAD69B /* WLProtocolViewModel.swift in Sources */,
 				6C77AF34227FD36100BAD69B /* WLSwiftLogin4ViewController.swift in Sources */,
-				6C0A54F92282857000BEB3A3 /* WLReportBaseViewController+Create.swift in Sources */,
-				6C0A55372282D98300BEB3A3 /* WLContentVideoTableViewCell.swift in Sources */,
 				6C77AF43227FD36100BAD69B /* WLPassword4ViewController.swift in Sources */,
-				6C0A55182282C5F000BEB3A3 /* WLCommentBaseViewController+Create.swift in Sources */,
 				6C77AF73227FD36100BAD69B /* WLProfileHeaderView.swift in Sources */,
-				6C84B3CC2284454100DE50E7 /* WLCircle1Empty.swift in Sources */,
 				6C77AF56227FD36100BAD69B /* WLProtocolViewController+Create.swift in Sources */,
 				6C77AF99227FD36100BAD69B /* WLLogin4ViewController.swift in Sources */,
 				6C77AF4E227FD36100BAD69B /* WLAboutViewModel.swift in Sources */,
-				6C0A54F22282809D00BEB3A3 /* WLReportTableViewCell.swift in Sources */,
-				6C77AFDB227FD7FD00BAD69B /* WLPublishHeaderView.swift in Sources */,
 				6C77AF9C227FD36100BAD69B /* WLLoginBaseViewController.swift in Sources */,
-				6C0A552E2282D5C300BEB3A3 /* WLContentViewModel.swift in Sources */,
 				6C77AF60227FD36100BAD69B /* WLWelComeBaseViewController.swift in Sources */,
-				6C0A55442282F0AC00BEB3A3 /* WLCircleDetailBaseViewController.swift in Sources */,
 				6C77AF77227FD36100BAD69B /* WLNameUpdateViewController.swift in Sources */,
 				6C77AF3F227FD36100BAD69B /* WLPassword2ViewController.swift in Sources */,
 				6C77AF74227FD36100BAD69B /* WLProfileViewController+Create.swift in Sources */,
 				6C77AF1C227FD36100BAD69B /* TextField+RX.swift in Sources */,
 				6C77AF26227FD36100BAD69B /* WLUserReq.swift in Sources */,
-				6C2DBAD222841A76006F47E1 /* WLCircleDetailDelegate.swift in Sources */,
-				6C77AFD9227FD7FD00BAD69B /* WLPublish4ViewController.swift in Sources */,
 				6C77AF8E227FD36100BAD69B /* WLBlackListBaseTableViewCell.swift in Sources */,
 				6C77AF5A227FD36100BAD69B /* WLWelcomViewModel.swift in Sources */,
-				6C77AFF6228011BF00BAD69B /* WLPublishTableViewCell.swift in Sources */,
-				6C5C10ED228178F900B129EA /* WLCircleBaseViewController.swift in Sources */,
 				6C77AF6E227FD36100BAD69B /* WLProfileConfigManager.swift in Sources */,
 				6C77AF28227FD36100BAD69B /* WLMainApi.swift in Sources */,
-				6C0A55462282F2A100BEB3A3 /* WLCircleDetailScrollView.swift in Sources */,
 				6C77AF70227FD36100BAD69B /* WLProfileViewController.swift in Sources */,
 				6C77AF22227FD36100BAD69B /* WLConfig.swift in Sources */,
-				6C61F4622281EC8300F20F36 /* WLCircle2ViewController.swift in Sources */,
-				6C5C11CC2281A74800B129EA /* WLCircleBaseViewController+Create.swift in Sources */,
 				6C77AF83227FD36100BAD69B /* WLSettingViewController.swift in Sources */,
-				6C77AFD7227FD7FD00BAD69B /* WLPublish3ViewController.swift in Sources */,
-				6C0A54F4228282FD00BEB3A3 /* WLReport1TableViewCell.swift in Sources */,
-				6C77B01822803DE800BAD69B /* WLTextEditBaseViewController+Create.swift in Sources */,
 				6C77AF55227FD36100BAD69B /* WLProtocolViewController.swift in Sources */,
 				6C77AF21227FD36100BAD69B /* UIViewController+ActionShow.swift in Sources */,
-				6C77B01722803DE800BAD69B /* WLTextEditViewController.swift in Sources */,
 				6C77AF4D227FD36100BAD69B /* WLAboutType.swift in Sources */,
-				6C2DBAD522841A9E006F47E1 /* WLCommentDelegate.swift in Sources */,
 				6C77AF71227FD36100BAD69B /* WLProfileTableView.swift in Sources */,
 				6C77AF96227FD36100BAD69B /* WLLogin3ViewController.swift in Sources */,
 				6C77AF8A227FD36100BAD69B /* WLBlackListViewModel.swift in Sources */,
-				6C0A54E92282786100BEB3A3 /* WLReportViewModel.swift in Sources */,
-				6C5C10EF2281791500B129EA /* WLCircleViewModel.swift in Sources */,
 				6C77AF2E227FD36100BAD69B /* WLImagePickerImpl.swift in Sources */,
-				6C0A552A2282D2E900BEB3A3 /* WLContentStyle.swift in Sources */,
-				6C5C10F222817F0700B129EA /* WLCircleStyle.swift in Sources */,
 				6C77AF65227FD36100BAD69B /* WLFocusViewController.swift in Sources */,
 				6C77AF67227FD36100BAD69B /* WLFocusListTableView.swift in Sources */,
 				6C77AF24227FD36100BAD69B /* WLUserBean.swift in Sources */,
-				6C77B00B22803D9000BAD69B /* WLPublishBean.swift in Sources */,
 				6C77AF7D227FD36100BAD69B /* WLUserInfoViewController.swift in Sources */,
 				6C77AF38227FD36100BAD69B /* WLModifyPwdViewModel.swift in Sources */,
-				6C5C11CF2281A9A700B129EA /* WLCircleDelegate.swift in Sources */,
-				6C0A552C2282D32B00BEB3A3 /* WLContentBaseViewController.swift in Sources */,
 				6C77AF4F227FD36100BAD69B /* WLAboutViewController.swift in Sources */,
 				6C77AF7C227FD36100BAD69B /* WLUserInfoViewModel.swift in Sources */,
-				6C77AFD5227FD7FD00BAD69B /* WLPublishViewModel.swift in Sources */,
-				6C77AFF5228011BF00BAD69B /* WLPublishTableHeaderView.swift in Sources */,
 				6C77AF39227FD36100BAD69B /* WLPwdViewModel.swift in Sources */,
 				6C77AF53227FD36100BAD69B /* WLAboutViewController+Create.swift in Sources */,
-				6C0A55352282D97700BEB3A3 /* WLContentImageTableViewCell.swift in Sources */,
 				6C77AF6F227FD36100BAD69B /* WLProfileViewModel.swift in Sources */,
 				6C77AF6C227FD36100BAD69B /* WLProfileType.swift in Sources */,
 				6C77AF57227FD36100BAD69B /* WLWelComeConfig.swift in Sources */,
 				6C77AF3B227FD36100BAD69B /* WLModifyPwd2ViewController.swift in Sources */,
-				6C2DBACF22841320006F47E1 /* WLCircleDetailStyle.swift in Sources */,
 				6C77AF2B227FD36100BAD69B /* WLTextCheck.swift in Sources */,
 				6C77AF92227FD36100BAD69B /* WLLoginConfig.swift in Sources */,
 				6C77B000228032BF00BAD69B /* WLMainV.swift in Sources */,
 				6C77AF88227FD36100BAD69B /* WLBlackListBean.swift in Sources */,
-				6C77AFFB2280171600BAD69B /* WLPublish1ViewController.swift in Sources */,
 				6C77AF29227FD36100BAD69B /* WLUserApi.swift in Sources */,
 				6C77AF27227FD36100BAD69B /* WLGlobalManager.swift in Sources */,
 				6C77AF3C227FD36100BAD69B /* WLModifyPwd3ViewController.swift in Sources */,
 				6C77AF66227FD36100BAD69B /* WLFocusList1Empty.swift in Sources */,
 				6C77AF97227FD36100BAD69B /* WLLogin1ViewController.swift in Sources */,
 				6C77AF8D227FD36100BAD69B /* WLBlackListTableView.swift in Sources */,
-				6C0A55512283D6EB00BEB3A3 /* WLCircleDetailViewModel.swift in Sources */,
 				6C77AF20227FD36100BAD69B /* WLUserInfoCache.swift in Sources */,
-				6C77B00A22803D9000BAD69B /* WLCircleBean.swift in Sources */,
 				6C77AF50227FD36100BAD69B /* WLAboutTableViewCell.swift in Sources */,
 				6C77AF30227FD36100BAD69B /* WLSwiftLoginViewModel.swift in Sources */,
-				6C0A55122282C10D00BEB3A3 /* WLCommentTableViewCell.swift in Sources */,
 				6C77AF4B227FD36100BAD69B /* WLSignatureBaseViewController.swift in Sources */,
 				6C77AF44227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift in Sources */,
 				6C77AF48227FD36100BAD69B /* WLSignatureViewModel.swift in Sources */,
 				6C77AF45227FD36100BAD69B /* WLModifyPwdBaseViewController+Create.swift in Sources */,
-				6C0A55142282C46000BEB3A3 /* WLCommentEmptyTableViewCell.swift in Sources */,
 				6C77ADC5227FD32900BAD69B /* ViewController.swift in Sources */,
 				6C77AF82227FD36100BAD69B /* WLSettingViewModel.swift in Sources */,
 				6C77AF81227FD36100BAD69B /* WLSettingType.swift in Sources */,
-				6C0A54EC2282796C00BEB3A3 /* WLReportBean.swift in Sources */,
 				6C77AF75227FD36100BAD69B /* WLProfileBaseViewController.swift in Sources */,
-				6C0A54EE22827B7000BEB3A3 /* WLReportTableView.swift in Sources */,
-				6C5C10BA2280779D00B129EA /* WLVideoConvert.swift in Sources */,
-				6C0A550A2282B80C00BEB3A3 /* WLCommentBean.swift in Sources */,
 				6C77AF63227FD36100BAD69B /* WLFocusListStyle.swift in Sources */,
 				6C77AF7B227FD36100BAD69B /* WLUserInfoType.swift in Sources */,
 				6C77AF8C227FD36100BAD69B /* WLBlackList1Empty.swift in Sources */,
+				6C5795EB228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift in Sources */,
 				6C77AF9B227FD36100BAD69B /* WLLoginBaseViewController+Create.swift in Sources */,
 				6C77AF85227FD36100BAD69B /* WLSettingTableView.swift in Sources */,
 				6C77AF4C227FD36100BAD69B /* WLAboutConfig.swift in Sources */,
-				6C77AFDC227FD7FD00BAD69B /* WLPublishImageViewCell.swift in Sources */,
 				6C77AF58227FD36100BAD69B /* WLWelComeBaseDelegate.swift in Sources */,
 				6C77ADC3227FD32900BAD69B /* AppDelegate.swift in Sources */,
-				6C77AFDA227FD7FD00BAD69B /* WLPublishCollectionViewCell.swift in Sources */,
 				6C77AF2D227FD36100BAD69B /* WLVideoPickerImpl.swift in Sources */,
 				6C77AF86227FD36100BAD69B /* WLSettingViewController+Create.swift in Sources */,
-				6C0A554D2283302E00BEB3A3 /* WLCommentRectangleTableViewCell.swift in Sources */,
 				6C77AF8F227FD36100BAD69B /* WLBlackList1TableViewCell.swift in Sources */,
 				6C77AF52227FD36100BAD69B /* WLAboutHeaderView.swift in Sources */,
 				6C77AF42227FD36100BAD69B /* WLPassword5ViewController.swift in Sources */,
 				6C77AF3A227FD36100BAD69B /* WLModifyPwd1ViewController.swift in Sources */,
 				6C77AF68227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift in Sources */,
-				6C0A55312282D6FE00BEB3A3 /* WLContentTableView.swift in Sources */,
-				6C0A553D2282ECAB00BEB3A3 /* WLContentHeaderVIew.swift in Sources */,
 				6C77AF90227FD36100BAD69B /* WLBlackListViewController+Create.swift in Sources */,
 				6C77AF5F227FD36100BAD69B /* WLWelComeBaseViewController+Create.swift in Sources */,
-				6C0A55392282DEDF00BEB3A3 /* WLContent1ViewController.swift in Sources */,
 				6C77AF6A227FD36100BAD69B /* WLFocusViewController+Create.swift in Sources */,
 				6C77AF25227FD36100BAD69B /* WLBaseBean.swift in Sources */,
-				6C0A55282282D2BD00BEB3A3 /* WLContentDelegate.swift in Sources */,
 				6C77AF95227FD36100BAD69B /* WLLogin2ViewController.swift in Sources */,
-				6C5C10BD228104DD00B129EA /* WLPublishDelegate.swift in Sources */,
 				6C77AF1E227FD36100BAD69B /* WLUserResult.swift in Sources */,
 				6C77AF41227FD36100BAD69B /* WLPassword1ViewController.swift in Sources */,
-				6C0A54FB2282A8E500BEB3A3 /* WLReportFooterView.swift in Sources */,
-				6C0A554F228330F600BEB3A3 /* WLCommentFailedTableViewCell.swift in Sources */,
 				6C77AF49227FD36100BAD69B /* WLSignatureViewController.swift in Sources */,
 				6C77AF40227FD36100BAD69B /* WLPassword3ViewController.swift in Sources */,
-				6C0A550C2282BA0600BEB3A3 /* WLCommentViewModel.swift in Sources */,
 				6C77AF7A227FD36100BAD69B /* WLUserInfoConfig.swift in Sources */,
-				6C77AFF3228011BF00BAD69B /* WLPublishTableFooterView.swift in Sources */,
 				6C77AF79227FD36100BAD69B /* WLNameUpdateBaseViewController.swift in Sources */,
-				6C61F4602281D4D200F20F36 /* WLCircleBaseTableViewCell.swift in Sources */,
 				6C77AF94227FD36100BAD69B /* WLLoginViewModel.swift in Sources */,
-				6C5C11C92281A64600B129EA /* WLCircle1ViewController.swift in Sources */,
 				6C77AF37227FD36100BAD69B /* WLSwiftLoginBaseViewController.swift in Sources */,
-				6C0A550E2282BCAF00BEB3A3 /* WLCommentBaseViewController.swift in Sources */,
-				6C0A55162282C48900BEB3A3 /* WLCommentNormalTableViewCell.swift in Sources */,
 				6C77AF1D227FD36100BAD69B /* Button+RX.swift in Sources */,
-				6C0A55492282F87800BEB3A3 /* WLCircleDetailBaseViewController+Create.swift in Sources */,
-				6C0A553B2282DEEF00BEB3A3 /* WLContentBaseViewController+Create.swift in Sources */,
-				6C61F4662281EDE900F20F36 /* WLCircle2TableViewCell.swift in Sources */,
 				6C77AF64227FD36100BAD69B /* WLFocusViewModel.swift in Sources */,
-				6C0A55262282D29F00BEB3A3 /* WLContentConfig.swift in Sources */,
-				6C0A54F6228284D800BEB3A3 /* WLReport1ViewController.swift in Sources */,
-				6C0A54E7228277D700BEB3A3 /* WLReportStyle.swift in Sources */,
-				6C77AFDE227FD7FD00BAD69B /* WLPublishBaseViewController+Create.swift in Sources */,
-				6C77B00C22803D9000BAD69B /* WLPublishStyle.swift in Sources */,
 				6C77AF84227FD36100BAD69B /* WLSettingTableViewCell.swift in Sources */,
 				6C77AF59227FD36100BAD69B /* WLWelcomeStyle.swift in Sources */,
-				6C2DBACC228411EF006F47E1 /* WLCricleDetail1ViewController.swift in Sources */,
-				6C0A554B22832CDB00BEB3A3 /* WLCommentTotalTableViewCell.swift in Sources */,
-				6C77AFDD227FD7FD00BAD69B /* WLPublishCollectionView.swift in Sources */,
-				6C77B00922803D9000BAD69B /* WLPublishConfig.swift in Sources */,
 				6C77AF6B227FD36100BAD69B /* WLProfileConfig.swift in Sources */,
-				6C0A55062282B79900BEB3A3 /* WLCommentConfig.swift in Sources */,
-				6C77AFFE228018F800BAD69B /* WLPublishTableBaseViewController+Create.swift in Sources */,
 				6C77AF5B227FD36100BAD69B /* WLWelCome2ViewController.swift in Sources */,
-				6C5C10EB228178E300B129EA /* WLCircleConfig.swift in Sources */,
 				6C77AF3E227FD36100BAD69B /* WLModifyPwd4ViewController.swift in Sources */,
-				6C61F4642281EDC700F20F36 /* WLCircle1TableViewCell.swift in Sources */,
 				6C77AF2A227FD36100BAD69B /* WLBaseDisposeViewController.swift in Sources */,
 				6C77AF5D227FD36100BAD69B /* WLPageCollectionView.swift in Sources */,
-				6C5C11D12281D13900B129EA /* WLCircleTableView.swift in Sources */,
 				6C77AF78227FD36100BAD69B /* WLNameUpdateBaseViewController+Create.swift in Sources */,
 				6C77AF61227FD36100BAD69B /* WLFocusListConfig.swift in Sources */,
 				6C77AF9A227FD36100BAD69B /* UIViewController+CheckLogin.swift in Sources */,
 				6C77AF87227FD36100BAD69B /* WLBlackListConfig.swift in Sources */,
 				6C77AF51227FD36100BAD69B /* WLAboutTableView.swift in Sources */,
-				6C0A55082282B7DD00BEB3A3 /* WLCommentStyle.swift in Sources */,
-				6C0A54E52282761000BEB3A3 /* WLReportConfig.swift in Sources */,
 				6C77AF3D227FD36100BAD69B /* WLModifyPwd5ViewController.swift in Sources */,
 				6C77AF5C227FD36100BAD69B /* WLWelCome1ViewController.swift in Sources */,
 				6C77AF46227FD36100BAD69B /* WLPasswordBaseViewController.swift in Sources */,
 				6C77AF8B227FD36100BAD69B /* WLBlackListViewController.swift in Sources */,
 				6C77AF36227FD36100BAD69B /* WLSwiftLoginBaseViewController+Create.swift in Sources */,
-				6C77AFF4228011BF00BAD69B /* WLPublishTableView.swift in Sources */,
 				6C77AF4A227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift in Sources */,
 				6C77AF2C227FD36100BAD69B /* WLUploadReq.swift in Sources */,
-				6C0A55102282C0FD00BEB3A3 /* WLCommentTableView.swift in Sources */,
 				6C77AF23227FD36100BAD69B /* WLAccountBean.swift in Sources */,
-				6C0A551A2282C5FC00BEB3A3 /* WLComment1ViewController.swift in Sources */,
 				6C77AF35227FD36100BAD69B /* WLSwiftLogin5ViewController.swift in Sources */,
-				6C0A54F022827FE100BEB3A3 /* WLReportBaseViewController.swift in Sources */,
 				6C77AF98227FD36100BAD69B /* WLLogin5ViewController.swift in Sources */,
 				6C77AF93227FD36100BAD69B /* WLLoginStyle.swift in Sources */,
 				6C77AF7E227FD36100BAD69B /* WLUserInfoTableViewCell.swift in Sources */,
-				6C77AFD8227FD7FD00BAD69B /* WLPublish2ViewController.swift in Sources */,
 				6C77AF72227FD36100BAD69B /* WLProfileTableViewCell.swift in Sources */,
 				6C77AF1F227FD36100BAD69B /* WLAccountCache.swift in Sources */,
 				6C77AF47227FD36100BAD69B /* WLModifyPwdBaseViewController.swift in Sources */,
 				6C77AF80227FD36100BAD69B /* WLUserInfoViewController+Create.swift in Sources */,
-				6C77AFF2228011BF00BAD69B /* WLPublishTableBaseViewController.swift in Sources */,
-				6C77B01922803DE800BAD69B /* WLTextEditBaseViewController.swift in Sources */,
-				6C0A55332282D96600BEB3A3 /* WLContentTextTableViewCell.swift in Sources */,
 				6C77AF91227FD36100BAD69B /* UIViewController+TokenInvalid.swift in Sources */,
 				6C77AF5E227FD36100BAD69B /* WLPageCollectionViewCell.swift in Sources */,
 				6C77AF62227FD36100BAD69B /* WLFocusBean.swift in Sources */,
@@ -2599,7 +1748,6 @@
 				6C77AF31227FD36100BAD69B /* WLSwiftLogin1ViewController.swift in Sources */,
 				6C77AF69227FD36100BAD69B /* WLFocusList1TableViewCell.swift in Sources */,
 				6C77AF33227FD36100BAD69B /* WLSwiftLogin2ViewController.swift in Sources */,
-				6C0A551C2282C66800BEB3A3 /* WLCommentNoMoreTableViewCell.swift in Sources */,
 				6C77AF32227FD36100BAD69B /* WLSwiftLogin3ViewController.swift in Sources */,
 				6C77AF89227FD36100BAD69B /* WLBlackListStyle.swift in Sources */,
 				6C77AF7F227FD36100BAD69B /* WLUserInfoTableView.swift in Sources */,

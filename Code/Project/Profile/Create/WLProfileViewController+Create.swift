@@ -15,4 +15,9 @@ extension WLProfileBaseViewController {
         
         return WLProfileViewController(profileStyle, profileConfig: profileConfig, userInfoConfig: userInfoConfig, blackStyle: blackStyle, blackConfig: blackConfig, loginStyle: loginStyle, loginConfig: loginConfig, aboutConfig: aboutConfig ,focusStyle: focusStyle,focusConfig: focusConfig)
     }
+    @objc (createProfileWithProfileStyle:andProfileConfig:andUserInfoConfig: andBlackStyle:andBlackConfig:andLoginStyle:andLoginConfig:andAboutConfig:andFocusStyle: andFocusConfig:andDelegate:)
+    public static func createProfile(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig ,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate) -> WLProfileBaseViewController {
+        
+        return WLProfileViewController(profileStyle, profileConfig: profileConfig, userInfoConfig: userInfoConfig, blackStyle: blackStyle, blackConfig: blackConfig, loginStyle: loginStyle, loginConfig: loginConfig, aboutConfig: aboutConfig ,focusStyle: focusStyle,focusConfig: focusConfig,delegate: delegate)
+    }
 }

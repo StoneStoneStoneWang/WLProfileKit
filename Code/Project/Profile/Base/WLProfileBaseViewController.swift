@@ -12,19 +12,7 @@ import RxDataSources
 import WLToolsKit
 import WLThirdUtil.WLHudUtil
 
-@objc (WLProfileViewControllerDelegate)
-public protocol WLProfileViewControllerDelegate {
-    
-    func onUserInfoTap(_ vc: UIViewController)
-    
-    func onPravicyTap(_ vc: UIViewController)
-    
-    func onAboutTap(_ vc: UIViewController)
-    
-    func onSettingTap(_ vc: UIViewController)
-    
-    func onFocusTap(_ vc: UIViewController)
-}
+
 @objc (WLProfileBaseViewController)
 open class WLProfileBaseViewController: WLF1DisposeViewController {
     
@@ -74,7 +62,33 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         self.focusConfig = focusConfig
     }
     
-    
+    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate) {
+        super.init(nibName: nil, bundle: nil)
+        
+        self.profileStyle = profileStyle
+        
+        self.profileConfig = profileConfig
+        
+        self.userInfoConfig = userInfoConfig
+        
+        self.blackConfig = blackConfig
+        
+        self.blackStyle = blackStyle
+        
+        self.loginConfig = loginConfig
+        
+        self.loginStyle = loginStyle
+        
+        self.aboutConfig = aboutConfig
+        
+        WLProfileConfigManager.default.config = profileConfig
+        
+        self.focusStyle = focusStyle
+        
+        self.focusConfig = focusConfig
+        
+        self.mDelegate = delegate
+    }
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
