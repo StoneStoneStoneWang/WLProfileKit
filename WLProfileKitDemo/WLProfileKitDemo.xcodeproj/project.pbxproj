@@ -71,14 +71,6 @@
 		6C77AF49227FD36100BAD69B /* WLSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE3C227FD36100BAD69B /* WLSignatureViewController.swift */; };
 		6C77AF4A227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE3E227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift */; };
 		6C77AF4B227FD36100BAD69B /* WLSignatureBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */; };
-		6C77AF4C227FD36100BAD69B /* WLAboutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */; };
-		6C77AF4D227FD36100BAD69B /* WLAboutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE45227FD36100BAD69B /* WLAboutType.swift */; };
-		6C77AF4E227FD36100BAD69B /* WLAboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */; };
-		6C77AF4F227FD36100BAD69B /* WLAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */; };
-		6C77AF50227FD36100BAD69B /* WLAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */; };
-		6C77AF51227FD36100BAD69B /* WLAboutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */; };
-		6C77AF52227FD36100BAD69B /* WLAboutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */; };
-		6C77AF53227FD36100BAD69B /* WLAboutViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */; };
 		6C77AF54227FD36100BAD69B /* WLProtocolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE52227FD36100BAD69B /* WLProtocolViewModel.swift */; };
 		6C77AF55227FD36100BAD69B /* WLProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE54227FD36100BAD69B /* WLProtocolViewController.swift */; };
 		6C77AF56227FD36100BAD69B /* WLProtocolViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77AE56227FD36100BAD69B /* WLProtocolViewController+Create.swift */; };
@@ -243,14 +235,6 @@
 		6C77AE3C227FD36100BAD69B /* WLSignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSignatureViewController.swift; sourceTree = "<group>"; };
 		6C77AE3E227FD36100BAD69B /* WLSignatureBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLSignatureBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSignatureBaseViewController.swift; sourceTree = "<group>"; };
-		6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutConfig.swift; sourceTree = "<group>"; };
-		6C77AE45227FD36100BAD69B /* WLAboutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutType.swift; sourceTree = "<group>"; };
-		6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutViewModel.swift; sourceTree = "<group>"; };
-		6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutViewController.swift; sourceTree = "<group>"; };
-		6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutTableViewCell.swift; sourceTree = "<group>"; };
-		6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutTableView.swift; sourceTree = "<group>"; };
-		6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAboutHeaderView.swift; sourceTree = "<group>"; };
-		6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAboutViewController+Create.swift"; sourceTree = "<group>"; };
 		6C77AE52227FD36100BAD69B /* WLProtocolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewModel.swift; sourceTree = "<group>"; };
 		6C77AE54227FD36100BAD69B /* WLProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewController.swift; sourceTree = "<group>"; };
 		6C77AE56227FD36100BAD69B /* WLProtocolViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLProtocolViewController+Create.swift"; sourceTree = "<group>"; };
@@ -771,7 +755,6 @@
 		6C77AE38227FD36100BAD69B /* Signature */ = {
 			isa = PBXGroup;
 			children = (
-				6C77AE41227FD36100BAD69B /* About */,
 				6C77AE39227FD36100BAD69B /* VM */,
 				6C77AE3B227FD36100BAD69B /* VC */,
 				6C77AE3D227FD36100BAD69B /* Create */,
@@ -810,69 +793,6 @@
 				6C77AE40227FD36100BAD69B /* WLSignatureBaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		6C77AE41227FD36100BAD69B /* About */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE42227FD36100BAD69B /* Config */,
-				6C77AE44227FD36100BAD69B /* Bean */,
-				6C77AE46227FD36100BAD69B /* VM */,
-				6C77AE48227FD36100BAD69B /* VC */,
-				6C77AE4A227FD36100BAD69B /* View */,
-				6C77AE4E227FD36100BAD69B /* Create */,
-			);
-			path = About;
-			sourceTree = "<group>";
-		};
-		6C77AE42227FD36100BAD69B /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE43227FD36100BAD69B /* WLAboutConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C77AE44227FD36100BAD69B /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE45227FD36100BAD69B /* WLAboutType.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C77AE46227FD36100BAD69B /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE47227FD36100BAD69B /* WLAboutViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C77AE48227FD36100BAD69B /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE49227FD36100BAD69B /* WLAboutViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C77AE4A227FD36100BAD69B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE4B227FD36100BAD69B /* WLAboutTableViewCell.swift */,
-				6C77AE4C227FD36100BAD69B /* WLAboutTableView.swift */,
-				6C77AE4D227FD36100BAD69B /* WLAboutHeaderView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C77AE4E227FD36100BAD69B /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C77AE4F227FD36100BAD69B /* WLAboutViewController+Create.swift */,
-			);
-			path = Create;
 			sourceTree = "<group>";
 		};
 		6C77AE50227FD36100BAD69B /* Protocol */ = {
@@ -1707,7 +1627,6 @@
 				6C77AF73227FD36100BAD69B /* WLProfileHeaderView.swift in Sources */,
 				6C77AF56227FD36100BAD69B /* WLProtocolViewController+Create.swift in Sources */,
 				6C77AF99227FD36100BAD69B /* WLLogin4ViewController.swift in Sources */,
-				6C77AF4E227FD36100BAD69B /* WLAboutViewModel.swift in Sources */,
 				6C77AF9C227FD36100BAD69B /* WLLoginBaseViewController.swift in Sources */,
 				6C77AF60227FD36100BAD69B /* WLWelComeBaseViewController.swift in Sources */,
 				6C77AF77227FD36100BAD69B /* WLNameUpdateViewController.swift in Sources */,
@@ -1724,7 +1643,6 @@
 				6C77AF83227FD36100BAD69B /* WLSettingViewController.swift in Sources */,
 				6C77AF55227FD36100BAD69B /* WLProtocolViewController.swift in Sources */,
 				6C77AF21227FD36100BAD69B /* UIViewController+ActionShow.swift in Sources */,
-				6C77AF4D227FD36100BAD69B /* WLAboutType.swift in Sources */,
 				6C77AF71227FD36100BAD69B /* WLProfileTableView.swift in Sources */,
 				6C77AF96227FD36100BAD69B /* WLLogin3ViewController.swift in Sources */,
 				6C77AF8A227FD36100BAD69B /* WLBlackListViewModel.swift in Sources */,
@@ -1734,10 +1652,8 @@
 				6C77AF24227FD36100BAD69B /* WLUserBean.swift in Sources */,
 				6C77AF7D227FD36100BAD69B /* WLUserInfoViewController.swift in Sources */,
 				6C77AF38227FD36100BAD69B /* WLModifyPwdViewModel.swift in Sources */,
-				6C77AF4F227FD36100BAD69B /* WLAboutViewController.swift in Sources */,
 				6C77AF7C227FD36100BAD69B /* WLUserInfoViewModel.swift in Sources */,
 				6C77AF39227FD36100BAD69B /* WLPwdViewModel.swift in Sources */,
-				6C77AF53227FD36100BAD69B /* WLAboutViewController+Create.swift in Sources */,
 				6C77AF6F227FD36100BAD69B /* WLProfileViewModel.swift in Sources */,
 				6C77AF6C227FD36100BAD69B /* WLProfileType.swift in Sources */,
 				6C77AF57227FD36100BAD69B /* WLWelComeConfig.swift in Sources */,
@@ -1753,7 +1669,6 @@
 				6C77AF97227FD36100BAD69B /* WLLogin1ViewController.swift in Sources */,
 				6C77AF8D227FD36100BAD69B /* WLBlackListTableView.swift in Sources */,
 				6C77AF20227FD36100BAD69B /* WLUserInfoCache.swift in Sources */,
-				6C77AF50227FD36100BAD69B /* WLAboutTableViewCell.swift in Sources */,
 				6C77AF30227FD36100BAD69B /* WLSwiftLoginViewModel.swift in Sources */,
 				6C77AF4B227FD36100BAD69B /* WLSignatureBaseViewController.swift in Sources */,
 				6C77AF44227FD36100BAD69B /* WLPasswordBaseViewController+Create.swift in Sources */,
@@ -1770,13 +1685,11 @@
 				6C5795EB228C03AD0000AD07 /* WLProfileViewControllerDelegate.swift in Sources */,
 				6C77AF9B227FD36100BAD69B /* WLLoginBaseViewController+Create.swift in Sources */,
 				6C77AF85227FD36100BAD69B /* WLSettingTableView.swift in Sources */,
-				6C77AF4C227FD36100BAD69B /* WLAboutConfig.swift in Sources */,
 				6C77AF58227FD36100BAD69B /* WLWelComeBaseDelegate.swift in Sources */,
 				6C77ADC3227FD32900BAD69B /* AppDelegate.swift in Sources */,
 				6C77AF2D227FD36100BAD69B /* WLVideoPickerImpl.swift in Sources */,
 				6C77AF86227FD36100BAD69B /* WLSettingViewController+Create.swift in Sources */,
 				6C77AF8F227FD36100BAD69B /* WLBlackList1TableViewCell.swift in Sources */,
-				6C77AF52227FD36100BAD69B /* WLAboutHeaderView.swift in Sources */,
 				6C77AF42227FD36100BAD69B /* WLPassword5ViewController.swift in Sources */,
 				6C77AF3A227FD36100BAD69B /* WLModifyPwd1ViewController.swift in Sources */,
 				6C77AF68227FD36100BAD69B /* WLFocusListBaseTableViewCell.swift in Sources */,
@@ -1811,7 +1724,6 @@
 				6C77AF9A227FD36100BAD69B /* UIViewController+CheckLogin.swift in Sources */,
 				6C5795FE228C09990000AD07 /* WLAboutViewController.swift in Sources */,
 				6C77AF87227FD36100BAD69B /* WLBlackListConfig.swift in Sources */,
-				6C77AF51227FD36100BAD69B /* WLAboutTableView.swift in Sources */,
 				6C77AF3D227FD36100BAD69B /* WLModifyPwd5ViewController.swift in Sources */,
 				6C77AF5C227FD36100BAD69B /* WLWelCome1ViewController.swift in Sources */,
 				6C77AF46227FD36100BAD69B /* WLPasswordBaseViewController.swift in Sources */,
