@@ -14,6 +14,10 @@ import ObjectMapper
 
 
 class WLLLLLL: WLLoginConfig ,WLProfileConfig{
+    var circleIcon: String { return "" }
+    
+    var ciecleName: String { return "我的发布" }
+    
     var defaultIcon: String  { return "" }
     
     var userInfoIcon: String  { return "" }
@@ -57,7 +61,7 @@ class WLUUUUUU: WLUserInfoConfig ,WLBlackListConfig ,WLFocusListConfig ,WLAboutC
     var backIcon: String {  return "" }
     
     var defaultIcon: String {  return "" }
-
+    
 }
 
 class WLMainV: UITabBarController {
@@ -65,7 +69,7 @@ class WLMainV: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let profile = WLProfileBaseViewController.createProfile(.one ,profileConfig: WLLLLLL(), userInfoConfig:  WLUUUUUU(), blackStyle: .one, blackConfig: WLUUUUUU(), loginStyle: .five, loginConfig: WLLLLLL(), aboutConfig: WLUUUUUU(), focusStyle: .one, focusConfig: WLUUUUUU())
+        let profile = WLProfileBaseViewController.createProfile(.two ,profileConfig: WLLLLLL(), userInfoConfig:  WLUUUUUU(), blackStyle: .one, blackConfig: WLUUUUUU(), loginStyle: .five, loginConfig: WLLLLLL(), aboutConfig: WLUUUUUU(), focusStyle: .one, focusConfig: WLUUUUUU(),delegate: nil)
         
         addChildVC(childVC: profile, title: "我的", fontSize: 12, titleColor: WLHEXCOLOR(hexColor: "#666666"), highColor: WLHEXCOLOR(hexColor: "#84aaf7"), imageName: "", selectedImageName: "")
     }

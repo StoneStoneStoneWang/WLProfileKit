@@ -21,4 +21,6 @@ public protocol WLProfileViewControllerDelegate {
     func onSettingTap(_ vc: UIViewController)
     
     func onFocusTap(_ vc: UIViewController)
+    
+    func onCircleTap(_ vc: UIViewController)
 }

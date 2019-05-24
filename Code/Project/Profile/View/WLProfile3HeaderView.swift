@@ -1,8 +1,8 @@
 //
-//  WLProfileHeaderView.swift
-//  ZUserKit
+//  WLProfile3HeaderView.swift
+//  WLProfileKitDemo
 //
-//  Created by three stone 王 on 2019/3/15.
+//  Created by three stone 王 on 2019/5/24.
 //  Copyright © 2019 three stone 王. All rights reserved.
 //
 
@@ -14,51 +14,21 @@ import WLToolsKit
 import WLBaseTableView
 import SnapKit
 
-extension Reactive where Base: WLProfileHeaderView {
+@objc (WLProfile3HeaderView)
+public final class WLProfile3HeaderView: WLProfileHeaderView {
     
-    var user: Binder<WLUserBean?> {
+    public final let backgroundImageView: UIImageView = UIImageView()
+    
+    lazy var effectView: UIVisualEffectView = {
         
-        return Binder(base) { view, user in
-            
-            view.user = user
-        }
-    }
-}
-
-extension WLProfileHeaderView {
-    
-    public static func createProfileHeader(_ style: WLProfileStyle) -> WLProfileHeaderView {
+        let blur = UIBlurEffect(style: .dark)
         
-        switch style {
-        case .one: return WLProfile1HeaderView(.white, style: .default, reuseIdentifier: "cell")
-            
-        case .two: return WLProfile2HeaderView(.white, style: .default, reuseIdentifier: "cell")
-            
-        case .three: return WLProfile3HeaderView(.white, style: .default, reuseIdentifier: "cell")
-            
-        default: return WLProfileHeaderView(.white, style: .default, reuseIdentifier: "cell")
-            
-        }
-    }
-    
-}
-
-@objc (WLProfileHeaderView)
-open class WLProfileHeaderView: WLBaseTableViewCell {
-    
-    final let topLine: UIView = UIView().then {
+        let res = UIVisualEffectView(effect: blur)
         
-        $0.backgroundColor = WLHEXCOLOR(hexColor: "#f1f1f1")
-    }
+        return res
+    }()
     
-    final let nameLabel: UILabel = UILabel().then {
-        
-        $0.textAlignment = .left
-        
-        $0.font = UIFont.systemFont(ofSize: 15)
-    }
-    
-    open  var user: WLUserBean? {
+    public override var user: WLUserBean? {
         
         willSet {
             
@@ -87,9 +57,16 @@ open class WLProfileHeaderView: WLBaseTableViewCell {
                     
                 } else {
                     
-                    let icon: String = newValue.headImg + "?x-oss-process=image/resize,w_100,h_100"
+                    let icon: String = newValue.headImg + "?x-oss-process=image/resize,w_1600,h_800"
                     
-                    self.iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: WLProfileConfigManager.default.config.defaultIcon), options: [
+                    iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: WLProfileConfigManager.default.config.defaultIcon), options: [
+                        .processor(processor),
+                        .scaleFactor(UIScreen.main.scale),
+                        .transition(.fade(0.3)),
+                        .forceRefresh
+                        ])
+                    
+                    backgroundImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage.colorTransformToImage(color: WLHEXCOLOR(hexColor: "#e1e1e1")), options: [
                         .processor(processor),
                         .scaleFactor(UIScreen.main.scale),
                         .transition(.fade(0.3)),
@@ -104,48 +81,43 @@ open class WLProfileHeaderView: WLBaseTableViewCell {
                 iconImageView.image = UIImage(named: WLProfileConfigManager.default.config.defaultIcon)
                 
                 nameLabel.text = newValue.nickname
+                
+                backgroundImageView.image = UIImage.colorTransformToImage(color: WLHEXCOLOR(hexColor: "#e1e1e1"))
+                
             }
             
             iconImageView.layer.borderColor = WLHEXCOLOR(hexColor: WLProfileConfigManager.default.config.itemColor).cgColor
         }
     }
     
-    open var style: WLProfileStyle! {
+    public override var style: WLProfileStyle! {
         
         willSet {
             
-            nameLabel.textAlignment = .left
+            nameLabel.textAlignment = .center
             
             setNeedsDisplay()
         }
     }
 }
 
-extension WLProfileHeaderView {
+extension WLProfile3HeaderView {
     
-    override open func commitInit() {
+    override public func commitInit() {
+        
+        contentView.addSubview(backgroundImageView)
+        
+        backgroundImageView.addSubview(effectView)
+        
+        backgroundImageView.contentMode = .scaleAspectFill
+        
+        backgroundImageView.layer.masksToBounds = true
+        
         super.commitInit()
-        addSubview(topLine)
         
-        addSubview(nameLabel)
-        
-        backgroundColor = .white
-        
-        iconImageView.layer.masksToBounds = true
-        
-        iconImageView.isUserInteractionEnabled = true
-        
-        iconImageView.contentMode = .redraw
-        
-        iconImageView.layer.cornerRadius = 35
-        
-        iconImageView.layer.borderWidth = 1
-        
-        accessoryType = .disclosureIndicator
-        
-        
+
     }
-    override open func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         topLine.snp.makeConstraints { (make) in
             
@@ -174,6 +146,9 @@ extension WLProfileHeaderView {
             make.centerY.equalToSuperview()
         }
         
+        backgroundImageView.frame = bounds
+        
+        effectView.frame = bounds
     }
     
 }

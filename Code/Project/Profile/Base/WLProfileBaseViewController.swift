@@ -62,7 +62,7 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         self.focusConfig = focusConfig
     }
     
-    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate) {
+    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate?) {
         super.init(nibName: nil, bundle: nil)
         
         self.profileStyle = profileStyle
@@ -97,7 +97,10 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
     
     public final let tableView: WLProfileTableView = WLProfileTableView.baseTableView()
     
-    public final let profileHeader: WLProfileHeaderView = WLProfileHeaderView(.white, style: .default, reuseIdentifier: "header")
+    open lazy var profileHeader: WLProfileHeaderView = {
+        
+        return WLProfileHeaderView.createProfileHeader(self.profileStyle)
+    }()
     
     typealias Section = WLSectionModel<(), WLProfileType>
     
@@ -122,19 +125,6 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         tableView.separatorStyle = .none
         
         tableView.register(WLProfileTableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        switch profileStyle {
-        case .one: fallthrough
-        case .two:
-            
-            profileHeader.frame = CGRect(x: 0, y: 0, width: WL_SCREEN_WIDTH, height: WL_SCREEN_WIDTH / 3)
-        case .three: fallthrough
-        case .four:
-            
-            profileHeader.frame = CGRect(x: 0, y: 0, width: WL_SCREEN_WIDTH, height: WL_SCREEN_WIDTH / 2)
-        }
-        
-        tableView.tableHeaderView = profileHeader
     }
     
     override open func configViewModel() {
@@ -338,6 +328,10 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         
         title = "我的"
     }
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        
+    }
 }
 
 extension WLProfileBaseViewController: UITableViewDelegate {
@@ -348,4 +342,5 @@ extension WLProfileBaseViewController: UITableViewDelegate {
         
         return datasource[indexPath].cellHeight
     }
+    
 }

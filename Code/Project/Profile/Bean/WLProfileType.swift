@@ -24,6 +24,11 @@ public enum WLProfileType : Int{
     case focus
     
     case space
+    
+    case myCircle
+    
+    case address
+    
 }
 
 extension WLProfileType {
@@ -34,11 +39,11 @@ extension WLProfileType {
             
             if version > "1.1.0" {
                 
-                return [.space,userInfo,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                return [.space,userInfo,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
             }
         }
         
-        return [.space,userInfo,.space,.contactUS,.pravicy,.about,.space,.setting]
+        return [.space,userInfo,.myCircle,.space,.contactUS,.pravicy,.about,.space,.setting]
     }
     
     var cellHeight: CGFloat {
@@ -66,6 +71,10 @@ extension WLProfileType {
             
         case .focus: return WLProfileConfigManager.default.config.focusIcon
             
+        case .myCircle: return WLProfileConfigManager.default.config.circleIcon
+            
+        case .address: return ""
+            
         case .space: return ""
             
         }
@@ -86,6 +95,8 @@ extension WLProfileType {
         case .pravicy: return "隐私政策"
             
         case .focus: return "我的关注"
+            
+        case .myCircle: return WLProfileConfigManager.default.config.ciecleName
             
         default: return ""
             

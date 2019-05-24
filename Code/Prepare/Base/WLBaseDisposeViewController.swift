@@ -36,6 +36,7 @@ open class WLLoadingDisposeViewController: WLLoadingViewController {
     public final let disposed: DisposeBag = DisposeBag()
     
 }
+
 @objc (WLLoadingDisposeF1ViewController)
 open class WLLoadingDisposeF1ViewController: WLLoadingDisposeViewController {
     

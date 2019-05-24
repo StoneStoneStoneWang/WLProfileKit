@@ -29,6 +29,10 @@ public protocol WLProfileConfig {
     /* 我的关注icon */
     var focusIcon: String { get }
     
+    var circleIcon: String { get }
+    
     var phoneNum: String { get }
+    
+    var ciecleName: String { get }
 }
 
