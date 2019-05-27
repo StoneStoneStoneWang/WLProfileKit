@@ -206,9 +206,10 @@ public final class WLUserInfoViewController: WLF1DisposeViewController {
             
             let data = UIImage.compressImage(img, maxLength: 500 * 1024)
             
-            self.onUploadImag(type: .header, ip: IndexPath(row: 0, section: 0), data: data)
+            self.onUploadImag(type: .header, ip: IndexPath(row: 1, section: 0), data: data)
         })
     }
+    
     override public func wl_imagePhotoShow() {
         
         imagePicker.openImagePicker(self, isPhoto: true, imageHandler: { [weak self] (img) in

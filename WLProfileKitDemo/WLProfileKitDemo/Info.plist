@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>aaa</string>
+	<string>WLProfileKitDemo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -48,5 +48,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>是否允许康达开启相册以供您发送选择要上传的视频</string>
+	<key>NSCameraUsageDescription</key>
+	<string>是否允许康达开启相机拍照，以便拍照上传图片或用于用户扫描二维码</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>是否允许康达使用麦克风权限,以供录制视频时录制声音</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>是否允许康达开启相册以供您发送选择要上传的图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>是否允许康达开启相册以供您发送选择要上传的图片</string>
 </dict>
 </plist>

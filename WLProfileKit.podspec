@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLProfileKit"
-  spec.version      = "1.1.2"
+  spec.version      = "1.1.3"
   spec.summary      = "A Lib For profile kit."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -98,6 +98,8 @@ Pod::Spec.new do |spec|
     ## Prepare/Base
     prepare.subspec 'ActionShow' do |ac|
       ac.source_files = "Code/Prepare/ActionShow/*.{swift}"
+      ac.frameworks = 'AVFoundation'
+      ac.dependency 'WLToolsKit/OpenUrl'
     end
     ## Prepare/Base
     prepare.subspec 'PickerImpl' do |pi|
@@ -747,6 +749,7 @@ Pod::Spec.new do |spec|
       view.dependency 'WLBaseTableView/BTV'
       view.dependency 'WLBaseTableView/BTVC'
       view.dependency 'WLToolsKit/Color'
+      view.dependency 'WLToolsKit/Image'
       view.dependency 'SnapKit'
     end
     
