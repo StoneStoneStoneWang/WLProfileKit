@@ -11,15 +11,15 @@ import WLBaseViewController
 
 class WLCCCC: WLStyleConfig {
     
-    var host: String { return "https://zhih.ecsoi.com/" }
+    var host: String { return "" }
     
     var smspasswordCode: String { return "SMS_160571563"}
     
     var smsLoginCode: String { return "SMS_160576175" }
     
-    var smsSignName: String { return "纸盒App"}
+    var smsSignName: String { return ""}
     
-    var prprEncode: String { return "6d47b329735f4f6eb1cb76e4b1e13e26"}
+    var prprEncode: String { return ""}
     
     var umKey: String { return ""}
     

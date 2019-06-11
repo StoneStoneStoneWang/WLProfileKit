@@ -64,7 +64,7 @@ struct WLSwiftLoginViewModel: WLBaseViewModel {
         self.input = input
         
         let usernameAndVcode = Driver.combineLatest(input.username, input.vcode)
-        
+
         let logining: Driver<Void> = input.loginTaps.flatMap { Driver.just($0) }
         
         // 登录完成返回
